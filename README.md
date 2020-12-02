@@ -7,6 +7,7 @@
 * ***License:*** [GPLv3](https://www.gnu.org/licenses/old-licenses/gpl-3.0.html)
 * ***Home Page:*** https://www.nubuilder.com
 * ***Wiki:*** https://wiki.nubuilder.net/
+* ***Github Wiki:*** https://github.com/smalos/nuBuilder4-Code-Library/wiki/Installing-nuBuilder
 * ***Forum:*** https://forums.nubuilder.com/
 
 * ***Requires PHP:*** 5.2.4 (phpMyAdmin that is shipped with nuBuilder will require PHP 7.1+)
@@ -14,6 +15,11 @@
 * ***Requires a web server:*** (e.g. Apache or Nginx)
 
 ***nuBuilder*** is the world's best open-source, low-code application and report builder.
+
+### nuManagement
+* The original Author Steven Copley [has handed over the project](http://nubuilder.blogspot.com/2020/12/) for future development to ***@smalos*** (**kev1n** in the forum) and **Janus** (in the forum).
+* @smalos has [his updated fork](https://github.com/smalos/nubuilder4-Dev) and new changes will arise there.
+* [Discord Invite](https://discord.com/invite/KbHzgh3EbY) - [discussion channel](https://discord.com/channels/710460059359903804/710465287912292372) for NuBuilder (expects your birthdate!)
 
 ## Description
 
@@ -77,6 +83,7 @@ nuBuilder is a enterprise level application builder but with no limitations on d
 * [nuBuilder-Forte-User-Guide 2](https://sourceforge.net/projects/nubuilder/files/nuBuilderForte_UserGuide.pdf/download)
 * [nuBuilder-Forte-Wiki-Documentation](https://wiki.nubuilder.net/nubuilderforte/index.php/Main_Page)
 * [Javascript character Key Codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes) - case insensitive
+* [JS Pivot in nubuilder4](https://cdn.discordapp.com/attachments/710465287912292372/785888555872419840/nuBuilder_Pivot_table.pdf)
 
 ### phpMyAdmin Workarounds for various versions
 

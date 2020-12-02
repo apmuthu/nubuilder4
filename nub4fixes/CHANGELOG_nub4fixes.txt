@@ -1,3 +1,4 @@
+2020-12-15: Janusz     Fixed Number Format on reports without currency
 2020-12-14: Upstream   Fix to restore window after maximising
 2020-12-12: Ap.Muthu   Case sensitive string match synch for Launch From
 2020-12-12: Ap.Muthu   Reduced translation strings by synching whitespace
