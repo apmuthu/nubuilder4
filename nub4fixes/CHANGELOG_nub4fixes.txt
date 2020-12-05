@@ -1,3 +1,4 @@
+2020-12-05: Ap.Muthu   Cloned nuemailer.php for fixes
 2020-12-05: Ap.Muthu   Increased height of all buttons from 30px to 45px for Non English strings in nuhome pages - Setup, Builders
 2020-12-05: Ap.Muthu   Added 55 missing Hindi translation strings - all 211 strings translated
 2020-12-05: Ap.Muthu   Added Tamil translation strings
