@@ -129,3 +129,17 @@ If you are using nuBuilder as a standalone application, then follow these instru
 Here is a link to PDF instructions to get started as a nuBuilder developer [nuBuilder-Forte-User-Guide](https://www.nubuilder.com/storage/pdf/nuBuilderForte_UserGuide.pdf "nuBuilder Forte User Guide")
 
 Here is a link to the nuBuilder Forte Wiki Documentation [nuBuilder-Forte-Wiki-Documentation](https://wiki.nubuilder.net/nubuilderforte/index.php/Main_Page "nuBuilder Forte Wiki Documentation")
+
+== Ap.Muthu's notes ==
+
+* NuBuilder4 uses `phpMyAdmin` located in the `nudb` folder. It sports [phpMyAdmin v5.0.2](https://codeload.github.com/phpmyadmin/phpmyadmin/tar.gz/RELEASE_5_0_2) which needs `PHP 7+` as it uses `declare(strict_types=1);` in `nudb/db_structure.php` line 8 and errors out in line 22.
+* Replacing it with [phpMyAdmin v4.5.5.1](https://codeload.github.com/phpmyadmin/phpmyadmin/tar.gz/RELEASE_4_5_5_1) (using the same `config.inc.php` file) expects `PHP 5.5+` and can be operational (tested in `PHP 5.4.27`) if in file `nudb/libraries/common.inc.php` the line 46 is commented out:
+```php
+die('PHP 5.5+ is required');
+```
+* Replacing it with [phpMyAdmin v4.0.10.17 (2016-08-16)](https://codeload.github.com/phpmyadmin/phpmyadmin/tar.gz/RELEASE_4_0_10_17) works well with older PHP versions as it needs a minimum of `PHP v5.2+` only but the `config.inc.php` must include the lines below:
+```php
+/* Select mysql if your server does not have mysqli */
+$cfg['Servers'][$i]['extension'] = 'mysqli';
+```
+
