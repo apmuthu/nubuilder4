@@ -1,7 +1,8 @@
+2020-12-06: smalos     Fixed nuSetStartingTab() error on no objects
 2020-12-06: Ap.Muthu   Cloned nuform.js for fixing nuSetStartingTab() on no objects
-2020-12-06: Ap.Muthu   Fixed search keys F3 and CTRL+f by resetting window.nuNEW=0
+2020-12-06: smalos     Fixed search keys F3 and CTRL+f by resetting window.nuNEW=0
 2020-12-06: Ap.Muthu   Cloned nucommon.js for fixing CTRL key Up for search fix
-2020-12-06: Ap.Muthu   Fixed Label Umlaut in tcpdf_fonts.php
+2020-12-06: smalos     Fixed Label Umlaut in tcpdf_fonts.php
 2020-12-06: Ap.Muthu   Cloned tcpdf/include/tcpdf_fonts.php for label Unmlaut fix
 2020-12-06: Ap.Muthu   Added Video Tutorials List
 2020-12-06: Ap.Muthu   Ordered translations with separate bulk insert for each language, completed Russian, Armenian and German translations
