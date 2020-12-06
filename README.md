@@ -71,6 +71,7 @@ If you are using nuBuilder as a standalone application, then follow these instru
 * [nuBuilder-Forte-User-Guide](https://www.nubuilder.com/storage/pdf/nuBuilderForte_UserGuide.pdf)
 * [nuBuilder-Forte-Wiki-Documentation](https://wiki.nubuilder.net/nubuilderforte/index.php/Main_Page)
 * Use the files in the `nub4fixes` folder to overwrite their counterparts in the `core` folder and use the latter.
+* [Javascript character Key Codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes) - case insensitive
 
 ### phpMyAdmin Workarounds for various versions
 
