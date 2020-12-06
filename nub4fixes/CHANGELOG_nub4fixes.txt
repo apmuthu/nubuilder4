@@ -1,3 +1,4 @@
+2020-12-06: Ap.Muthu   Cloned nuform.js for fixing nuSetStartingTab() on no objects
 2020-12-06: Ap.Muthu   Fixed search keys F3 and CTRL+f by resetting window.nuNEW=0
 2020-12-06: Ap.Muthu   Cloned nucommon.js for fixing CTRL key Up for search fix
 2020-12-06: Ap.Muthu   Fixed Label Umlaut in tcpdf_fonts.php
