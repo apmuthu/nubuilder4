@@ -142,4 +142,9 @@ die('PHP 5.5+ is required');
 /* Select mysql if your server does not have mysqli */
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 ```
+* Language translation stats
+```sql
+SELECT trl_language, COUNT(*) AS translated_strings, 211-COUNT(*) AS ToTranslate 
+FROM `zzzzsys_translate` GROUP BY trl_language ORDER BY translated_strings DESC, trl_language ASC;
+```
 
