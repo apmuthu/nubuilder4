@@ -1,3 +1,4 @@
+2020-12-06: Ap.Muthu   Cloned tcpdf/include/tcpdf_fonts.php for label unmlaut fix
 2020-12-06: Ap.Muthu   Added Video Tutorials List
 2020-12-06: Ap.Muthu   Ordered translations with separate bulk insert for each language, completed Russian, Armenian and German translations
 2020-12-05: Ap.Muthu   Localised font-awesome css and font files
