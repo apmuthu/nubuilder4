@@ -11,6 +11,9 @@
 1. 2:44 mins [Calculating Invoice Totals](https://www.youtube.com/watch?v=vf41VH7PgxE)
 1. 4:10 mins [Print an Invoice](https://www.youtube.com/watch?v=sR_RqTkLO8k)
 
+* [SQL of tables used](./nuBuilder4_Pizza_tables.sql)
+* [ERD](./nuBuilder4_Tutorial_Pizza_ERD.png)
+
 ### Printing House Roster
 
 1. 1:50 mins [Join Roster Data for Reporting](https://www.youtube.com/watch?v=3HIBSCcHjs4)
