@@ -26,6 +26,7 @@ UPDATE `zzzzsys_setup` SET `set_denied` = '0';
 
 * [SQL of tables used](./nuBuilder4_Pizza_tables.sql)
 * [ERD](./nuBuilder4_Tutorial_Pizza_ERD.png)
+* [Pizza Tutorial DB Changes](./NuBuilder4_Pizza_Install.md)
 
 ### Printing House Roster
 
