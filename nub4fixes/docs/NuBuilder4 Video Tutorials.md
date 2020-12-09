@@ -37,3 +37,4 @@ UPDATE `zzzzsys_setup` SET `set_denied` = '0';
 
 ## Code Snippet Links
 * [Print Button on Edit Form](https://forums.nubuilder.com/viewtopic.php?f=19&t=9438)
+* [Set Denied setting PHP Procedure](./set_denied.png)

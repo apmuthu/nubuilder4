@@ -1,3 +1,4 @@
+2020-12-07: Ap.Muthu   docs updated
 2020-12-07: Ap.Muthu   nubuilder4.sql CHARSET redundancies fixed
 2020-12-07: Ap.Muthu   Added ERD and SQL of tables used in Pizza Delivery Software nuBuilder4 Tutorial
 2020-12-06: smalos     Fixed nuSetStartingTab() error on no objects
