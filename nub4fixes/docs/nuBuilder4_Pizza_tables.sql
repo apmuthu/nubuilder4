@@ -48,6 +48,32 @@ INSERT INTO `invoice` (`invoice_id`, `inv_date`, `inv_number`, `inv_customer_id`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `product_id` varchar(25) NOT NULL,
+  `pro_code` varchar(1000) NOT NULL,
+  `pro_description` varchar(1000) NOT NULL,
+  `pro_price` decimal(12,4) NOT NULL,
+  `pro_group` varchar(1000) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`product_id`, `pro_code`, `pro_description`, `pro_price`, `pro_group`) VALUES
+('5d881a5cc309669', 'P1', 'Large Pineapple Pizza', '15.9000', 'Pizza'),
+('5d881afd0f7e7ea', 'P2', 'Large Pizza wth the Lot', '23.0000', 'Pizza'),
+('5d881b2d40b46ef', 'Prawn Pizza', 'Large Prawn Pizza', '27.5000', 'Pizza'),
+('5d881ba8dd326a7', 'A2', 'Spaghetti and Meatballs', '15.5000', 'Pasta'),
+('5d881be75552ac6', 'D1', 'Can of Coke', '3.0000', 'Drink'),
+('5d881bf6c772e79', 'D1', 'Can of Pepsi', '3.0000', 'Drink');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `item`
 --
 
@@ -77,30 +103,6 @@ INSERT INTO `item` (`item_id`, `ite_invoice_id`, `ite_product_id`, `ite_price`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
---
-
-CREATE TABLE `product` (
-  `product_id` varchar(25) NOT NULL,
-  `pro_code` varchar(1000) NOT NULL,
-  `pro_description` varchar(1000) NOT NULL,
-  `pro_price` decimal(12,4) NOT NULL,
-  `pro_group` varchar(1000) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `product`
---
-
-INSERT INTO `product` (`product_id`, `pro_code`, `pro_description`, `pro_price`, `pro_group`) VALUES
-('5d881a5cc309669', 'P1', 'Large Pineapple Pizza', '15.9000', 'Pizza'),
-('5d881afd0f7e7ea', 'P2', 'Large Pizza wth the Lot', '23.0000', 'Pizza'),
-('5d881b2d40b46ef', 'Prawn Pizza', 'Large Prawn Pizza', '27.5000', 'Pizza'),
-('5d881ba8dd326a7', 'A2', 'Spaghetti and Meatballs', '15.5000', 'Pasta'),
-('5d881be75552ac6', 'D1', 'Can of Coke', '3.0000', 'Drink'),
-('5d881bf6c772e79', 'D1', 'Can of Pepsi', '3.0000', 'Drink');
-
---
 -- Indexes for table `customer`
 --
 ALTER TABLE `customer`
@@ -111,17 +113,16 @@ ALTER TABLE `customer`
 --
 ALTER TABLE `invoice`
   ADD PRIMARY KEY (`invoice_id`);
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`product_id`);
 
 --
 -- Indexes for table `item`
 --
 ALTER TABLE `item`
   ADD PRIMARY KEY (`item_id`);
-
---
--- Indexes for table `product`
---
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`product_id`);
 
 -- --------------------------------------------------------

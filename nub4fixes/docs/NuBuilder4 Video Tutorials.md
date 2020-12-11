@@ -25,7 +25,7 @@ UPDATE `zzzzsys_setup` SET `set_denied` = '0';
 1. 4:10 mins [Print an Invoice](https://www.youtube.com/watch?v=sR_RqTkLO8k)
 
 * [SQL of tables used](./nuBuilder4_Pizza_tables.sql)
-* [ERD](./nuBuilder4_Tutorial_Pizza_ERD.png)
+* [ERD](./images/nuBuilder4_Tutorial_Pizza_ERD.png)
 * [Pizza Tutorial DB Changes](./NuBuilder4_Pizza_Install.md)
 
 ### Printing House Roster
@@ -38,4 +38,4 @@ UPDATE `zzzzsys_setup` SET `set_denied` = '0';
 
 ## Code Snippet Links
 * [Print Button on Edit Form](https://forums.nubuilder.com/viewtopic.php?f=19&t=9438)
-* [Set Denied setting PHP Procedure](./set_denied.png)
+* [Set Denied setting PHP Procedure](./images/set_denied.png)

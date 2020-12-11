@@ -1,3 +1,4 @@
+2020-12-12: Ap.Muthu   Entity Relationship Diagrams for Nubuilder4
 2020-12-07: Ap.Muthu   Pizza Tutorial DB changes WIP
 2020-12-07: Ap.Muthu   docs updated
 2020-12-07: Ap.Muthu   nubuilder4.sql CHARSET redundancies fixed
