@@ -1746,3 +1746,10 @@ function nuOnLoad() {
    
 }
 
+function nuBrowseTitleMultiLine() {
+
+    $('#nuActionHolder').css({'height': '40px'});	    
+    $('.nuBrowseTitle').css('top', "-20px");
+
+}
+

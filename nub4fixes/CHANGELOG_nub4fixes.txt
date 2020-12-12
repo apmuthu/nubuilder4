@@ -1,3 +1,4 @@
+2020-12-12: smalos     MultiLine Title JS function added
 2020-12-12: smalos     Tamil Strings with <br> avoiding truncation
 2020-12-12: smalos     Removed unused objects/forms (Run Update required)
 2020-12-12: Ap.Muthu   Entity Relationship Diagrams for Nubuilder4
