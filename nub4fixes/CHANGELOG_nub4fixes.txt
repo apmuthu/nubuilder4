@@ -1,3 +1,4 @@
+2020-12-12: Ap.Muthu   Case sensitive string match synch for Launch From
 2020-12-12: Ap.Muthu   Reduced translation strings by synching whitespace
 2020-12-12: Ap.Muthu   nbsp typo in nubuilder4.sql fixed
 2020-12-12: smalos     MultiLine Title JS function added
