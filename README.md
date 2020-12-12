@@ -2,21 +2,24 @@
 
 * ***Name:*** nuBuilder 4 - Standalone
 * ***This Fork:*** https://github.com/apmuthu/nubuilder4
-* ***Contributors:*** Steven Copley, Ap.Muthu
+* ***Contributors:*** Steven Copley, Ap.Muthu, smalos
 * ***Donate link:*** https://www.nubuilder.com/#donate
-* ***Requires PHP:*** 5.2.4 (Some parts will now or soon require PHP 7+)
 * ***License:*** [GPLv3](https://www.gnu.org/licenses/old-licenses/gpl-3.0.html)
 * ***Home Page:*** https://www.nubuilder.com
 * ***Wiki:*** https://wiki.nubuilder.net/
 * ***Forum:*** https://forums.nubuilder.com/
 
+* ***Requires PHP:*** 5.2.4 (phpMyAdmin that is shipped with nuBuilder will require PHP 7.1+)
+* ***Requires MySQL:*** 5.5. (or MariaDB)
+* ***Requires a web server:*** (e.g. Apache or Nginx)
+
 ***nuBuilder*** is the world's best open-source, low-code application and report builder.
 
 ## Description
 
-nuBuilder enables you to make any application that want or need with the least amount of effort / learning.
+nuBuilder enables you to make any application that want or need with the least amount of effort and learning.
 
-nuBuilder Forte is in it's 4th version of nuBuilder and is a browser-based tool created by ***nuSoftware*** for developing web-based database applications.
+nuBuilder Forte is in its 4th version of nuBuilder and is a browser-based tool created by ***nuSoftware*** for developing web-based database applications.
 
 nuBuilder uses either ***MySQL*** or ***Maria DB*** databases and gives its users the ability to do database operations like: 
 * Search
@@ -55,10 +58,11 @@ nuBuilder is a enterprise level application builder but with no limitations on d
 
 ## Installation
 
-If you are using nuBuilder as a standalone application, then follow these instructions:
-
-1. Upload the unzipped nuBuilder files to your webroot 
-1. Edit nuconfig.php to set you database credentials and globeadmin credentials
+1. Upload the unzipped nuBuilder files to your webroot
+1. To use the fixes in this fork, overwrite the core folder files with those in the nub4fixes folder
+1. Create a database (e.g. `nubuilder4`)
+1. Edit `nuconfig.php` to set your database credentials and globeadmin credentials
+1. [Detailed installation instructions:](https://github.com/smalos/nuBuilder4-Code-Library/wiki/Installing-nuBuilder)
 
 ## Changelog
 * [core CHANGELOG](https://github.com/apmuthu/nubuilder4/blob/master/core/CHANGELOG.txt)
@@ -68,9 +72,10 @@ If you are using nuBuilder as a standalone application, then follow these instru
 
 ### PDF instructions / Documentation to get started as a nuBuilder developer
 
-* [nuBuilder-Forte-User-Guide](https://www.nubuilder.com/storage/pdf/nuBuilderForte_UserGuide.pdf)
+* [nuBuilder-Forte-User-Guide](https://www.nubuilder.com/pdf/nubuilder-forte-user-guide.pdf)
+* [nuBuilder-Forte-User-Guide 1](https://sourceforge.net/projects/nubuilder/files/nuBuilderForte_UserGuide_OLD.pdf/download)
+* [nuBuilder-Forte-User-Guide 2](https://sourceforge.net/projects/nubuilder/files/nuBuilderForte_UserGuide.pdf/download)
 * [nuBuilder-Forte-Wiki-Documentation](https://wiki.nubuilder.net/nubuilderforte/index.php/Main_Page)
-* Use the files in the `nub4fixes` folder to overwrite their counterparts in the `core` folder and use the latter.
 * [Javascript character Key Codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes) - case insensitive
 
 ### phpMyAdmin Workarounds for various versions
