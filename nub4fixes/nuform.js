@@ -184,6 +184,8 @@ function nuBuildForm(f){
 //	$(function() {
 //		FastClick.attach(document.body);
 //	});
+
+	nuWindowPosition();
 	
 }
 
