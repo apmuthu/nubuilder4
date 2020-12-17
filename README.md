@@ -83,6 +83,8 @@ nuBuilder is a enterprise level application builder but with no limitations on d
 * [nuBuilder-Forte-User-Guide 2](https://sourceforge.net/projects/nubuilder/files/nuBuilderForte_UserGuide.pdf/download)
 * [nuBuilder-Forte-Wiki-Documentation](https://wiki.nubuilder.net/nubuilderforte/index.php/Main_Page)
 * [Javascript character Key Codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes) - case insensitive
+* [Javascript Key decoder online](https://github.com/wesbos/keycodes) | [Live](https://keycode.info/)
+* [JS Snippets](https://1loc.dev/)
 * [JS Pivot in nubuilder4](https://cdn.discordapp.com/attachments/710465287912292372/785888555872419840/nuBuilder_Pivot_table.pdf)
 
 ### phpMyAdmin Workarounds for various versions
