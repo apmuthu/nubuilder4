@@ -21,3 +21,26 @@ INSERT INTO `zzzzsys_object` (`zzzzsys_object_id`,`sob_all_zzzzsys_form_id`,`sob
 ('5fdba6246ffc449','nusetup','zzzzsys_setup','input','set_denied','Access denied','nu5bad6cb36d97acd',40,157,217,20,18,'1','left','0','0','','','','','','','','','','stz_timezone','stz_timezone','0',NULL,'nutimezone','',NULL,'zzzzsys_timezone','','','','','','',0,'','checkbox','','','','','','','','');
 
 ```
+
+## [Deployment NuBuilder4 Migration](https://forums.nubuilder.com/viewtopic.php?f=19&t=10120#p19867)
+
+### Moving from development environment to deployment environment and destination target database
+1. Export the whole DB to an SQL file and import the db dump to the destination target database.
+1. Copy the `nuBuilder` files to the target location.
+1. Update the `nuconfig.php` file
+
+### Access data from more than one database
+* NuBuilder does not support multiple databases as yet.
+* You can however, use the PHP BE (Before Edit) to load data from another db.
+
+### Clone a form or report from one development environment to another
+* There is no direct way but you can copy the corresponding rows from source to destination.
+* Data is mainly stored in these tables:
+````
+zzzzsys_object
+zzzzsys_form
+zzzzsys_php
+zzzzsys_tab
+zzzzsys_event
+zzzzsys_report
+````
