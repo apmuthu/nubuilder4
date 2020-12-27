@@ -1,3 +1,4 @@
+2020-12-27: Ap.Muthu   SQL optimisation for nuform.php done
 2020-12-27: Ap.Muthu   Cloned nuform.php for sql optimisation
 2020-12-26: smalos     Added documentation from forum on deployment migration
 2020-12-18: smalos     additional upstream German language strings translated
