@@ -1,5 +1,6 @@
 ### Changelog for core
 
+2020-12-23 : SQL limited to single table matched fields in upstream nuform.php
 2020-12-23 : Whitespace changes in upstream nuform.php
 2020-12-22 : [Fixed] nuReplaceHashVariables() for PHP 8 compatibility
 2020-12-14 : [Fixed] Restore window after maximising
