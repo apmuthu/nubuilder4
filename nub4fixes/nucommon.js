@@ -642,20 +642,15 @@ function nuUnbindDragEvents(){
 
 
 function nuTranslate(s){
-	
-	for(var i = 0 ; i < nuLANGUAGE.length ; i ++){
-		
-		if(nuLANGUAGE[i].english == s){
-			return nuLANGUAGE[i].translation;
-		}
-		
+
+	if (s === '' || s === null || s.startsWith('@@') ) {
+		return '';
 	}
-	
-	return s;
-	
+
+    var l = nuLANGUAGE.find(elem => elem.english === s);
+    return !l ? s : l.translation;
+
 }
-
-
 
 function nuIsOpener() {
 	
