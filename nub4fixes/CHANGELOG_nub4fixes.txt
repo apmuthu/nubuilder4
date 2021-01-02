@@ -1,3 +1,4 @@
+2021-01-02: Ap.Muthu   Zero Width for Description field when it is same as Code field - Pizza Tutorial
 2021-01-02: smalos     Added function nuSetToolTip
 2021-01-02: Ap.Muthu   Only Whitespace chages
 2020-12-28: Ap.Muthu   Optimised js translation lookup

@@ -165,6 +165,8 @@ ALTER TABLE `invoice`
   ADD PRIMARY KEY (`invoice_id`);
 ```
 
+* Where the Lookup Code and Lookup Description are the same, the latter an be suppressed by [setting it's width to 0](./images/Zero_Width_of_Description.png)
+
 ### item
 The `item` table is created by `nubuilder4` itself when the `item_sf` subform for `invoice` is created.
 
