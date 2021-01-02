@@ -44,3 +44,30 @@ zzzzsys_tab
 zzzzsys_event
 zzzzsys_report
 ````
+
+### Translations Status
+```sql
+/* Translation Stats */
+SELECT trl_language
+     , COUNT(*) AS translated_strings
+     , (SELECT COUNT(DISTINCT trl_english) FROM `zzzzsys_translate` a)-COUNT(*) AS ToTranslate
+FROM `zzzzsys_translate`
+GROUP BY trl_language
+ORDER BY translated_strings DESC;
+```
+
+### Strings yet to be translated
+```sql
+/* Missing Strings */
+
+/* change @lang value for each language's strings yet to be translated */
+SET @lang:='French';
+
+SELECT a.trl_english
+FROM `zzzzsys_translate` a LEFT JOIN
+(SELECT b.trl_english FROM zzzzsys_translate b WHERE b.trl_language = @lang) lang
+USING (trl_english)
+WHERE lang.trl_english IS NULL
+GROUP BY a.trl_english;
+```
+
