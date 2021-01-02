@@ -1,4 +1,3 @@
-
 window.nuDialog 				= new nuCreateDialog('');
 window.nuFORM					= new nuFormObject();
 window.nuRESPONSIVE 			= new nuResponseForm();
@@ -73,7 +72,6 @@ function nuGetOpenerById(pOPENER, pid) {
 	return;
 }
 
-
 function nuRemoveOpenerById(o, pid) {
 
 	for (var i = 0; i < o.length; i++) {
@@ -85,7 +83,6 @@ function nuRemoveOpenerById(o, pid) {
 	}
 
 }
-
 
 function nuGetBreadcrumb(bc){
 	
@@ -120,7 +117,6 @@ function nuGetBreadcrumb(bc){
 
 	
 }
-
 
 function nuDisplayError(e){
 
@@ -184,7 +180,7 @@ function nuLogin(nuconfigNuWelcomeBodyInnerHTML){
 	$('body').html('');
 
 	var h 	= `	
-	
+
 			<div id='outer' style='width:100%'>
 
 				<div id='login' class='nuLogin'>
@@ -207,9 +203,9 @@ function nuLogin(nuconfigNuWelcomeBodyInnerHTML){
 						</tr>
 					</table>
 				</div>
-				
+
 			</div>
-				
+
 
 	`;
 	
@@ -368,7 +364,6 @@ function nuCreateDialog(t){
 		
 	}
 
-	
 	this.down = function(event) {
 	
 		window.nuCurrentID	= event.target.id;
@@ -438,9 +433,6 @@ function nuCreateDialog(t){
 	
 }
 
-
-
-
 function nuReformat(t){
 
 	var o		= $('#' + t.id);
@@ -471,7 +463,6 @@ function nuReformat(t){
 	
 }
 
-
 function nuOpenAce(lang, obj){
 
 	var ts			= new Date().getTime();
@@ -481,55 +472,54 @@ function nuOpenAce(lang, obj){
 
 }
 
-
 function nuRunIt(t, email, type){
 
 	var r   = $('#' + t.id).attr('data-nu-row');
 	var c   = '000';
 	var p   = $('#' + r + c).html();
-	
+
 	if(arguments.length < 3){										//-- set type
-		
+
 		var type	= $('#' + r + '001').html();					//-- report - PDF,or procedure - PHP
-		
+
 	}
-	
+
 	if(arguments.length == 1){										//-- set email
-		
+
 		var email	= 0;
-		
+
 	}
-	
+
 	var f	= $('#' + t.id).attr('data-nu-primary-key');
 	var i	= window.nuFORM.getProperty('record_id');
 
 	if(email == 1){
-		
+
 		if(type == 'php'){
 			nuEmailPHP(i);
 		}
-		
+
 		if(type == 'pdf'){
 			nuEmailPDF(i);
 		}
-		
+
 	}else{
-		
+
 		if(type == 'php'){
 			nuGetPHP(f, p);
 		}
-		
+
 		if(type == 'pdf'){
 			nuGetReport(f, p);
 		}
-		
+
 	}
-		
+
 }
 
 function nuBindCtrlEvents(){
 
-	var nuCtrlKeydownListener = function(e){	
+	var nuCtrlKeydownListener = function(e){
 
 		if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) { // exclude search keys F3 and Ctrl + f
 			window.nuNEW = 0;
@@ -570,9 +560,8 @@ function nuBindCtrlEvents(){
 
 			}
 
-
 			if(nuFormType() == 'edit') {
-			
+
 				if(e.keyCode == 65 && window.global_access) {						//-- a		Arrange
 					nuPopup(window.nuFORM.getCurrent().form_id, "-2");
 				} else if(e.keyCode == 70 && window.global_access) {				//-- f		Form Properties
@@ -596,42 +585,41 @@ function nuBindCtrlEvents(){
 
 			}
 
-
 			var nosearch = window.nuFORM.getProperty('nosearch_columns');
 			var searchIndex = -1;
-			
+
 			//Numbers
 			if(e.keyCode >= 49 && e.keyCode <= 57) {
 				searchIndex = Math.abs(49 - e.keyCode);
 			}
-				
+
 			if(searchIndex != -1){
-				
+
 				if($.inArray(searchIndex,nosearch) != '-1'){
-					
+
 					nosearch.pop(searchIndex);
 					$('#nusort_' + searchIndex).removeClass('nuNoSearch');					
-					
+
 				}else{
-					
+
 					nosearch.push(searchIndex);
 					$('#nusort_' + searchIndex).addClass('nuNoSearch');
-					
+
 				}
-				
+
 			}
-			
+
 			window.nuFORM.setProperty('nosearch_columns', nosearch);
         }
     });
-	
+
 	var nuCtrlKeyupListener = function(e){	
-		
+
 		window.nuNEW = 0;
 	}
-	
+
     $(document).on('keydown.nubindctrl', nuCtrlKeydownListener);
-	
+
 	$(document).on('keyup.nubindctrl', nuCtrlKeyupListener);
 
 }
@@ -639,7 +627,6 @@ function nuBindCtrlEvents(){
 function nuUnbindDragEvents(){
     $(document).off('.nubindctrl');
 }
-
 
 function nuTranslate(s){
 
@@ -653,14 +640,13 @@ function nuTranslate(s){
 }
 
 function nuIsOpener() {
-	
+
 	if(window.opener != null) {
 		return true;
 	}
-	
+
 	return false;
 }
-
 
 function nuPreview(a){
 
@@ -668,69 +654,65 @@ function nuPreview(a){
 	var b	= t.indexOf('browse') != -1;
     var f   = nuFORM.getProperty('redirect_form_id');
     var r   = nuFORM.getProperty('record_id');
-    
+
     if(r == '-1'){
-        
+
         alert('Form must be saved first..');
         return;
-        
+
     }
-    
+
     if(arguments.length == 1){
         nuPopup(r, '');
     }else{
         nuPopup(r, '-3');
 	}
-    
-}
 
+}
 
 function nuPopPHP(e, nuE){			//-- used in database
 
     var i   = nuFORM.getProperty('record_id');
 
     if(i == ''){
-        
+
         alert('Cannot create Event Until This Form Has Been Saved..')
         return;
-		
+
     }
-	
+
     nuPopup('nuphp', i + '_' + nuE, 'justphp');
 
 }
-
 
 function nuPopSQL(e, nuE){			//-- used in database
 
     var i   = nuFORM.getProperty('record_id');
 
     if(i == ''){
-        
+
         alert('Cannot create SQL Until This Form Has Been Saved..')
         return;
-		
+
     }
-	
+
     nuPopup('nuselect', i + '_' + nuE, 'justsql');
 
 }
 
-    
-
 function nuPopJS(){				//-- used in database
 
 	var i  = $('#sob_all_zzzzsys_form_id').val();
-	
+
 	if(i == ''){
-		
+
 		alert('Cannot Create Event Until This Form Has Been Saved..')
 		return;
-		
+
 	}
-	
+
 	nuPopup('nuform', i, 'justjs');
-	
+
 }
 
 function  nuGetLookupFields(id){
@@ -738,11 +720,11 @@ function  nuGetLookupFields(id){
 	var i	= id.substr(0, id.length - 4);
 	var o	= $('#' + id);
 	var a	= [];
-	
+
 	if(o.length == 1){
-		
+
 		if(o.attr('data-nu-type') == 'subform'){
-			
+
 			a.push(i);
 			a.push(id);
 			a.push(i + 'description');
@@ -756,10 +738,8 @@ function  nuGetLookupFields(id){
 	}
 
 	return a;
-	
+
 }
-
-
 
 function nuEnable(i) {            //-- Enable Edit Form Object
 
@@ -781,103 +761,94 @@ function nuEnable(i) {            //-- Enable Edit Form Object
 
         }
     }
+
 }
-
-
-
-
 
 function nuReadonly(i){  			               //-- set Edit Form Object to readonly
 
 	var o	= [i, i + 'code', i + 'button', i + 'description'];
-	
+
 	for(var c = 0 ; c < o.length ; c++){
-			
+
 		$('#' + o[c])
 		.addClass('nuReadonly')
 		.attr('onclick',"return false")
 		.prop('readonly', true);
-		
+
 	}
 
 }
-
 
 function nuDisable(i){                 	//-- Disable Edit Form Object
 
 	var o	= [i, i + 'code', i + 'button', i + 'description'];
-	
+
 	for(var c = 0 ; c < o.length ; c++){
-			
+
 		$('#' + o[c])
 		.addClass('nuReadonly')
 		.prop('readonly', true)
 		.prop('disabled', true);
-		
+
 		if(c == 2){						//-- button
-			
+
 			$('#' + o[c]).off();
-			
+
 		}
-		
+
 	}
 
 }
-
 
 function nuShow(i){                 	//-- Show Edit Form Object
 
 	var o	= [i, i + 'code', i + 'button', i + 'description', 'label_' + i];
-	
+
 	for(var c = 0 ; c < o.length ; c++){
 
 		var t	=	String($('#' + o[c]).attr('data-nu-tab'));
-		
+
 		if(t[0] == 'x'){
-				
+
 			$('#' + o[c])
 			.attr('data-nu-tab', t.substr(1))
 			.show();
-			
+
 		}else{
-				
+
 			$('#' + o[c])
 			.show();
-			
-		}
-		
-		
-	}
-	
-	nuOpenTab($('.nuTabSelected')[0].id.substr(5));
-	
-}
 
+		}
+
+	}
+
+	nuOpenTab($('.nuTabSelected')[0].id.substr(5));
+
+}
 
 function nuHide(i){                 //-- Hide Edit Form Object
 
 	var o	= [i, i + 'code', i + 'button', i + 'description', 'label_' + i];
-	
+
 	for(var c = 0 ; c < o.length ; c++){
 
 		var t	=	String($('#' + o[c]).attr('data-nu-tab'));
-		
+
 		if(t[0] == 'x'){
-				
+
 			$('#' + o[c])
 			.hide();
-			
+
 		}else{
-				
+
 			$('#' + o[c])
 			.attr('data-nu-tab', 'x' + t)
 			.hide();
-			
+
 		}
-		
-		
+
 	}
-	
 
 }
 
@@ -888,7 +859,7 @@ function nuAddThousandSpaces(s, c){
 	var r	= [];
 
 	r		= a.reverse();
-		
+
 	if(r.length > 3){r.splice(3, 0, c);}
 	if(r.length > 7){r.splice(7, 0, c);}
 	if(r.length > 11){r.splice(11, 0, c);}
@@ -897,9 +868,9 @@ function nuAddThousandSpaces(s, c){
 	if(r.length > 23){return 'toobig';}
 
 	r		= r.reverse();
-	
+
 	return r.join('');
-	
+
 }
 */
 
@@ -911,19 +882,18 @@ function nuDuplicates(arr){
 
 	var s	= arr.slice().sort();
 	var d	= [];
-	
+
 	for (var i = 0; i < arr.length - 1; i++) {
-		
+
 		if (s[i + 1] == s[i]) {
 			d.push(s[i]);
 		}
-		
+
 	}
-	
+
 	return d;
 
 }
-
 
 function nuResizeWindow(e){
 
@@ -939,36 +909,34 @@ function nuResizeWindow(e){
 	if(D.length != 0){
 		W	= parseInt(D.css('width'));
 	}
-	
+
 	if(l == 2){
 
 		if(D.length == 0){
-			
+
 			d.css(f.nuDialogSize);
 			w.css(f.nuWindowSize);
-			
+
 		}
-		
+
 	}else{
 
 		d.css({top:0, left:2, width:window.innerWidth - 30, height:window.innerHeight});
-		
+
 		var dh	= parseInt(d.css('height')) - 50;
 		var dw	= parseInt(d.css('width')) - W - 10;
-		
-		w.css({top:30, width:dw, height:dh});
-		
-	}
-	
-	window.frames[window.frames.length-1].frameElement.contentWindow.nuResize();
-		
-}
 
+		w.css({top:30, width:dw, height:dh});
+
+	}
+
+	window.frames[window.frames.length-1].frameElement.contentWindow.nuResize();
+
+}
 
 function nuSubformObject(id){
 	return nuFORM.subform(id);
 }
-
 
 function nuGetFunctionList(){
 
@@ -977,11 +945,11 @@ function nuGetFunctionList(){
 	for (var k in window) {
 
 		if (window.hasOwnProperty(k)){
-			
+
 			if(String(k).substr(0,2) === 'nu'){
 				f += k + "\n";
 			}
-		
+
 		}
 
 	}
@@ -990,35 +958,29 @@ function nuGetFunctionList(){
 
 }
 
-
-
 function nuID(){
 
 	nuSetSuffix();
-	
+
 	window.nuUniqueID		= 'c' + String(Date.now());
-	
+
 	return window.nuUniqueID + String(window.nuSuffix);
 
 }
 
-
 function nuSetSuffix(a){
-	
+
 	if(arguments.length == 1){
 		window.nuSuffix		= a;
 	}
-		
+
 	if(window.nuSuffix == 9999){
 		window.nuSuffix		= 0
 	}else{
 		window.nuSuffix	++;
 	}
-	
-	
+
 }
-
-
 
 function nuWhen(w){
 
@@ -1032,50 +994,48 @@ function nuWhen(w){
 
 }
 
-
-
 function nuSpaces(s){
 	return String('&nbsp;').repeat(s);
 }
 
 function nuAddEditFieldsToHash(w){
-	
+
 	var d	= nuFORM.data()[0];
 	var f	= d.fields;
 	var r	= d.rows[0];
-	
+
 	for(i = 2 ; i < f.length ; i++){
 		w[f[i]] = r[i];
 	}
-	
+
 	return w;
-	
+
 }
 
 function nuClick(e){
-	
+
 	if(!$(e.target).hasClass('nuOptionsItem') && !$(e.target).hasClass('nuSearchCheckbox')){
 		$('#nuSearchList').remove();
 	}
-	
+
 	if(!$(e.target).hasClass('nuIcon')){
 		$('#nuOptionsListBox').remove();
 	}
-	
+
 	if(e.target.id != 'nuMessageDiv' && $(e.target).attr('data-nu-option-title')!= 'Help' ){
 
 		if(window.nuHideMessage){
 			$('#nuMessageDiv').remove();
 		}
-		
+
 		window.nuHideMessage	= true;
-		
+
 	}
-	
+
 	if($(e.target).attr('type') != 'nuDate' && !$(e.target).hasClass('nuCalendar')){
 		$('#nuCalendar').remove();
 	}
-	
+
 }
 
 function nuAddSlashes(s){
@@ -1087,39 +1047,36 @@ function nuRemoveTabs(t){
 	for(var i = 0 ; i < arguments.length ; i++){
 		$('#nuTab' + arguments[i]).remove();
 	}
-	
+
 }
 
 function nuOpenTab(i){
 	$('#nuTab' + i).click();
 }
 
-
 function nuHideHolders(h){
-	
+
 	for(var i = 0 ; i < arguments.length ; i++){
-		
+
 		if(arguments[i] == 0){$('#nuActionHolder').hide();}
 		if(arguments[i] == 1){$('#nuBreadcrumbHolder').hide();}
 		if(arguments[i] == 2){$('#nuTabHolder').hide();}
-		
+
 	}
-	
+
 }
 
-
 function nuRemoveHolders(h){
-	
+
 	for(var i = 0 ; i < arguments.length ; i++){
-		
+
 		if(arguments[i] == 0){$('#nuActionHolder').remove();}
 		if(arguments[i] == 1){$('#nuBreadcrumbHolder').remove();}
 		if(arguments[i] == 2){$('#nuTabHolder').remove();}
-		
-	}
-	
-}
 
+	}
+
+}
 
 function nuAttachFile(j, c){
 
@@ -1132,14 +1089,14 @@ function nuAttachFile(j, c){
 		.css('text-align', 'left')
 
 		return;
-		
+
 	}
-	
+
 	if(nuImages[c] !== undefined){
-		
+
 		var p				= JSON.parse(g);
 		var b				= atob(p.file);
-		
+
 		$(j)
 		.css('background-image', 'url("' + b + '")')
 		.css('background-repeat', 'no-repeat')
@@ -1147,12 +1104,10 @@ function nuAttachFile(j, c){
 		.css('text-align', 'left')
 
 		return;
-		
+
 	}
-	
+
 }
-
-
 
 function nuButtonIcon(j){
 
@@ -1161,23 +1116,22 @@ function nuButtonIcon(j){
 	.css('padding', '0px 0px 0px 35px')
 	.css('background-size', '30px')
 	.css('background-repeat', 'no-repeat')
-	
-}
 
+}
 
 function nuChart(d, t, a, h, x, y, st, is){
 
 	a				= eval(a);
-	
+
 	google.charts.load('current', {'packages':['corechart']});
 	google.charts.setOnLoadCallback(drawVisualization);
-	
+
 	if(a == ''){return;}
 
 	function drawVisualization() {
-		
+
 		if(a === undefined){return;}
-		
+
 		var data 	= google.visualization.arrayToDataTable(a);
 
 		var options = {
@@ -1187,7 +1141,7 @@ function nuChart(d, t, a, h, x, y, st, is){
 			seriesType	: st,
 			isStacked 	: is,
 		};
-		
+
 		var chart 	= new google.visualization[t](document.getElementById(d));
 
 		chart.draw(data, options);
@@ -1196,16 +1150,14 @@ function nuChart(d, t, a, h, x, y, st, is){
 
 }
 
-
 function nuSubformRowId(t){
 	return $(t).parent().attr('data-nu-primary-key');
 }
 
-
 function nuSubformValue(t, id){
 
 	var p	= $(t).attr('data-nu-prefix');
-	
+
 	return $('#' + p + id).val();
 
 }
@@ -1214,7 +1166,6 @@ function nuEncode(s){
 	return window.btoa(unescape(encodeURIComponent(s)))
 }
 
-
 function nuDecode(s){
 	return decodeURIComponent(escape(window.atob(s)))
 }
@@ -1222,22 +1173,20 @@ function nuDecode(s){
 function nuAddRow(s){
 
 	var o 	= nuSubformObject(s);
-	
+
 	var i	= s + nuPad3(o.rows.length - 1) + o.fields[1];
-	
+
 	$('#' + i).change();
 
 	i		= s + nuPad3(o.rows.length) + o.fields[1];
-	
-	$('#' + i).focus();
-	
-}
 
+	$('#' + i).focus();
+
+}
 
 function nuAccessLevelCode(){
 	return nuSERVERRESPONSE.access_level_code;
 }
-
 
 function nuAccessLevelId(){
 	return nuSERVERRESPONSE.access_level_id;
@@ -1247,12 +1196,9 @@ function nuUserName(){
 	return nuSERVERRESPONSE.user_name;
 }
 
-
-
 function nuDatabase(){
 	return nuSERVERRESPONSE.database;
 }
-
 
 function nuClosePopup(){
 
@@ -1260,7 +1206,6 @@ function nuClosePopup(){
 	parent.$('#nuDragDialog').remove();
 
 }
-
 
 /*
 function nuStopClick(e){
@@ -1276,7 +1221,7 @@ function nuStopClick(e){
 
    if(window.nuCLICKER != '' && e.ctrlKey == false ){
       $(e.target).prop('onclick',null).off('click');
-   }   
+   }
 }
 
 
@@ -1284,10 +1229,8 @@ function nuIsSaved(){
 	return window.nuSAVED;
 }
 
-
-
 function nuSortSubform(s, c, e){
-	
+
 	var sf				= [];
 	var so				= nuSubformObject(s).fields[c];;
 	var h				= 0;
@@ -1302,25 +1245,23 @@ function nuSortSubform(s, c, e){
 		var v = $('#' + f + so).val();
 		var m = $('#' + f + so).attr('data-nu-format')
 		var l = $('#' + f + so).hasClass('nuHiddenLookup');
-		
+
 		if(m != ''){
 			v = nuFORM.removeFormatting(v, m);
 		}
-		
+
 		if(l){
 			v = $('#' + f + so + 'code').val();
 		}
-		
+
 		var o = {'form' : i, 'value' : v};
-		
+
 		sf.push(o);
 
 	});	
-
-
 	
 	if($(e.target).attr('data-nu-order') == 'asc'){
-		
+
 		if(t){
 			var rows				= sf.sort(nuDecendingSortNumberColumn);
 		}else{
@@ -1328,9 +1269,9 @@ function nuSortSubform(s, c, e){
 		}
 
 		$(e.target).attr('data-nu-order', 'desc');
-		
+
 	}else{
-		
+
 		if(t){
 			var rows				= sf.sort(nuAscendingSortNumberColumn);
 		}else{
@@ -1338,23 +1279,22 @@ function nuSortSubform(s, c, e){
 		}
 
 		$(e.target).attr('data-nu-order', 'asc');
-		
+
 	}
-	
+
 	var top 	= 0;
-	
+
 	for(var i = 0 ; i < rows.length ; i++){
-	
+
 		$('#' + rows[i].form).css('top', top);
 		top	= top + h;
-		
+
 	}
 
 }
 
-
 function nuAscendingSortColumn(a, b) {
-	
+
 	if (a.value < b.value){return -1;}
 	if (a.value > b.value){return 1;}
 
@@ -1363,47 +1303,44 @@ function nuAscendingSortColumn(a, b) {
 }
 
 function nuDecendingSortColumn(b, a) {
-	
+
 	if (a.value < b.value){return -1;}
 	if (a.value > b.value){return 1;}
 
 	return 0;
-	
+
 }
 
-
-
 function nuAscendingSortNumberColumn(a, b) {
-	
+
 	if (Number(a.value) < Number(b.value)){return -1;}
 	if (Number(a.value) > Number(b.value)){return 1;}
-	
+
 	return 0;
-	
+
 }
 
 function nuDecendingSortNumberColumn(b, a) {
-	
+
 	if (Number(a.value) < Number(b.value)){return -1;}
 	if (Number(a.value) > Number(b.value)){return 1;}
-	
+
 	return 0;
-	
+
 }
 
-
 function nuEmbedObject(f, d, w, h){
-    
+
 	if(f == ''){return;}
 
 	if(w === undefined){w = 300;}
 	if(h === undefined){h = 300;}
-	
+
 	var ob	= JSON.parse(f);
 	var ty	= ob.type;
 	var ur	= atob(ob.file);
     var x   = document.createElement("EMBED");
-    
+
     x.setAttribute("type", ty);
     x.setAttribute("src", ur);
     x.setAttribute("width", w + "px");
@@ -1411,9 +1348,8 @@ function nuEmbedObject(f, d, w, h){
 
     $('#' + d).html('');
     document.getElementById(d).appendChild(x);
-        
-}
 
+}
 
 function nuStartDatabaseAdmin() {
 
@@ -1429,15 +1365,13 @@ function nuTransformScale(){
 		if($('body').css('transform') == 'none'){
 			return 1;
 		}
-		
+
 		return Number($('body').css('transform').split('(')[1].split(',')[0]);
-		
+
 }
 
-
-
 function nuWorker(){
-		
+
 	function checkScreenSize() {
 		setTimeout("checkScreenSize()", 500);
 	}
@@ -1446,70 +1380,62 @@ function nuWorker(){
 
 }
 
-
-
 function nuStartWorker(){
 
 	var iw	= 0;
 
 	if(typeof(Worker) !== 'undefined') {
-		
+
 		if(typeof(w) === 'undefined') {
 			var w = new Worker('nuworkers.js');
 		}
 
 		w.onmessage = function(event) {
-			
+
 			if(iw != window.innerWidth){
-				
+
 				iw = window.innerWidth;
 				nuResize();
-				
+
 				if(window.nuResponsive != null){
 					nuResponsive();
 				}
-				
+
 			}
-			
-			
+
 		};
 
 	}
 
 }
 
-
-
-
 function nuSetBrowserColumns(c){
-	
+
 	var r	= $('[data-nu-column="0"]').length;
 	var p	= nuTotalWidth('nucell_0_0') - $('#nucell_0_0').width();	//-- padding
 	var l	= 7;
-	
+
 	for(var i = 0 ; i < c.length ; i++){
-		
+
 		$('[data-nu-column="' + i + '"]').css({'left' : l, 'width' : c[i]});
 		$('#nuBrowseTitle' + i).css({'left' : l, 'width' : c[i]});
 		l	= l + c[i] + (c[i] == 0 ? 0 : p);
-		
+
 	}
 
 	$('#nuBrowseFooter').css('width', l-7);
-	
+
 	nuFORM.breadcrumbs[nuFORM.breadcrumbs.length-1].column_widths	= c;
-	
+
 }
 
 function nuStopBrowserResize(){
-	
+
 	if(nuFormType() == 'browse'){
 		nuFORM.breadcrumbs[nuFORM.breadcrumbs.length-1].refreshed		= 1;
 	}
 
 }
-
-
 
 function nuResizeBrowseColumns(){
 
@@ -1518,9 +1444,9 @@ function nuResizeBrowseColumns(){
 	var p	= nuTotalWidth('nucell_0_0') - $('#nucell_0_0').width();	//-- padding
 
 	if(nuFORM.getCurrent().refreshed != 0 && nuMainForm()){return;}
-	
+
 	if(nuMainForm()){
-		
+
 		for(var i = 0 ; i < w.length ; i++){
 			t = t + w[i];
 		}
@@ -1530,12 +1456,12 @@ function nuResizeBrowseColumns(){
 		}
 
 	}else{
-		
+
 		var W	= nuTotalWidth('nuBrowseFooter') + 22;
 
 		$('#nuDragDialog', 	window.parent.document).css('width', W + 14);
 		$('#nuWindow', 		window.parent.document).css('width', W);
-		
+
 		$('body').css('width', W);//.css('padding', '0px 0px 0px 7px');
 
 	}
@@ -1543,17 +1469,15 @@ function nuResizeBrowseColumns(){
 	if(nuFORM.getCurrent().refreshed != 0){return;}
 
 	nuSetBrowserColumns(w);
-	
+
 }
-
-
 
 function nuDragTitleEvents(){
 
     if(nuFormType() != 'browse'){return;}
-	
+
 	var last	= nuFORM.breadcrumbs.length-1;
-	
+
 	if(nuFORM.getCurrent().column_widths == 0){
 		nuSetBrowserColumns(nuGetColumWidths());
 	}else{
@@ -1565,54 +1489,48 @@ function nuDragTitleEvents(){
     $('.nuBrowseTitle').on('mousedown.nuresizecolumn',    function(event) {nuDownBrowseResize(event, 'pointer')});
 
     $('#nubody').on('mouseup.nuresizecolumn',          function(event) {nuEndBrowseResize();});
-   
+
     $('.nuBrowseTitle').on('touchstart.nuresizecolumn', function(event) {nuDownBrowseResize(event, 'finger_touch');});
-                                                       
+
     $('.nuBrowseTitle').on('touchmove.nuresizecolumn',    function(event) {nuDragBrowseColumn(event, 'finger_touch');});
-                                                       
+
     $('.nuBrowseTitle').on('touchend.nuresizecolumn',    function(event)   {nuEndBrowseResize(event);});
 
     $('.nuBrowseTitle').on('touchcancel.nuresizecolumn',function(event)   {nuEndBrowseResize(event);});
-   
+
 }
 
-
 function nuGetColumWidths(){
-	
+
 	var a	= [];
 
 	$("div[id^='nuBrowseTitle']").each(function( index ) {
 		a.push(parseInt($(this).css('width')));
 	});
-	
+
 	return a;
 
 }
 
-
 function nuDownBrowseResize(e, p){
-   
+
    e.preventDefault();
-   
+
    window.nuBROWSERESIZE.mouse_down       = true;
    window.nuBROWSERESIZE.pointer          = p; // Added
-   window.nuBROWSERESIZE.moving_element    = e.target.id;
-        window.nuBROWSERESIZE.x_position       = e.clientX;
+   window.nuBROWSERESIZE.moving_element   = e.target.id;
+   window.nuBROWSERESIZE.x_position       = e.clientX;
    $(e.target).css('background-color', '#badeeb');
 
 }
 
-
-
 function nuEndBrowseResize(e){
-	
+
 	window.nuBROWSERESIZE.mouse_down 		= false;
 	window.nuBROWSERESIZE.moving_element 	= '';
 	$('.nuBrowseTitle').css('background-color', '');
-	
+
 }
-
-
 
 function nuDragBrowseColumn(e, p){
 
@@ -1625,44 +1543,42 @@ function nuDragBrowseColumn(e, p){
 		var offset_limit	= 100000000;
 		var min_offset		= 2;
 		var x				= event.pageX;
-		
+
 		if (window.nuBROWSERESIZE.pointer == "finger_touch"){
 			x				= event.changedTouches[0].clientX;
 		}
-		
+
 		var x_offset		= x - window.nuBROWSERESIZE.x_position;
-		
+
 		window.nuBROWSERESIZE.x_position	= x;
 
 		if (x !== 0 && Math.abs(x_offset) > min_offset){
-			
+
 			x_offset		= x_offset;
-			
+
 			if (x_offset < offset_limit){
-				
+
 				var c		= Number(e.target.id.substr(13));
 				var m		= nuFORM.breadcrumbs[nuFORM.breadcrumbs.length-1].column_widths[c] + x_offset
-				
+
 				if(m < 40){m=40;}
-				
+
 				nuFORM.breadcrumbs[nuFORM.breadcrumbs.length-1].column_widths[c] = m;
 				nuSetBrowserColumns(nuFORM.breadcrumbs[nuFORM.breadcrumbs.length-1].column_widths)
-				
+
 			}else{
 				console.log('Offset size exceeds limit');
 			}
-			
+
 		}
 
 	} 
 
 }
 
-
 function nuRemovePX(s){
 	return Number(String(s).split('px')[0]);
 }
-
 
 function nuImportCSV(t, s){
 
@@ -1671,61 +1587,61 @@ function nuImportCSV(t, s){
 	var inserts	= [];
 
 	for(var i = 1 ; i < c.length ; i++){
-		
+
 		var r	= String(c[i]);
 		var c	= nuCSVcolumn(r);
-		
+
 		if(r.substr(0,2) == '"'){
 			R.push('"' + r.join('","') + '"');
 		}else{
-			
+
 			for(var f = 0 ; f < r.length ; f++){
-					
+
 				if(String(r[f]).substr(0,1) == '"'){
-					
+
 					var Q = f;
-					
+
 					for(var q = f ; q < r.length ; q++){
-						
+
 						if(String(r[q]).substr(String(r[q]).length - 1) != '"'){
-							
+
 							r[f] = r[f] + ',' + r[q];
 							r.splice(q,1)
-							
+
 						}
-						
+
 					}
-					
+
 				}
-				
+
 			}
-			
+
 			R.push('"' + r.join('","') + '"');
-			
+
 		}
-			
+
 	}
-	
+
 }
 
 function nuIsIframe(){
 
 	return parent.window.nuDocumentID != window.nuDocumentID;
-		
+
 }
 
 // After clicking a nuActionButton (Save, Delete, Print, Clone etc.), disable it for 1.5 secs to prevent a user from double-clicking it.
 
 function preventButtonDblClick() {
 
-   $('.nuActionButton').click(function() {   
-   
-      var id = $(this).attr("id");   
+   $('.nuActionButton').click(function() {
+
+      var id = $(this).attr("id");
 
       nuDisable(id);
 
       setTimeout(
-	  
+
          function() {
             nuEnable(id);
          }
@@ -1734,17 +1650,15 @@ function preventButtonDblClick() {
 
 }
 
-
 function nuOnLoad() {
 
    preventButtonDblClick();
-   
+
 }
 
 function nuBrowseTitleMultiLine() {
 
-    $('#nuActionHolder').css({'height': '40px'});	    
+    $('#nuActionHolder').css({'height': '40px'});
     $('.nuBrowseTitle').css('top', "-20px");
 
 }
-
