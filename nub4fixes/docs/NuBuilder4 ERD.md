@@ -10,7 +10,7 @@
 ![Settings ERD](./images/Nubuilder4_Settings_ERD.png)
 
 ## set_denied to hide system forms and objects
-***Setup => set_denied*** can be ticked to hide all NuBuilder's forms and objects. Useful for developers.
+***Setup => set_denied*** can be ticked to hide all NuBuilder's forms and objects. Useful for developers. Needs updated [nucommon.js](https://github.com/apmuthu/nubuilder4/commit/50deab677e2268cc0a970300297f5211a2a1fab9#diff-3be85bba7d935c8a483a53d3409983f33c617c6249f3983239015abb6dc73719)
 ![set_denied Setting](./images/set_denied_screenshot.png)
 
 Existing users can backport this feature with:

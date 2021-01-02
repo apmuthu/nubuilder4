@@ -82,6 +82,8 @@ nuBuilder is a enterprise level application builder but with no limitations on d
 * [nuBuilder-Forte-User-Guide 1](https://sourceforge.net/projects/nubuilder/files/nuBuilderForte_UserGuide_OLD.pdf/download)
 * [nuBuilder-Forte-User-Guide 2](https://sourceforge.net/projects/nubuilder/files/nuBuilderForte_UserGuide.pdf/download)
 * [nuBuilder-Forte-Wiki-Documentation](https://wiki.nubuilder.net/nubuilderforte/index.php/Main_Page)
+* [nuBuilder PHP Functions Lookup Reference](https://wiki.nubuilder.net/nubuilderforte/index.php/PHP)
+* [nuBuilder Javascript Functions Lookup Reference](https://wiki.nubuilder.net/nubuilderforte/index.php/Javascript#nuForm)
 * [Javascript character Key Codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes) - case insensitive
 * [Javascript Key decoder online](https://github.com/wesbos/keycodes) | [Live](https://keycode.info/)
 * [JS Snippets](https://1loc.dev/)

@@ -1630,6 +1630,21 @@ function nuIsIframe(){
 
 }
 
+function nuSetToolTip(i, message, labelHover) {
+
+    // Show tooltip on object hover
+    $("#" + i).hover(function() {
+        $(this).attr("title", message);
+    });
+
+    if (labelHover === true) {
+        // Show tooltip on label hover
+        $("#label_" + i).hover(function() {
+            $(this).attr("title", message);
+        });
+    }
+}
+
 // After clicking a nuActionButton (Save, Delete, Print, Clone etc.), disable it for 1.5 secs to prevent a user from double-clicking it.
 
 function preventButtonDblClick() {
