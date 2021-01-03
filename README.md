@@ -84,6 +84,7 @@ nuBuilder is a enterprise level application builder but with no limitations on d
 * [nuBuilder-Forte-Wiki-Documentation](https://wiki.nubuilder.net/nubuilderforte/index.php/Main_Page)
 * [nuBuilder PHP Functions Lookup Reference](https://wiki.nubuilder.net/nubuilderforte/index.php/PHP)
 * [nuBuilder Javascript Functions Lookup Reference](https://wiki.nubuilder.net/nubuilderforte/index.php/Javascript)
+* [nuBuilder Globeadmin to Delete Form Completely](https://github.com/smalos/nuBuilder4-Code-Library/tree/master/codelib/globeadmin_delete_form_and_data)
 * [nuBuilder Audit Trail Logging](https://wiki.nubuilder.net/nubuilderforte/index.php/Logging_Activity) - JSON Timestamps for Add / View / Edit Activity per table
 * [Javascript character Key Codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes) - case insensitive
 * [Javascript Key decoder online](https://github.com/wesbos/keycodes) | [Live](https://keycode.info/)

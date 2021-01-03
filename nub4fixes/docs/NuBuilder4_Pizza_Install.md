@@ -194,3 +194,16 @@ INSERT INTO `item` (`item_id`, `ite_invoice_id`, `ite_product_id`, `ite_price`, 
 ALTER TABLE `item`
   ADD PRIMARY KEY (`item_id`);
 ```
+* [Lookup Prices and Assume default Quantity](./images/LookupPricesDefaultUnits.png) (Units) in the Items subform:
+```php
+$lu = nuLookupRecord();
+
+nuSetFormValue('ite_price', $lu->pro_price);
+nuSetFormValue('ite_units', 1);
+```
+* This results in the following tables entries:
+
+```sql
+INSERT INTO `zzzzsys_php` VALUES
+('5ff087f8e8643b4_AB','5ff087f8e8643b4_AB','System PHP','nubuilder','$lu = nuLookupRecord();\n\nnuSetFormValue(\'ite_price\', $lu->pro_price);\nnuSetFormValue(\'ite_units\', 1);\n',NULL,NULL,'1',NULL);
+```
