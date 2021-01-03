@@ -767,7 +767,6 @@ INSERT INTO `zzzzsys_php` (`zzzzsys_php_id`, `sph_code`, `sph_description`, `sph
 ('nuaccess_AD', 'nuaccess_AD', 'System PHP', 'nubuilder', '', '', '', '1', ''),
 ('nuaccessreport_AD', 'nuaccessreport_AD', 'System PHP', 'nubuilder', '', '', '', '1', ''),
 ('nuaccess_BE', 'nuaccess_BE', 'System PHP', 'nubuilder', '', '', '', '1', ''),
-('', '', 'System PHP', 'nubuilder', '', '', '', '1', ''),
 ('nuaccessforms_AD', 'nuaccessforms_AD', 'System PHP', 'nubuilder', '', '', '', '1', ''),
 ('nuaccess_AS', 'nuaccess_AS', 'System PHP', 'nubuilder', '', '', '', '1', ''),
 ('nuaccess_BB', 'nuaccess_BB', 'System PHP', 'nubuilder', '', '', '', '1', ''),
