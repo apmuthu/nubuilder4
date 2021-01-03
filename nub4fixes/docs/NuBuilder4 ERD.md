@@ -45,6 +45,33 @@ zzzzsys_event
 zzzzsys_report
 ````
 
+### SQL Cleanup
+In the `zzzzsys_form` table, `sfo_code = zzzzsys_form_id` for all system forms.
+The kinds of `zzzzsys_form_id` that has only blank `sob_all_table` field value are:
+```sql
+SELECT * FROM zzzzsys_form WHERE sfo_type = 'launch';
+```
+
+The following `sob_all_table` field values can be blanked out in the `zzzzsys_object` table:
+```sql
+SELECT * FROM `zzzzsys_object` 
+  WHERE `sob_all_zzzzsys_form_id` IN 
+    (SELECT zzzzsys_form_id FROM `zzzzsys_form` WHERE sfo_type='launch')
+  AND COALESCE(sob_all_table,'') <> ''
+  AND sob_all_type <> 'run';
+```
+
+The following `sob_browse_sql` field values in `zzzzsys_form` table can be blanked too:
+```sql
+SELECT zzzzsys_form_id, sfo_type, sfo_code, sfo_description, sfo_table, sfo_browse_sql 
+FROM `zzzzsys_form` WHERE sfo_type='launch' AND COALESCE(sfo_browse_sql, '') <> '';
+```
+
+Remove records with blank `sph_php` field in table `zzzzsys_php` with:
+```sql
+SELECT * FROM `zzzzsys_php` WHERE COALESCE(`sph_php`, '') = '';
+```
+
 ### Translations Status
 ```sql
 /* Translation Stats */
