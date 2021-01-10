@@ -1,3 +1,4 @@
+2021-01-10: Ap.Muthu   Removed 14 translation strings only in v4.5 for German
 2021-01-10: Ap.Muthu   Fixed Translation and indices
 2021-01-03: Ap.Muthu   Cleaned invalid table and sql field values in object and form tables
 2021-01-03: Ap.Muthu   Removed blank System PHP entry from sql
