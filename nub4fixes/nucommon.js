@@ -1534,7 +1534,7 @@ function nuEndBrowseResize(e){
 
 function nuDragBrowseColumn(e, p){
 
-	event.preventDefault();
+	e.preventDefault();
 
 	if (window.nuBROWSERESIZE.mouse_down && window.nuBROWSERESIZE.moving_element == e.target.id){
 
