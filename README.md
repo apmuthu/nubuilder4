@@ -6,6 +6,7 @@
 * ***Donate link:*** https://www.nubuilder.com/#donate
 * ***License:*** [GPLv3](https://www.gnu.org/licenses/old-licenses/gpl-3.0.html)
 * ***Home Page:*** https://www.nubuilder.com
+* ***SourceForge:*** https://sourceforge.net/projects/nubuilder/
 * ***Wiki:*** https://wiki.nubuilder.net/
 * ***Github Wiki:*** https://github.com/smalos/nuBuilder4-Code-Library/wiki/Installing-nuBuilder
 * ***Forum:*** https://forums.nubuilder.com/
@@ -18,12 +19,14 @@
 
 ### nuManagement
 * The original Author Steven Copley [has handed over the project](http://nubuilder.blogspot.com/2020/12/) for future development to ***@smalos*** (**kev1n** in the forum) and **Janus** (in the forum).
-* @smalos has [his updated fork](https://github.com/smalos/nubuilder4-Dev) and new changes will arise there.
+* @smalos has [his updated v4.5 fork](https://github.com/smalos/nubuilder4-Dev) and new changes will arise there.
 * [Discord Invite](https://discord.com/invite/KbHzgh3EbY) - [discussion channel](https://discord.com/channels/710460059359903804/710465287912292372) for NuBuilder (expects your birthdate!)
 
 ## Description
 
 nuBuilder enables you to make any application that want or need with the least amount of effort and learning.
+
+nuBuilder [expects you to be online](https://forums.nubuilder.com/viewtopic.php?f=19&t=10732) for using it's applications if Google Charts are used in it.
 
 nuBuilder Forte is in its 4th version of nuBuilder and is a browser-based tool created by ***nuSoftware*** for developing web-based database applications.
 
