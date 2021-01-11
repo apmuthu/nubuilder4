@@ -189,7 +189,7 @@ function db_num_rows($o) {
 
 function nuUpdateTables(){
 	
-	$a	= [];
+	$a	= Array();
 	$t 	= nuRunQuery("SHOW TABLES");
 	
 	while($r = db_fetch_row($t)){

@@ -873,7 +873,7 @@ function nuAddThousandSpaces($s, $c){
 
 	$r			= strrev($s);
 	$a			= str_split($r, 3);
-	$n			= [];
+	$n			= Array();
 	
 	for($i = 0 ; $i < count($a) ; $i++){
 		
@@ -1012,7 +1012,7 @@ function nuCSSInclude($pfile){
 
 function nuImageList($f){
 
-	$a			= [];	
+	$a			= Array();	
 	$s			= "SELECT sfi_code FROM zzzzsys_file ORDER BY sfi_code";
 	$t			= nuRunQuery($s);
 	
@@ -1056,7 +1056,7 @@ function nuHash(){
 function nuBuildFormSchema(){
 
 	$T				= nuRunQuery("SELECT * FROM zzzzsys_form ORDER BY sfo_code");
-	$fs				= [];
+	$fs				= Array();
 
 	while($r = db_fetch_object($T)){
 		
@@ -1123,7 +1123,7 @@ function nuUpdateFormSchema(){
 		return $s;
 		
 	}else{
-		return [];
+		return Array();
 	}
 	
 }
@@ -1436,7 +1436,7 @@ function nuGetFonts(){
 
 //	$dir 	= "fonts/";
 	$dir 	= "tfpdf/font/unifont/";
-	$a		= [];
+	$a		= Array();
 
 	if (is_dir($dir)){	// Open a directory, and read its contents
 		
@@ -1699,7 +1699,7 @@ function nuFromCSV($file, $table, $d){
 
 function nuListTables(){
 	
-	$a	= [];
+	$a	= Array();
 	$t 	= nuRunQuery("SHOW TABLES");
 	
 	while($r = db_fetch_row($t)){
@@ -1755,7 +1755,7 @@ function nuBuildCurrencyFormats(){
 
 
 	$t = nuRunQuery("SELECT * FROM zzzzsys_format WHERE srm_type = 'Number'");
-	$a = [];
+	$a = Array();
 	while($r = db_fetch_object($t)){
 		$a[]		= ['N|'. trim($r->srm_format), $r->srm_currency];
 	}

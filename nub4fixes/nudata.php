@@ -10,8 +10,8 @@ function nuValidateSubforms(){
 	for($d = 0 ; $d < count($nudata) ; $d++){
 		
 		$sf	= $nudata[$d];
-		$a	= [];
-		$L	= [];
+		$a	= Array();
+		$L	= Array();
 		$s	= '
 				SELECT 
 					sob_subform_zzzzsys_form_id, 
@@ -197,8 +197,8 @@ function nuUpdateDatabase(){
 					
 				}
 				
-				$V					= [];																//-- primary key id
-				$I					= [];
+				$V					= Array();																//-- primary key id
+				$I					= Array();
 				
 				if($nv != 'autoid'){
 						
@@ -572,7 +572,7 @@ function nuAutoNumbers($form_id){
 				";
 				
 	$t			= nuRunQuery($s, array($form_id));
-	$a			= [];
+	$a			= Array();
 	
 	while($r = db_fetch_object($t)){
 		$a[]	= $r->sob_all_id;

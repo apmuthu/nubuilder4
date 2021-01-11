@@ -265,7 +265,7 @@ function nuIDTEMP(){
 
 function nuGetTranslation($l){
 	
-	$a	= [];
+	$a	= Array();
 	$s	= "SELECT * FROM zzzzsys_translate WHERE trl_language = '$l' ";
 	$t	= nuRunQuery($s);
 	while($r = db_fetch_object($t)){

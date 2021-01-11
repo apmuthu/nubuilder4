@@ -13,7 +13,7 @@ function nuFormProperties($f){
 
 function nuBeforeBrowse($f){
 	
-	$_POST['nuMessages']	= [];
+	$_POST['nuMessages']	= Array();
 	$r						= nuFormProperties($f);
 	nuEval($f . '_BB');
 	
@@ -89,7 +89,7 @@ function nuGetFormObject($F, $R, $OBJS){
     $f->record_id	= $R;
 	
 	if($f->table == ''){
-		$A 			= [];
+		$A 			= Array();
 	}else{
 		
 		$s 			= "Select * From `$f->table` Where `$f->primary_key` = '$R'";

@@ -250,7 +250,7 @@ function nuAppendToSystemTables(){
 
 function nuSystemList(){
 	
-	$t      = [];
+	$t      = Array();
     	$t[]	= 'zzzzsys_access';
     	$t[]	= 'zzzzsys_access_form';
     	$t[]	= 'zzzzsys_access_php';
