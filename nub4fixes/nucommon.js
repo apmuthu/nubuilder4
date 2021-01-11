@@ -1542,10 +1542,10 @@ function nuDragBrowseColumn(e, p){
 		var id				= window.nuBROWSERESIZE.moving_element;
 		var offset_limit	= 100000000;
 		var min_offset		= 2;
-		var x				= event.pageX;
+		var x				= e.pageX;
 
 		if (window.nuBROWSERESIZE.pointer == "finger_touch"){
-			x				= event.changedTouches[0].clientX;
+			x				= e.changedTouches[0].clientX;
 		}
 
 		var x_offset		= x - window.nuBROWSERESIZE.x_position;
