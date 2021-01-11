@@ -1,3 +1,4 @@
+2021-01-11: Ap.Muthu   JS and CSS refresh only on file modifiation
 2021-01-11: Ap.Muthu   event => e typo fix re-run
 2021-01-11: Ap.Muthu   Color values lookup optimisation
 2021-01-11: Ap.Muthu   event => e typo fix

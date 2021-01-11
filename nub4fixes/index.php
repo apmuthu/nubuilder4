@@ -28,14 +28,15 @@
 
 function nuJSIndexInclude($pfile){
 
-    	//$timestamp = date("YmdHis", filemtime($pfile));                                         //-- Add timestamp so javascript changes are effective immediately
-	$timestamp = date("YmdHis");
-    	print "<script src='$pfile?ts=$timestamp' type='text/javascript'></script>\n";
+    $timestamp = date("YmdHis", filemtime($pfile));                                         //-- Add timestamp so javascript changes are effective immediately
+	//$timestamp = date("YmdHis");
+    print "<script src='$pfile?ts=$timestamp' type='text/javascript'></script>\n";
 }
 
 function nuCSSIndexInclude($pfile){
 
 	$timestamp = date("YmdHis", filemtime($pfile));                                         //-- Add timestamp so javascript changes are effective immediately
+	//$timestamp = date("YmdHis");
 	print "<link rel='stylesheet' href='$pfile?ts=$timestamp' />\n";
 }
 
