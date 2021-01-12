@@ -395,7 +395,7 @@ function nuRunPHPHidden($nuCode){
 	$p 						= nuProcedureAccessList($aa);
 
 	$s						= "SELECT * FROM zzzzsys_php WHERE sph_code = ? ";
-	$t						= nuRunQuery($s, [$nuCode]);
+	$t						= nuRunQuery($s, Array($nuCode));
 	$r						= db_fetch_object($t);
 
 	if($_SESSION['nubuilder_session_data']['isGlobeadmin'] or in_array($r->zzzzsys_php_id, $p)){
@@ -921,7 +921,7 @@ function nuPunctuation($f){
 
 function nuTTList($id, $l){
 	
-	$t										= nuRunQuery('SELECT * FROM zzzzsys_object WHERE  sob_all_zzzzsys_form_id = ?' , [$l]);
+	$t										= nuRunQuery('SELECT * FROM zzzzsys_object WHERE  sob_all_zzzzsys_form_id = ?' , Array($l));
 	
 	while($r = db_fetch_object($t)){						//-- add default empty hash variables
 		$_POST['nuHash'][$r->sob_all_id]	= '';
@@ -963,7 +963,7 @@ function nuBuildTempTable($name_id, $tt, $rd = 0){
 	if($x[0] == 'SQL'){
 		
 		$s			= "SELECT sse_sql FROM zzzzsys_select WHERE zzzzsys_select_id = ?";
-		$t			= nuRunQuery($s,[$id]);
+		$t			= nuRunQuery($s,Array($id));
 		$r			= db_fetch_row($t);
 		$c			= $r[0];
 		
@@ -1216,7 +1216,7 @@ function nuEventName($e){
 function nuEval($phpid){
 
 	$s						= "SELECT * FROM zzzzsys_php WHERE zzzzsys_php_id = ? ";
-	$t						= nuRunQuery($s, [$phpid]);
+	$t						= nuRunQuery($s, Array($phpid));
 	$r						= db_fetch_object($t);
 	
 	if(trim($r->sph_php) == ''){return;}
@@ -1243,7 +1243,7 @@ function nuEval($phpid){
 //function nuProcedure($c){
 //
 //	$s							= "SELECT * FROM zzzzsys_php WHERE sph_code = ? ";
-//	$t							= nuRunQuery($s, [$c]);
+//	$t							= nuRunQuery($s, Array($c));
 //	$r							= db_fetch_object($t);
 //	$php						= nuReplaceHashVariables($r->sph_php);
 //	$php						= "$php \n\n//--Added by nuProcedure()\n\n$"."_POST['nuProcedureEval'] = '';";
@@ -1259,7 +1259,7 @@ function nuEval($phpid){
 function nuProcedure($c){
 
    $s                     = "SELECT * FROM zzzzsys_php WHERE sph_code = ? ";
-   $t                     = nuRunQuery($s, [$c]);
+   $t                     = nuRunQuery($s, Array($c));
    
    if (db_num_rows($t) > 0) {  // procedure exists
    
@@ -1314,7 +1314,7 @@ function nuEvalMessage($phpid, $code){
 		
 		$event	= nuEventName($i[1]);
 		$s		= "SELECT * FROM zzzzsys_form WHERE zzzzsys_form_id = ?	";
-		$t		= nuRunQuery($s, [$i[0]]);
+		$t		= nuRunQuery($s, Array($i[0]));
 		$O		= db_fetch_object($t);
 	
 		return "<i>$event</i> of Form <b>$O->sfo_code</b>";
@@ -1322,7 +1322,7 @@ function nuEvalMessage($phpid, $code){
 	}
 		
 	$s			= "SELECT * FROM zzzzsys_object JOIN zzzzsys_form ON zzzzsys_form_id = sob_all_zzzzsys_form_id	WHERE zzzzsys_object_id = ?	";
-	$t			= nuRunQuery($s, [$i[0]]);
+	$t			= nuRunQuery($s, Array($i[0]));
 	$O			= db_fetch_object($t);
 	
 	return "<i>Before Browse</i> of Object <b>$O->sob_all_id</b> on Form <b>$O->sfo_code</b>";
@@ -1356,9 +1356,9 @@ function nuUpdateTabIds(){
 		$b	= "UPDATE zzzzsys_tab 		SET zzzzsys_tab_id = 'nu$n' 		WHERE zzzzsys_tab_id = ? ";
 		$o	= "UPDATE zzzzsys_object 	SET sob_all_zzzzsys_tab_id = 'nu$n'	WHERE sob_all_zzzzsys_tab_id = ? ";
 		
-		nuRunQuery($o, [$i]);
+		nuRunQuery($o, Array($i));
 		print "$o<br>";
-		nuRunQuery($b, [$i]);
+		nuRunQuery($b, Array($i));
 		print "$b<br>";
 	}
 	
@@ -1381,9 +1381,9 @@ function nuUpdateObjectIds(){
 		$e	= "UPDATE zzzzsys_event 	SET sev_zzzzsys_object_id = 'nu$n' 	WHERE sev_zzzzsys_object_id = ? ";
 		$p	= "UPDATE zzzzsys_php 		SET zzzzsys_php_id = 'nu$pid' 		WHERE zzzzsys_php_id = ? ";
 		
-		nuRunQuery($o, [$i]);
-		nuRunQuery($e, [$i]);
-		nuRunQuery($p, [$a]);
+		nuRunQuery($o, Array($i));
+		nuRunQuery($e, Array($i));
+		nuRunQuery($p, Array($a));
 		print "$o<br>";
 	}
 	
@@ -1487,7 +1487,7 @@ function nuUser(){
 		WHERE zzzzsys_user_id = ?
 	";
 	
-	$t	= nuRunQuery($s, [nuHash()['USER_ID']]);
+	$t	= nuRunQuery($s, Array(nuHash()['USER_ID']));
 
 	return db_fetch_object($t);
 
@@ -1527,7 +1527,7 @@ function db_setup(){
 function nuUserLanguage(){
 
 	$user_id	= nuHash()['USER_ID'];
-	$t 			= nuRunQuery('SELECT * FROM zzzzsys_user WHERE zzzzsys_user_id = ?', [$user_id]);
+	$t 			= nuRunQuery('SELECT * FROM zzzzsys_user WHERE zzzzsys_user_id = ?', Array($user_id));
 	$r 			= db_fetch_object($t);
 	$l 			= $r->sus_language;
 
@@ -1546,7 +1546,7 @@ function nuUserLanguage(){
       $s = 'SELECT sus_language as language FROM zzzzsys_user WHERE zzzzsys_user_id = ?';
    }
    
-   $t          = nuRunQuery($s, [$user_id]);
+   $t          = nuRunQuery($s, Array($user_id));
    $r          = db_fetch_object($t);
    $l          = $r->language;
 
@@ -1565,7 +1565,7 @@ function nuTranslate($e){
 
                 ";
 
-        $t      = nuRunQuery($s, [$l, $e]);
+        $t      = nuRunQuery($s, Array($l, $e));
 		$tr		= db_fetch_object($t)->trl_translation;
 
         return $tr == '' ? $e : $tr;

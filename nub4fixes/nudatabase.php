@@ -201,7 +201,7 @@ function nuUpdateTables(){
 	for($i = 0 ; $i < count($a) ; $i ++){
 		
 		$s	= "INSERT INTO zzzzsys_table (zzzzsys_table_id) VALUES (?)";
-		nuRunQuery($s, [$a[$i]]);
+		nuRunQuery($s, Array($a[$i]));
 		
 	}
 		

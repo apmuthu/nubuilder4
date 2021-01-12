@@ -43,7 +43,7 @@ function nuBuildFastReport(){
 
 	";
 	
-	nuRunQuery($s, [$i, $c, $d, $g, $t, $f, $j]);
+	nuRunQuery($s, Array($i, $c, $d, $g, $t, $f, $j));
 	
 
 	$js		= "
@@ -197,7 +197,7 @@ function nuBuildFastForm($table, $form_type){
 			$array      = Array($field, $label, $i * 5, $top, 150, $table, $form_id, $tab_id, $newid, $oldid);
 			nuRunQuery($sql, $array);
 
-			$OT			= nuRunQuery("SELECT * FROM $TT WHERE zzzzsys_object_id = ? ", [$newid]);
+			$OT			= nuRunQuery("SELECT * FROM $TT WHERE zzzzsys_object_id = ? ", Array($newid));
 			$top		= $top + db_fetch_object($OT)->sob_all_height + 10;
 			
 		}

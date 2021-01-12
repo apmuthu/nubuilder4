@@ -1,3 +1,4 @@
+2021-01-11: Ap.Muthu   PHP [...] => Array() long syntax fix
 2021-01-13: Ap.Muthu   Added file for non blank PHP Array fix
 2021-01-11: Ap.Muthu   JS and CSS refresh only on file modifiation
 2021-01-11: Ap.Muthu   event => e typo fix re-run

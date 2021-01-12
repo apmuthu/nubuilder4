@@ -240,7 +240,7 @@ function nuDie($msg = 'Invalid login!') {
 function nuAccessLevelCode($u){
 
 	$s	= "SELECT sal_code FROM zzzzsys_user JOIN zzzzsys_access ON zzzzsys_access_id = sus_zzzzsys_access_id WHERE zzzzsys_user_id = ? ";
-	$t	= nuRunQuery($s, [$u]);
+	$t	= nuRunQuery($s, Array($u));
 	return db_fetch_row($t)[0];
 }
 
