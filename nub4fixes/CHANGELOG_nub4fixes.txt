@@ -1,3 +1,4 @@
+2021-01-14: Ap.Muthu   Backported Zero Width lookup description suppressal
 2021-01-13: Ap.Muthu   Re-ordered statements, split compound construct
 2021-01-13: Ap.Muthu   PHP [...] => Array() long syntax fix
 2021-01-13: Ap.Muthu   Added file for non blank PHP Array fix
