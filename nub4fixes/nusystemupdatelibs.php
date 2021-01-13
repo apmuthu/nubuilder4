@@ -277,29 +277,29 @@ function nuSystemList(){
 	return $t;
 }
 
-
 function nuSetCollation(){
-	
-	$tbls   = nuRunQuery("SHOW FULL Tables WHERE Table_type = 'BASE TABLE'");
-	$db	= nuRunQuery("SELECT DATABASE()");
-	$dbname	= db_fetch_row($db)[0];
 
+	$db	= nuRunQuery("SELECT DATABASE()");
+	$dbname	= db_fetch_row($db);
+	$dbname	= $dbname[0];
 	nuRunQuery("ALTER DATABASE $dbname CHARACTER SET utf8 COLLATE utf8_general_ci");
-	
+
+	$tbls   = nuRunQuery("SHOW FULL Tables WHERE Table_type = 'BASE TABLE'");
+
 	while($row = db_fetch_row($tbls)){
 
 		$tab 	= $row[0];
-		
+
 		if(substr($tab, 0, 8) == 'zzzzsys_'){
-			
+
 			nuRunQuery("ALTER TABLE $tab ENGINE = MyISAM");
 			nuRunQuery("ALTER TABLE $tab DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci");
 			nuRunQuery("ALTER TABLE $tab CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci");
-		
+
 		}
-		
+
 	}
-	
+
 }
 
 function nuMigrateSQL() {

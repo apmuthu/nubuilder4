@@ -1,0 +1,766 @@
+./nuajax.js:function nuAbortSave(){
+./nuajax.js:function nuAjax(w,successCallback,errorCallback){
+./nuajax.js:function nuAttachButtonImage(i, c){
+./nuajax.js:function nuAttachImage(i, c){
+./nuajax.js:function nuForm(f, r, filter, search, n, like){
+./nuajax.js:function nuGetLookupCode(e){
+./nuajax.js:function nuGetLookupId(pk, id){
+./nuajax.js:function nuGetPHP(f, r){
+./nuajax.js:function nuGetReport(f, r){
+./nuajax.js:function nuLogout(f, iframe){
+./nuajax.js:function nuOpenNewBrowserTab(c, f, r, filter){
+./nuajax.js:function nuPrintAction(){
+./nuajax.js:function nuRunPHP(pCode, iframe, rbs){
+./nuajax.js:function nuRunPHPHidden(i, rbs){
+./nuajax.js:function nuRunReport(f, iframe){
+./nuajax.js:function nuRunReportSave(f){
+./nuajax.js:function nuSaveAfterDrag() {
+./nuajax.js:function nuSystemUpdate(){
+./nuajax.js:function nuUpdateData(action, instruction){
+./nucalendar.js:function nu2Month(n){
+./nucalendar.js:function nuAppendChild(p,t,i){
+./nucalendar.js:function nuBuildDate(){
+./nucalendar.js:function nuCalChoice(t){
+./nucalendar.js:function nuDayBox(n, l, t){
+./nucalendar.js:function nuFullMonth(n){
+./nucalendar.js:function nuMonthScope(m){
+./nucalendar.js:function nuPopulateCalendar(id, y, m, d){
+./nucalendar.js:function nuPopupCalendar(pThis, d){
+./nucalendar.js:function nuPreviousMonth(y, m, d){
+./nucalendar.js:function nuTitleBox(n, l){
+./nucommon.js:function  nuGetLookupFields(id){
+./nucommon.js:function loginInputKeyup(event){
+./nucommon.js:function nuAccessLevelCode(){
+./nucommon.js:function nuAccessLevelId(){
+./nucommon.js:function nuAddEditFieldsToHash(w){
+./nucommon.js:function nuAddRow(s){
+./nucommon.js:function nuAddSlashes(s){
+./nucommon.js:function nuAddThousandSpaces(s, c){
+./nucommon.js:function nuAscendingSortColumn(a, b) {
+./nucommon.js:function nuAscendingSortNumberColumn(a, b) {
+./nucommon.js:function nuAttachFile(j, c){
+./nucommon.js:function nuBindCtrlEvents(){
+./nucommon.js:function nuBuildLookup(t, s, like){
+./nucommon.js:function nuButtonIcon(j){
+./nucommon.js:function nuChart(d, t, a, h, x, y, st, is){
+./nucommon.js:function nuClick(e){
+./nucommon.js:function nuClosePopup(){
+./nucommon.js:function nuCreateDialog(t){
+./nucommon.js:function nuDatabase(){
+./nucommon.js:function nuDecendingSortColumn(b, a) {
+./nucommon.js:function nuDecendingSortNumberColumn(b, a) {
+./nucommon.js:function nuDecode(s){
+./nucommon.js:function nuDisable(i){                 	//-- Disable Edit Form Object
+./nucommon.js:function nuDisplayError(e){
+./nucommon.js:function nuDownBrowseResize(e, p){
+./nucommon.js:function nuDragBrowseColumn(e, p){
+./nucommon.js:function nuDragTitleEvents(){
+./nucommon.js:function nuDuplicates(arr){
+./nucommon.js:function nuEmbedObject(f, d, w, h){
+./nucommon.js:function nuEnable(i) {            //-- Enable Edit Form Object
+./nucommon.js:function nuEncode(s){
+./nucommon.js:function nuEndBrowseResize(e){
+./nucommon.js:function nuFormatAjaxErrorMessage(jqXHR, exception) {
+./nucommon.js:function nuGetBreadcrumb(bc){
+./nucommon.js:function nuGetColumWidths(){
+./nucommon.js:function nuGetFunctionList(){
+./nucommon.js:function nuGetOpenerById(pOPENER, pid) {
+./nucommon.js:function nuHide(i){                 //-- Hide Edit Form Object
+./nucommon.js:function nuHideHolders(h){
+./nucommon.js:function nuID(){
+./nucommon.js:function nuImportCSV(t, s){
+./nucommon.js:function nuIsIframe(){
+./nucommon.js:function nuIsMobile(){
+./nucommon.js:function nuIsOpener() {
+./nucommon.js:function nuIsSaved(){
+./nucommon.js:function nuLogin(nuconfigNuWelcomeBodyInnerHTML){
+./nucommon.js:function nuOnLoad() {
+./nucommon.js:function nuOpenAce(lang, obj){
+./nucommon.js:function nuOpener(t, f, r, filter, parameters){
+./nucommon.js:function nuOpenerAppend(t, k) {
+./nucommon.js:function nuOpenTab(i){
+./nucommon.js:function nuPopJS(){				//-- used in database
+./nucommon.js:function nuPopPHP(e, nuE){			//-- used in database
+./nucommon.js:function nuPopSQL(e, nuE){			//-- used in database
+./nucommon.js:function nuPopup(f, r, filter){
+./nucommon.js:function nuPreview(a){
+./nucommon.js:function nuReadonly(i){  			               //-- set Edit Form Object to readonly
+./nucommon.js:function nuReformat(t){
+./nucommon.js:function nuRemoveHolders(h){
+./nucommon.js:function nuRemoveOpenerById(o, pid) {
+./nucommon.js:function nuRemovePX(s){
+./nucommon.js:function nuRemoveTabs(t){
+./nucommon.js:function nuResizeBrowseColumns(){
+./nucommon.js:function nuResizeWindow(e){
+./nucommon.js:function nuRunIt(t, email, type){
+./nucommon.js:function nuSetBrowserColumns(c){
+./nucommon.js:function nuSetSuffix(a){
+./nucommon.js:function nuShow(i){                 	//-- Show Edit Form Object
+./nucommon.js:function nuSortSubform(s, c, e){
+./nucommon.js:function nuSpaces(s){
+./nucommon.js:function nuStartDatabaseAdmin() {
+./nucommon.js:function nuStartWorker(){
+./nucommon.js:function nuStopBrowserResize(){
+./nucommon.js:function nuStopClick(e){
+./nucommon.js:function nuSubformObject(id){
+./nucommon.js:function nuSubformRowId(t){
+./nucommon.js:function nuSubformValue(t, id){
+./nucommon.js:function nuSubmit(e){
+./nucommon.js:function nuTransformScale(){
+./nucommon.js:function nuTranslate(s){
+./nucommon.js:function nuUnbindDragEvents(){
+./nucommon.js:function nuUserName(){
+./nucommon.js:function nuWhen(w){
+./nucommon.js:function nuWorker(){
+./nucommon.js:function preventButtonDblClick() {
+./nudrag.js:function nuCreateDrag(){
+./nuform.js:function nuAbortSave(){
+./nuform.js:function nuAddAction(){
+./nuform.js:function nuAddActionButton(i, v, f){
+./nuform.js:function nuAddActionButtons(form){
+./nuform.js:function nuAddBreadcrumb(i){
+./nuform.js:function nuAddBreadcrumbs(){
+./nuform.js:function nuAddDataTab(i, t, p){
+./nuform.js:function nuAddedByLookup(f){
+./nuform.js:function nuAddEditTabs(p, w){
+./nuform.js:function nuAddHolder(t){
+./nuform.js:function nuAddHomeLogout(){
+./nuform.js:function nuAddJavascript(o){
+./nuform.js:function nuAddJSObjectEvents(i, j){
+./nuform.js:function nuAddSubformRow(t, e){
+./nuform.js:function nuAlign(a){
+./nuform.js:function nuAllowChanges(f){
+./nuform.js:function nuArrowPressed(e){
+./nuform.js:function nuBrowseBorders(){
+./nuform.js:function nuBrowseColumnSize(e){
+./nuform.js:function nuBrowseTable(){
+./nuform.js:function nuBrowseTitle(b, i, l){
+./nuform.js:function nuBuildEditObjects(f, p, o, prop){
+./nuform.js:function nuBuildFastReport(){
+./nuform.js:function nuBuildForm(f){
+./nuform.js:function nuBuildOptionsList(l, p, type){												//-- loop through adding options to menu
+./nuform.js:function nuBuildSubformDeleteTitle(l, id, subform_id){
+./nuform.js:function nuBuildSubformTitle(o, l, w, id, col){
+./nuform.js:function nuCalculateForm(setAsEdited){	//-- calculate subform 'calcs' first
+./nuform.js:function nuChange(e){
+./nuform.js:function nuChangeFile(e){
+./nuform.js:function nuChooseEventList(){
+./nuform.js:function nuChooseOneLookupRecord(e, fm){
+./nuform.js:function nuClickSearchColumn(e){
+./nuform.js:function nuClickTab(t,s){
+./nuform.js:function nuCloneAction(){
+./nuform.js:function nuCurrentRow(){
+./nuform.js:function nuDefine(v){
+./nuform.js:function nuDeleteAction(){
+./nuform.js:function nuDeleteAllAction(){
+./nuform.js:function nuDetach(){
+./nuform.js:function nuDialogHeadersHeight(){
+./nuform.js:function nuDRAG(w, i, l, p, prop){
+./nuform.js:function nuDragBrowseDown(e){
+./nuform.js:function nuDragBrowseMove(e){
+./nuform.js:function nuDragBrowseUp(e){
+./nuform.js:function nuEditTab(p, t, i){
+./nuform.js:function nuEmailReportAction(code) {
+./nuform.js:function nuEmptyNoClone(){
+./nuform.js:function nuFastObject(g,s,o){
+./nuform.js:function nuFastReportFormat(width){
+./nuform.js:function nuFilterRun(id, f){
+./nuform.js:function nuFormType(){
+./nuform.js:function nuFormWH(){
+./nuform.js:function nuGetIframeValue(f, o){
+./nuform.js:function nuGetOptionsList(f, t, p, a, type){
+./nuform.js:function nuGetPage(p){
+./nuform.js:function nuGetSearchList(){
+./nuform.js:function nuGetStartingTab(){
+./nuform.js:function nuGetSubformRowSize(o, SF, id){
+./nuform.js:function nuGetWordWidth(w){
+./nuform.js:function nuHasBeenEdited(){
+./nuform.js:function nuHasBeenSaved(){
+./nuform.js:function nuHashFromEditForm(){
+./nuform.js:function nuHasNotBeenEdited(){
+./nuform.js:function nuHighlightSearch(){
+./nuform.js:function nuHTML(w, i, l, p, prop){
+./nuform.js:function nuIMAGE(w, i, l, p, prop){
+./nuform.js:function nuINPUT(w, i, l, p, prop){
+./nuform.js:function nuIsClone(){
+./nuform.js:function nuIsNewRecord(){
+./nuform.js:function nuLabel(w, i, p, prop){
+./nuform.js:function nuLookingUp(){
+./nuform.js:function nuLookupFocus(e){
+./nuform.js:function nuLookupObject(id, set, value){
+./nuform.js:function nuMainForm(){
+./nuform.js:function nuMessage(o){
+./nuform.js:function nuNewFastObject(){
+./nuform.js:function nuNewRowObject(p){
+./nuform.js:function nuNoDuplicates(){
+./nuform.js:function nuOptions(p, f, t, access){
+./nuform.js:function nuPad2(i){
+./nuform.js:function nuPad3(i){
+./nuform.js:function nuPad4(i){
+./nuform.js:function nuPopulateLookup(fm, target){
+./nuform.js:function nuPopulateLookup3(v, p){
+./nuform.js:function nuPortraitLabelWidth(o){
+./nuform.js:function nuPortraitScreen(columns){
+./nuform.js:function nuRecordHolderObject(t){
+./nuform.js:function nuRecordProperties(w, p, l){
+./nuform.js:function nuRecordRun(id, f){
+./nuform.js:function nuRedefine_nuSelectBrowse(){
+./nuform.js:function nuResizeFormDialogCoordinates(){
+./nuform.js:function nuResponseDefault(){
+./nuform.js:function nuResponseNoWrap(){
+./nuform.js:function nuResponseWrap(){
+./nuform.js:function nuResponsiveWrap(width, wrap){
+./nuform.js:function nuRUN(w, i, l, p, prop){
+./nuform.js:function nuRunPHPAction(code) {
+./nuform.js:function nuRunReportAction(code) {
+./nuform.js:function nuSaveAction(){
+./nuform.js:function nuSavingMessage(){
+./nuform.js:function nuSavingProgressMessage(){
+./nuform.js:function nuSearchableList(){
+./nuform.js:function nuSearchAction(S, F){
+./nuform.js:function nuSearchPressed(e){
+./nuform.js:function nuSELECT(w, i, l, p, prop){
+./nuform.js:function nuSelectAllTabs(pthis){
+./nuform.js:function nuSelectBrowse(e, t){
+./nuform.js:function nuSelectTab(tab){
+./nuform.js:function nuSetAccess(i, r){
+./nuform.js:function nuSetBody(f){
+./nuform.js:function nuSetIframeValue(f, o, v){
+./nuform.js:function nuSetNoSearchColumns(a){
+./nuform.js:function nuSetSearchColumn(){
+./nuform.js:function nuSetStartingTab(p, w){
+./nuform.js:function nuSetTab(pthis){
+./nuform.js:function nuSetTitle(t){
+./nuform.js:function nuSetVerticalTabs(){
+./nuform.js:function nuSortBrowse(c){
+./nuform.js:function nuStartingTab(p){
+./nuform.js:function nuSUBFORM(w, i, l, p, prop){
+./nuform.js:function nuSubformLastRow(t){
+./nuform.js:function nuTitleDrag(i){
+./nuform.js:function nuTotal(f){
+./nuform.js:function nuTotalHeight(i){
+./nuform.js:function nuTotalHolderWidth(i){
+./nuform.js:function nuTotalWidth(i){
+./nuform.js:function nuValidLookupId(id, fld){
+./nuform.js:function nuWidestTitle(c){
+./nuform.js:function nuWindowPosition(){
+./nuform.js:function nuWORD(w, i, l, p, prop){
+./nuformclass.js:function nuCurrentProperties(){
+./nuformclass.js:function nuGetNumberFormat(f){
+./nuformclass.js:function nuGetProperty(f){
+./nuformclass.js:function nuNumberFormat(f){
+./nuformclass.js:function nuSetProperty(f, v){
+./nuformdrag.js:function nuAbortSaveDrag(){
+./nuformdrag.js:function nuAlignBottom(){
+./nuformdrag.js:function nuAlignLeft(){
+./nuformdrag.js:function nuAlignRight(){
+./nuformdrag.js:function nuAlignTop(){
+./nuformdrag.js:function nuBindDragEvents(){
+./nuformdrag.js:function nuCanMove() {
+./nuformdrag.js:function nuCheckIfMovingFieldToOtherTabAllowed(fieldsSelectBox){
+./nuformdrag.js:function nuCheckIfMovingTabOrderAllowed(fieldsSelectBox){
+./nuformdrag.js:function nuClearFieldsList(){
+./nuformdrag.js:function nuCreateBox(event){
+./nuformdrag.js:function nuCreateDragOptionsBox(form){
+./nuformdrag.js:function nuDragBox(event) {	
+./nuformdrag.js:function nuFindFieldInState(tabNo, fieldID){
+./nuformdrag.js:function nuGetMinTabOrderInTab(currentTabNo){
+./nuformdrag.js:function nuGetTopArea() {
+./nuformdrag.js:function nuInitialiseDragState(){
+./nuformdrag.js:function nuMoveDownOrder(){
+./nuformdrag.js:function nuMoveNuDrag() {
+./nuformdrag.js:function nuMoveSelected() {
+./nuformdrag.js:function nuMoveUpOrder(){
+./nuformdrag.js:function nuPopulateFieldsList(currentlySelectedTabNo){
+./nuformdrag.js:function nuPopulateTabDropdown(currentlySelectedTabNo){
+./nuformdrag.js:function nuPutFieldDimensionsIntoState(){
+./nuformdrag.js:function nuRemoveBox(ctrlKey) {
+./nuformdrag.js:function nuResizeDrag(event) {
+./nuformdrag.js:function nuResizeToHighest(){
+./nuformdrag.js:function nuResizeToLowest(){
+./nuformdrag.js:function nuResizeToThinnest(){
+./nuformdrag.js:function nuResizeToWidest(){
+./nuformdrag.js:function nuSaveNuDrag(){
+./nuformdrag.js:function nuSetTabOrderDataAttrs(){
+./nuformdrag.js:function nuSortObjAsc(a,b) {
+./nuformdrag.js:function nuSpaceHorizontally(){
+./nuformdrag.js:function nuSpaceVertically(){
+./nuformdrag.js:function nuUnbindDragEvents(){
+./nuformdrag.js:function nuUnselectAllDragObjects(){
+./nuformdrag.js:function nuUpdateDragFieldsListbox(){
+./nuformdrag.js:function nuUpdateDragSelections(fieldsSelectBox){
+./nureportdrag.js:function deleteSelectedObjects(){
+./nureportdrag.js:function findWithAttr(array, attr, value) {
+./nureportdrag.js:function moveToolbar(){
+./nureportdrag.js:function nuAdjustButton(top, left, funct, value, title){
+./nureportdrag.js:function nuAdjustDialog(){
+./nureportdrag.js:function nuBlankMultipleValues(S){
+./nureportdrag.js:function nuClickGroup(t){
+./nureportdrag.js:function nuCloneObjects(){
+./nureportdrag.js:function nuDialogInput(cap, id, top, left, val, fun, sel){
+./nureportdrag.js:function nuDoNothing(t){
+./nureportdrag.js:function nuDragReport(){
+./nureportdrag.js:function nuGroupDialog(){
+./nureportdrag.js:function nuLoadReport(b){
+./nureportdrag.js:function nuMoveGroup(){
+./nureportdrag.js:function nuMoverAdjustHorClick(){
+./nureportdrag.js:function nuMoverAdjustVerClick(){
+./nureportdrag.js:function nuMoverAlignBottomClick(){
+./nureportdrag.js:function nuMoverAlignLeftClick(){
+./nureportdrag.js:function nuMoverAlignRightClick(){
+./nureportdrag.js:function nuMoverAlignTopClick(){
+./nureportdrag.js:function nuMoveReportGroup(ele, dir) {
+./nureportdrag.js:function nuNewObject(){
+./nureportdrag.js:function nuObjectDialog(){
+./nureportdrag.js:function nuOrderedSelectObjects(i){
+./nureportdrag.js:function nuReportDialog(){
+./nureportdrag.js:function nuREPORTUpdate(p, v){
+./nureportdrag.js:function nuResizeShortestClick(){
+./nureportdrag.js:function nuResizeTallestClick(){
+./nureportdrag.js:function nuResizeThinestClick(){
+./nureportdrag.js:function nuResizeWidestClick(){
+./nureportdrag.js:function nuSelectDialog(){
+./nureportdrag.js:function nuSetDialog(){ //-- reopen Dialog at set to last position
+./nureportdrag.js:function nuSetnuScroll(l){
+./nureportdrag.js:function nuSetTools(){
+./nureportdrag.js:function nuSortObjects(a,b){
+./nureportdrag.js:function nuUndo(){
+./nureportdrag.js:function nuUpdateGroup(t){
+./nureportdrag.js:function nuUpdateProperties(t){
+./nureportdrag.js:function nuUpdateReport(t){
+./nureportdrag.js:function nuUpdateSectionProperty(t){
+./nuselectclass.js:function nuAngle(){
+./nuselectclass.js:function nuChangeJoin(e){
+./nuselectclass.js:function nuDown(e){
+./nuselectclass.js:function nuMove(e){
+./nuselectclass.js:function nuUp(e){
+./nuworkers.js:function nuWork() {
+
+
+
+
+./ace/ace.js:function addAltCursorListeners(editor){
+./ace/ace.js:function addUnicodePackage (pack) {
+./ace/ace.js:function binarySearch(array, needle, comparator) {
+./ace/ace.js:function bindKey(win, mac) {
+./ace/ace.js:function BracketMatch() {
+./ace/ace.js:function calcDistance(ax, ay, bx, by) {
+./ace/ace.js:function calcDistance(ax, ay, bx, by) {
+./ace/ace.js:function calcRangeOrientation(range, cursor) {
+./ace/ace.js:function consumePoint(point, anchor) {
+./ace/ace.js:function consumeRange(range, anchor) {
+./ace/ace.js:function DefaultHandlers(mouseHandler) {
+./ace/ace.js:function deHyphenate(str) {
+./ace/ace.js:function doesDefinePropertyWork(object) {
+./ace/ace.js:function DragdropHandler(mouseHandler) {
+./ace/ace.js:function Empty() {}
+./ace/ace.js:function exportAce(ns) {
+./ace/ace.js:function find(session, needle, dir) {
+./ace/ace.js:function findAnnotations(session, row, dir) {
+./ace/ace.js:function FoldHandler(editor) {
+./ace/ace.js:function Folding() {
+./ace/ace.js:function FoldLine(foldData, folds) {
+./ace/ace.js:function GutterHandler(mouseHandler) {
+./ace/ace.js:function GutterTooltip(parentNode) {
+./ace/ace.js:function HashHandler(config, platform) {
+./ace/ace.js:function isPrimitive(input) {
+./ace/ace.js:function isSamePoint(p1, p2) {
+./ace/ace.js:function isSamePoint(p1, p2) {
+./ace/ace.js:function LineWidgets(session) {
+./ace/ace.js:function MultiSelect(editor) {
+./ace/ace.js:function normalizeCommandKeys(callback, e, keyCode) {
+./ace/ace.js:function onMouseDown(e) {
+./ace/ace.js:function restorePoint(point, anchor) {
+./ace/ace.js:function restoreRange(range, anchor) {
+./ace/ace.js:function toInteger(n) {
+./ace/ace.js:function Tooltip (parentNode) {
+./ace/ace.js:function toPrimitive(input) {
+./ace/ext-chromevox.js:function cvoxApiExists() {
+./ace/ext-chromevox.js:function watchForCvoxLoad(editor) {
+./ace/ext-emmet.js:function AceEmmetEditor() {}
+./ace/ext-language_tools.js:function getCompletionPrefix(editor) {
+./ace/ext-linking.js:function onClick(e) {
+./ace/ext-linking.js:function onMouseMove(e) {
+./ace/ext-modelist.js:function getModeForPath(path) {
+./ace/ext-old_ie.js:function patch(obj, name, regexp, replacement) {
+./ace/ext-settings_menu.js:function getModeForPath(path) {
+./ace/ext-settings_menu.js:function showSettingsMenu(editor) {
+./ace/ext-split.js:function UndoManagerProxy(undoManager, session) {
+./ace/ext-textarea.js:function applyStyles(elm, styles) {
+./ace/ext-textarea.js:function load(url, module, callback) {
+./ace/ext-textarea.js:function setupApi(editor, editorDiv, settingDiv, ace, options, loader) {
+./ace/ext-textarea.js:function setupContainer(element, getValue) {
+./ace/ext-textarea.js:function setupSettingPanel(settingDiv, settingOpener, editor) {
+./ace/keybinding-emacs.js:function IncrementalSearch() {
+./ace/keybinding-emacs.js:function IncrementalSearchKeyboardHandler(iSearch) {
+./ace/keybinding-emacs.js:function Occur() {}
+./ace/keybinding-emacs.js:function OccurKeyboardHandler() {}
+./ace/keybinding-vim.js:function find(editor, needle, dir) {
+./ace/keybinding-vim.js:function Motion(m) {
+./ace/keybinding-vim.js:function setPreviousCommand(fn) {
+./ace/mode-html.js:function findTagName(session, pos) {
+./ace/mode-html.js:function is(token, type) {
+./ace/mode-xml.js:function is(token, type) {
+./ace/worker-coffee.js:function doesDefinePropertyWork(object) {
+./ace/worker-coffee.js:function Empty() {}
+./ace/worker-coffee.js:function isPrimitive(input) {
+./ace/worker-coffee.js:function Parser () {
+./ace/worker-coffee.js:function toInteger(n) {
+./ace/worker-coffee.js:function toPrimitive(input) {
+./ace/worker-css.js:function clone(parent, circular, depth, prototype) {
+./ace/worker-css.js:function Combinator(text, line, col){
+./ace/worker-css.js:function doesDefinePropertyWork(object) {
+./ace/worker-css.js:function Empty() {}
+./ace/worker-css.js:function EventTarget(){
+./ace/worker-css.js:function isDigit(c){
+./ace/worker-css.js:function isHexDigit(c){
+./ace/worker-css.js:function isIdentStart(c){
+./ace/worker-css.js:function isNameChar(c){
+./ace/worker-css.js:function isNameStart(c){
+./ace/worker-css.js:function isNewLine(c){
+./ace/worker-css.js:function isPrimitive(input) {
+./ace/worker-css.js:function isWhitespace(c){
+./ace/worker-css.js:function MediaFeature(name, value){
+./ace/worker-css.js:function MediaQuery(modifier, mediaType, features, line, col){
+./ace/worker-css.js:function mix(receiver, supplier){
+./ace/worker-css.js:function objectToString(o) {
+./ace/worker-css.js:function Parser(options){
+./ace/worker-css.js:function PropertyName(text, hack, line, col){
+./ace/worker-css.js:function PropertyValue(parts, line, col){
+./ace/worker-css.js:function PropertyValueIterator(value){
+./ace/worker-css.js:function PropertyValuePart(text, line, col){
+./ace/worker-css.js:function Reporter(lines, ruleset){
+./ace/worker-css.js:function Selector(parts, line, col){
+./ace/worker-css.js:function SelectorPart(elementName, modifiers, text, line, col){
+./ace/worker-css.js:function SelectorSubPart(text, type, line, col){
+./ace/worker-css.js:function Specificity(a, b, c, d){
+./ace/worker-css.js:function StringReader(text){
+./ace/worker-css.js:function SyntaxError(message, line, col){
+./ace/worker-css.js:function SyntaxUnit(text, line, col, type){
+./ace/worker-css.js:function toInteger(n) {
+./ace/worker-css.js:function TokenStream(input){
+./ace/worker-css.js:function TokenStreamBase(input, tokenData){
+./ace/worker-css.js:function toPrimitive(input) {
+./ace/worker-css.js:function ValidationError(message, line, col){
+./ace/worker-html.js:function _deepEqual(actual, expected) {
+./ace/worker-html.js:function _throws(shouldThrow, block, expected, message) {
+./ace/worker-html.js:function arrayToHash(array) {
+./ace/worker-html.js:function CDATA(locator) {
+./ace/worker-html.js:function CharacterBuffer(characters) {
+./ace/worker-html.js:function Characters(locator, data){
+./ace/worker-html.js:function Comment(locator, data) {
+./ace/worker-html.js:function Document (locator) {
+./ace/worker-html.js:function DocumentFragment() {
+./ace/worker-html.js:function doesDefinePropertyWork(object) {
+./ace/worker-html.js:function DTD(name, publicIdentifier, systemIdentifier) {
+./ace/worker-html.js:function Element(locator, uri, localName, qName, atts, prefixMappings) {
+./ace/worker-html.js:function ElementStack() {
+./ace/worker-html.js:function Empty() {}
+./ace/worker-html.js:function Entity(name) {
+./ace/worker-html.js:function EventEmitter() {
+./ace/worker-html.js:function expectedException(actual, expected) {
+./ace/worker-html.js:function fail(actual, expected, message, operator, stackStartFunction) {
+./ace/worker-html.js:function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
+./ace/worker-html.js:function formatError(value) {
+./ace/worker-html.js:function formatMessage(format, args) {
+./ace/worker-html.js:function formatPrimitive(ctx, value) {
+./ace/worker-html.js:function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
+./ace/worker-html.js:function formatValue(ctx, value, recurseTimes) {
+./ace/worker-html.js:function getAttribute(item, name) {
+./ace/worker-html.js:function getAttribute(node, name) {
+./ace/worker-html.js:function getAttribute(node, name) {
+./ace/worker-html.js:function getMessage(self) {
+./ace/worker-html.js:function hasOwnProperty(obj, prop) {
+./ace/worker-html.js:function IgnorableWhitespace(locator, data) {
+./ace/worker-html.js:function InputStream() {
+./ace/worker-html.js:function inspect(obj, opts) {
+./ace/worker-html.js:function isAllWhitespace(characters) {
+./ace/worker-html.js:function isAllWhitespaceOrReplacementCharacters(characters) {
+./ace/worker-html.js:function isAlpha(c) {
+./ace/worker-html.js:function isAlphaNumeric(c) {
+./ace/worker-html.js:function isArguments(object) {
+./ace/worker-html.js:function isArray(ar) {
+./ace/worker-html.js:function isBoolean(arg) {
+./ace/worker-html.js:function isButtonScopeMarker(node) {
+./ace/worker-html.js:function isDate(d) {
+./ace/worker-html.js:function isDecimalDigit(c) {
+./ace/worker-html.js:function isError(e) {
+./ace/worker-html.js:function isFunction(arg) {
+./ace/worker-html.js:function isFunction(arg) {
+./ace/worker-html.js:function isHexDigit(c) {
+./ace/worker-html.js:function isListItemScopeMarker(node) {
+./ace/worker-html.js:function isNull(arg) {
+./ace/worker-html.js:function isNullOrUndefined(arg) {
+./ace/worker-html.js:function isNumber(arg) {
+./ace/worker-html.js:function isNumber(arg) {
+./ace/worker-html.js:function isObject(arg) {
+./ace/worker-html.js:function isObject(arg) {
+./ace/worker-html.js:function isPrimitive(arg) {
+./ace/worker-html.js:function isPrimitive(input) {
+./ace/worker-html.js:function isRegExp(re) {
+./ace/worker-html.js:function isScopeMarker(node) {
+./ace/worker-html.js:function isSelectScopeMarker(node) {
+./ace/worker-html.js:function isString(arg) {
+./ace/worker-html.js:function isSymbol(arg) {
+./ace/worker-html.js:function isTableBodyScopeMarker(node) {
+./ace/worker-html.js:function isTableRowScopeMarker(node) {
+./ace/worker-html.js:function isTableScopeMarker(node) {
+./ace/worker-html.js:function isUndefined(arg) {
+./ace/worker-html.js:function isUndefined(arg) {
+./ace/worker-html.js:function isWhitespace(c){
+./ace/worker-html.js:function isWhitespace(ch) {
+./ace/worker-html.js:function isWhitespaceOrReplacementCharacter(ch) {
+./ace/worker-html.js:function Node(locator) {
+./ace/worker-html.js:function noop() {}
+./ace/worker-html.js:function NullLexicalHandler() {
+./ace/worker-html.js:function objectToString(o) {
+./ace/worker-html.js:function objEquiv(a, b) {
+./ace/worker-html.js:function ok(value, message) {
+./ace/worker-html.js:function pad(n) {
+./ace/worker-html.js:function ParentNode(locator) {
+./ace/worker-html.js:function ProcessingInstruction(target, data) {
+./ace/worker-html.js:function reduceToSingleString(output, base, braces) {
+./ace/worker-html.js:function replacer(key, value) {
+./ace/worker-html.js:function SAXParser() {
+./ace/worker-html.js:function SAXTreeBuilder() {
+./ace/worker-html.js:function SkippedEntity(name) {
+./ace/worker-html.js:function StackItem(namespaceURI, localName, attributes, node) {
+./ace/worker-html.js:function stylizeNoColor(str, styleType) {
+./ace/worker-html.js:function stylizeWithColor(str, styleType) {
+./ace/worker-html.js:function timestamp() {
+./ace/worker-html.js:function toInteger(n) {
+./ace/worker-html.js:function Tokenizer(tokenHandler) {
+./ace/worker-html.js:function toPrimitive(input) {
+./ace/worker-html.js:function TreeBuilder() {
+./ace/worker-html.js:function TreeParser(contentHandler, lexicalHandler){
+./ace/worker-html.js:function truncate(s, n) {
+./ace/worker-javascript.js:function asyncTrigger() {
+./ace/worker-javascript.js:function doesDefinePropertyWork(object) {
+./ace/worker-javascript.js:function Empty() {}
+./ace/worker-javascript.js:function EventEmitter() {
+./ace/worker-javascript.js:function isFunction(arg) {
+./ace/worker-javascript.js:function isNumber(arg) {
+./ace/worker-javascript.js:function isObject(arg) {
+./ace/worker-javascript.js:function isPrimitive(input) {
+./ace/worker-javascript.js:function isUndefined(arg) {
+./ace/worker-javascript.js:function Lexer(source) {
+./ace/worker-javascript.js:function startRegex(arr) {
+./ace/worker-javascript.js:function toInteger(n) {
+./ace/worker-javascript.js:function toPrimitive(input) {
+./ace/worker-json.js:function doesDefinePropertyWork(object) {
+./ace/worker-json.js:function Empty() {}
+./ace/worker-json.js:function isPrimitive(input) {
+./ace/worker-json.js:function toInteger(n) {
+./ace/worker-json.js:function toPrimitive(input) {
+./ace/worker-lua.js:function doesDefinePropertyWork(object) {
+./ace/worker-lua.js:function Empty() {}
+./ace/worker-lua.js:function isPrimitive(input) {
+./ace/worker-lua.js:function toInteger(n) {
+./ace/worker-lua.js:function toPrimitive(input) {
+./ace/worker-php.js:function doesDefinePropertyWork(object) {
+./ace/worker-php.js:function Empty() {}
+./ace/worker-php.js:function isPrimitive(input) {
+./ace/worker-php.js:function toInteger(n) {
+./ace/worker-php.js:function toPrimitive(input) {
+./ace/worker-xquery.js:function doesDefinePropertyWork(object) {
+./ace/worker-xquery.js:function Empty() {}
+./ace/worker-xquery.js:function isPrimitive(input) {
+./ace/worker-xquery.js:function prefixBinarySearch(items, prefix) {
+./ace/worker-xquery.js:function retrievePrecedingIdentifier(text, pos, regex) {
+./ace/worker-xquery.js:function toInteger(n) {
+./ace/worker-xquery.js:function toPrimitive(input) {
+./nudb/doc/html/_static/jquery.js:function addCombinator( matcher, combinator, base ) {
+./nudb/doc/html/_static/jquery.js:function addGetHookIf( conditionFn, hookFn ) {
+./nudb/doc/html/_static/jquery.js:function addHandle( attrs, handler ) {
+./nudb/doc/html/_static/jquery.js:function addToPrefiltersOrTransports( structure ) {
+./nudb/doc/html/_static/jquery.js:function adjustCSS( elem, prop, valueParts, tween ) {
+./nudb/doc/html/_static/jquery.js:function adoptValue( value, resolve, reject, noValue ) {
+./nudb/doc/html/_static/jquery.js:function ajaxConvert( s, response, jqXHR, isSuccess ) {
+./nudb/doc/html/_static/jquery.js:function ajaxExtend( target, src ) {
+./nudb/doc/html/_static/jquery.js:function ajaxHandleResponses( s, jqXHR, responses ) {
+./nudb/doc/html/_static/jquery.js:function Animation( elem, properties, options ) {
+./nudb/doc/html/_static/jquery.js:function assert( fn ) {
+./nudb/doc/html/_static/jquery.js:function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computedVal ) {
+./nudb/doc/html/_static/jquery.js:function buildFragment( elems, context, scripts, selection, ignored ) {
+./nudb/doc/html/_static/jquery.js:function buildParams( prefix, obj, traditional, add ) {
+./nudb/doc/html/_static/jquery.js:function camelCase( string ) {
+./nudb/doc/html/_static/jquery.js:function classesToArray( value ) {
+./nudb/doc/html/_static/jquery.js:function cloneCopyEvent( src, dest ) {
+./nudb/doc/html/_static/jquery.js:function completed() {
+./nudb/doc/html/_static/jquery.js:function condense( unmatched, map, filter, context, xml ) {
+./nudb/doc/html/_static/jquery.js:function createButtonPseudo( type ) {
+./nudb/doc/html/_static/jquery.js:function createCache() {
+./nudb/doc/html/_static/jquery.js:function createDisabledPseudo( disabled ) {
+./nudb/doc/html/_static/jquery.js:function createFxNow() {
+./nudb/doc/html/_static/jquery.js:function createInputPseudo( type ) {
+./nudb/doc/html/_static/jquery.js:function createOptions( options ) {
+./nudb/doc/html/_static/jquery.js:function createPositionalPseudo( fn ) {
+./nudb/doc/html/_static/jquery.js:function createTween( value, prop, animation ) {
+./nudb/doc/html/_static/jquery.js:function curCSS( elem, name, computed ) {
+./nudb/doc/html/_static/jquery.js:function Data() {
+./nudb/doc/html/_static/jquery.js:function dataAttr( elem, key, data ) {
+./nudb/doc/html/_static/jquery.js:function defaultPrefilter( elem, props, opts ) {
+./nudb/doc/html/_static/jquery.js:function disableScript( elem ) {
+./nudb/doc/html/_static/jquery.js:function domManip( collection, args, callback, ignored ) {
+./nudb/doc/html/_static/jquery.js:function elementMatcher( matchers ) {
+./nudb/doc/html/_static/jquery.js:function fcamelCase( all, letter ) {
+./nudb/doc/html/_static/jquery.js:function finalPropName( name ) {
+./nudb/doc/html/_static/jquery.js:function fixInput( src, dest ) {
+./nudb/doc/html/_static/jquery.js:function genFx( type, includeWidth ) {
+./nudb/doc/html/_static/jquery.js:function getAll( context, tag ) {
+./nudb/doc/html/_static/jquery.js:function getClass( elem ) {
+./nudb/doc/html/_static/jquery.js:function getData( data ) {
+./nudb/doc/html/_static/jquery.js:function getDefaultDisplay( elem ) {
+./nudb/doc/html/_static/jquery.js:function getWidthOrHeight( elem, dimension, extra ) {
+./nudb/doc/html/_static/jquery.js:function Identity( v ) {
+./nudb/doc/html/_static/jquery.js:function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {
+./nudb/doc/html/_static/jquery.js:function isArrayLike( obj ) {
+./nudb/doc/html/_static/jquery.js:function manipulationTarget( elem, content ) {
+./nudb/doc/html/_static/jquery.js:function markFunction( fn ) {
+./nudb/doc/html/_static/jquery.js:function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
+./nudb/doc/html/_static/jquery.js:function matcherFromTokens( tokens ) {
+./nudb/doc/html/_static/jquery.js:function multipleContexts( selector, contexts, results ) {
+./nudb/doc/html/_static/jquery.js:function nodeName( elem, name ) {
+./nudb/doc/html/_static/jquery.js:function on( elem, types, selector, data, fn, one ) {
+./nudb/doc/html/_static/jquery.js:function propFilter( props, specialEasing ) {
+./nudb/doc/html/_static/jquery.js:function remove( elem, selector, keepData ) {
+./nudb/doc/html/_static/jquery.js:function restoreScript( elem ) {
+./nudb/doc/html/_static/jquery.js:function returnFalse() {
+./nudb/doc/html/_static/jquery.js:function returnTrue() {
+./nudb/doc/html/_static/jquery.js:function safeActiveElement() {
+./nudb/doc/html/_static/jquery.js:function schedule() {
+./nudb/doc/html/_static/jquery.js:function setFilters() {}
+./nudb/doc/html/_static/jquery.js:function setGlobalEval( elems, refElements ) {
+./nudb/doc/html/_static/jquery.js:function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {
+./nudb/doc/html/_static/jquery.js:function setPositiveNumber( elem, value, subtract ) {
+./nudb/doc/html/_static/jquery.js:function showHide( elements, show ) {
+./nudb/doc/html/_static/jquery.js:function sibling( cur, dir ) {
+./nudb/doc/html/_static/jquery.js:function siblingCheck( a, b ) {
+./nudb/doc/html/_static/jquery.js:function Sizzle( selector, context, results, seed ) {
+./nudb/doc/html/_static/jquery.js:function testContext( context ) {
+./nudb/doc/html/_static/jquery.js:function Thrower( ex ) {
+./nudb/doc/html/_static/jquery.js:function toSelector( tokens ) {
+./nudb/doc/html/_static/jquery.js:function toType( obj ) {
+./nudb/doc/html/_static/jquery.js:function Tween( elem, options, prop, end, easing ) {
+./nudb/doc/html/_static/jquery.js:function vendorPropName( name ) {
+./nudb/doc/html/_static/jquery.js:function winnow( elements, qualifier, not ) {
+./nudb/doc/html/_static/language_data.js:function splitQuery(query) {
+./nudb/js/config.js:function adjustPrefsNotification () {
+./nudb/js/config.js:function checkFieldDefault (field, type) {
+./nudb/js/config.js:function displayErrors (errorList) {
+./nudb/js/config.js:function getAllValues () {
+./nudb/js/config.js:function getFieldType (field) {
+./nudb/js/config.js:function getFieldValidators (fieldId, onKeyUpOnly) {
+./nudb/js/config.js:function getFieldValue (field, fieldType) {
+./nudb/js/config.js:function getIdPrefix (element) {
+./nudb/js/config.js:function isStorageSupported (type, warn) {
+./nudb/js/config.js:function loadInlineConfig () {
+./nudb/js/config.js:function markField (field) {
+./nudb/js/config.js:function offerPrefsAutoimport () {
+./nudb/js/config.js:function registerFieldValidator (id, type, onKeyUp, params) {
+./nudb/js/config.js:function restoreField (fieldId) {
+./nudb/js/config.js:function savePrefsToLocalStorage (form) {
+./nudb/js/config.js:function setDisplayError () {
+./nudb/js/config.js:function setFieldValue (field, fieldType, value) {
+./nudb/js/config.js:function setRestoreDefaultBtn (field, display) {
+./nudb/js/config.js:function setTab (tabId) {
+./nudb/js/config.js:function setupConfigTabs () {
+./nudb/js/config.js:function setupRestoreField () {
+./nudb/js/config.js:function setupValidation () {
+./nudb/js/config.js:function updatePrefsDate () {
+./nudb/js/config.js:function validateField (field, isKeyUp, errors) {
+./nudb/js/config.js:function validateFieldAndFieldset (field, isKeyUp) {
+./nudb/js/config.js:function validateFieldset (fieldset, isKeyUp, errors) {
+./nudb/js/database/query_generator.js:function appendTable (table, tableAliases, usedTables, foreignKeys) {
+./nudb/js/database/query_generator.js:function existReference (table, fk, usedTables) {
+./nudb/js/database/query_generator.js:function generateCondition (criteriaDiv, table) {
+./nudb/js/database/query_generator.js:function generateFromBlock (tableAliases, foreignKeys) {
+./nudb/js/database/query_generator.js:function generateJoin (newTable, tableAliases, fk) {
+./nudb/js/database/query_generator.js:function generateWhereBlock () {
+./nudb/js/database/query_generator.js:function getFormatsText () {
+./nudb/js/database/query_generator.js:function tryJoinTable (table, tableAliases, usedTables, foreignKeys) {
+./nudb/js/gis_data_editor.js:function addDataPoint (pointNumber, prefix) {
+./nudb/js/gis_data_editor.js:function closeGISEditor () {
+./nudb/js/gis_data_editor.js:function initGISEditorVisualization () {
+./nudb/js/gis_data_editor.js:function insertDataAndClose () {
+./nudb/js/gis_data_editor.js:function loadGISEditor (value, field, type, inputName) {
+./nudb/js/gis_data_editor.js:function loadJSAndGISEditor (value, field, type, inputName) {
+./nudb/js/gis_data_editor.js:function openGISEditor () {
+./nudb/js/gis_data_editor.js:function prepareJSVersion () {
+./nudb/js/import.js:function changePluginOpts () {
+./nudb/js/import.js:function matchFile (fname) {
+./nudb/js/keyhandler.js:function onKeyDownArrowsHandler (event) {
+./nudb/js/multi_column_sort.js:function captureURL (url) {
+./nudb/js/multi_column_sort.js:function removeColumnFromMultiSort (target, parent) {
+./nudb/js/normalization.js:function appendHtmlColumnsList () {
+./nudb/js/normalization.js:function goTo2NFFinish (pd) {
+./nudb/js/normalization.js:function goTo2NFStep1 () {
+./nudb/js/normalization.js:function goTo2NFStep2 (pd, primaryKey) {
+./nudb/js/normalization.js:function goTo3NFFinish (newTables) {
+./nudb/js/normalization.js:function goTo3NFStep1 (newTables) {
+./nudb/js/normalization.js:function goTo3NFStep2 (pd, tablesTds) {
+./nudb/js/normalization.js:function goToFinish1NF () {
+./nudb/js/normalization.js:function goToStep2 (extra) {
+./nudb/js/normalization.js:function goToStep3 () {
+./nudb/js/normalization.js:function goToStep4 () {
+./nudb/js/normalization.js:function moveRepeatingGroup (repeatingCols) {
+./nudb/js/normalization.js:function processDependencies (primaryKey, isTransitive) {
+./nudb/js/page_settings.js:function showNaviSettings () {
+./nudb/js/page_settings.js:function showPageSettings () {
+./nudb/js/page_settings.js:function showSettings (selector) {
+./nudb/js/replication.js:function updateConfig () {
+./nudb/js/server/privileges.js:function checkAddUser (theForm) {
+./nudb/js/server/privileges.js:function checkPasswordStrength (value, meterObject, meterObjectLabel, username) {
+./nudb/js/server/status/monitor.js:function destroyGrid () {
+./nudb/js/server/status/monitor.js:function serverResponseError () {
+./nudb/js/server/status/sorter.js:function initTableSorter (tabid) {
+./nudb/js/setup/scripts.js:function ajaxValidate (parent, id, values) {
+./nudb/js/table/change.js:function addNewContinueInsertionFiels (event) {
+./nudb/js/table/change.js:function changeValueFieldType (elem, searchIndex) {
+./nudb/js/table/change.js:function checkForCheckbox (multiEdit) {
+./nudb/js/table/change.js:function daysInFebruary (year) {
+./nudb/js/table/change.js:function fractionReplace (number) {
+./nudb/js/table/change.js:function isDate (val, tmstmp) {
+./nudb/js/table/change.js:function isTime (val) {
+./nudb/js/table/change.js:function nullify (theType, urlField, md5Field, multiEdit) {
+./nudb/js/table/change.js:function validateIntField (jqueryInput, returnValueIfIsNumber) {
+./nudb/js/table/change.js:function verificationsAfterFieldChange (urlField, multiEdit, theType) {
+./nudb/js/table/change.js:function verifyAfterSearchFieldChange (index) {
+./nudb/js/table/chart.js:function drawChart () {
+./nudb/js/table/chart.js:function extractDate (dateString) {
+./nudb/js/table/chart.js:function getSelectedSeries () {
+./nudb/js/table/chart.js:function onDataSeriesChange () {
+./nudb/js/table/chart.js:function onXAxisChange () {
+./nudb/js/table/chart.js:function queryChart (data, columnNames, settings) {
+./nudb/js/table/gis_visualization.js:function addZoomPanControllers () {
+./nudb/js/table/gis_visualization.js:function getRelativeCoords (e) {
+./nudb/js/table/gis_visualization.js:function initGISVisualization () {
+./nudb/js/table/gis_visualization.js:function loadSVG () {
+./nudb/js/table/gis_visualization.js:function resizeGISVisualization () {
+./nudb/js/table/gis_visualization.js:function selectVisualization () {
+./nudb/js/table/gis_visualization.js:function styleOSM () {
+./nudb/js/table/gis_visualization.js:function zoomAndPan () {
+./nudb/js/table/structure.js:function checkFirst () {
+./nudb/js/table/structure.js:function reloadFieldForm () {
+./nudb/js/table/zoom_plot_jqplot.js:function displayHelp () {
+./nudb/js/table/zoom_plot_jqplot.js:function getTimeStamp (val, type) {
+./nudb/js/table/zoom_plot_jqplot.js:function getType (field) {
+./nudb/js/table/zoom_plot_jqplot.js:function isEmpty (obj) {
+./nudb/js/table/zoom_plot_jqplot.js:function isNumeric (n) {
+./nudb/js/vendor/jquery/jquery.fullscreen.js:function fullScreen(state)
+./nudb/js/vendor/jquery/jquery.fullscreen.js:function fullScreenChangeHandler(event)
+./nudb/js/vendor/jquery/jquery.fullscreen.js:function fullScreenErrorHandler(event)
+./nudb/js/vendor/jquery/jquery.fullscreen.js:function installFullScreenHandlers()
+./nudb/js/vendor/jquery/jquery.fullscreen.js:function toggleFullScreen()
+./nudb/js/vendor/jquery/jquery.svg.js:function SVGManager() {
+./nudb/js/vendor/jquery/jquery.svg.js:function SVGPath() {
+./nudb/js/vendor/jquery/jquery.svg.js:function SVGText() {
+./nudb/js/vendor/jquery/jquery.svg.js:function SVGWrapper(svg, container) {
+./nudb/js/vendor/jquery/jquery-migrate.js:function compareVersions( v1, v2 ) {
+./nudb/js/vendor/jquery/jquery-migrate.js:function jQueryVersionSince( version ) {
+./nudb/js/vendor/jquery/jquery-migrate.js:function migrateWarn( msg ) {
+./nudb/js/vendor/jquery/jquery-migrate.js:function migrateWarnFunc( obj, prop, newFunc, msg ) {
+./nudb/js/vendor/jquery/jquery-migrate.js:function migrateWarnProp( obj, prop, value, msg ) {
+./nudb/js/vendor/sprintf.js:function sprintf() {
+./nudb/js/vendor/tracekit.js:function _has(object, key) {
+./nudb/js/vendor/tracekit.js:function _isUndefined(what) {

@@ -1,0 +1,342 @@
+./index.php:function nuCSSIndexInclude($pfile){
+./index.php:function nuHeader(){
+./index.php:function nuHomeWarning(){
+./index.php:function nuJSIndexInclude($pfile){
+./index.php:function nuLoginRequest(u, p){
+./index.php:function nuValidCaller(o){
+./nuace.php:function nuAceSave(){
+./nuace.php:function nuChooseFields(){
+./nuace.php:function nuChooseSnips(t){
+./nuace.php:function nuLoad(){
+./nuace.php:function nuResize(){
+./nuace.php:function nuUpdateDrag(t){
+./nuace.php:function nuWarning(){
+./nubuilder-forte.php:function nu_menu_function() {
+./nubuilder-forte.php:function nu_set_menu() {
+./nubuilder-forte.php:function nu_start_session() {
+./nubuilder-forte.php:function nubuilder_forte_shortcode($atts){
+./nubuilders.php:function nuBuildFastForm($table, $form_type){
+./nubuilders.php:function nuBuildFastReport(){
+./nubuilders.php:function nuBuildNewTable($tab, $array, $newT){
+./nubuilders.php:function nuFastForms(){
+./nuchoosesetup.php:function nuCheckGarbageCollector() {
+./nuchoosesetup.php:function nuDieIfWeAreInsideWordpress() {
+./nuchoosesetup.php:function nuLoadNewSession() {
+./nucommon.php:function ColorToHex($pColor){
+./nucommon.php:function db_setup(){
+./nucommon.php:function hex2rgb($hexOrColor) {
+./nucommon.php:function nuAddFormatting($v, $f){
+./nucommon.php:function nuAddThousandSpaces($s, $c){
+./nucommon.php:function nuAddToHashList($J, $run){
+./nucommon.php:function nuAllowedActivities(){
+./nucommon.php:function nuBuildCurrencyFormats(){
+./nucommon.php:function nuBuildFormSchema(){
+./nucommon.php:function nuBuildTableSchema(){
+./nucommon.php:function nuBuildTempTable($name_id, $tt, $rd = 0){
+./nucommon.php:function nuBuildViewSchema(){
+./nucommon.php:function nuClientTimeZone(){
+./nucommon.php:function nuCreateFile($j){
+./nucommon.php:function nuCSSInclude($pfile){
+./nucommon.php:function nuErrorFound(){
+./nucommon.php:function nuEval($phpid){
+./nucommon.php:function nuEvalMessage($phpid, $code){
+./nucommon.php:function nuEventName($e){
+./nucommon.php:function nuExceptionHandler($e, $code){
+./nucommon.php:function nuFontList(){
+./nucommon.php:function nuFormatList(){
+./nucommon.php:function nuFromCSV($file, $table, $d){
+./nucommon.php:function nuGetFonts(){
+./nucommon.php:function nuGetFormProperties($i){
+./nucommon.php:function nuGetJSONData($i){
+./nucommon.php:function nuGetNumberFormat($f){
+./nucommon.php:function nuGetProcedure($i){
+./nucommon.php:function nuGetUserAccess(){
+./nucommon.php:function nuHash(){
+./nucommon.php:function nuImageList($f){
+./nucommon.php:function nuInstall(){
+./nucommon.php:function nuJavascriptCallback($js){
+./nucommon.php:function nuJSInclude($pfile){
+./nucommon.php:function nuListSystemTables(){
+./nucommon.php:function nuListTables(){
+./nucommon.php:function nuProcedure($c){
+./nucommon.php:function nuPunctuation($f){
+./nucommon.php:function nuReplaceHashVariables($s){
+./nucommon.php:function nuRunHTML(){
+./nucommon.php:function nuRunPHP($procedure_code){
+./nucommon.php:function nuRunPHPHidden($nuCode){
+./nucommon.php:function nuRunReport($report_id){
+./nucommon.php:function nuRunSystemUpdate(){
+./nucommon.php:function nuSendEmail($to, $from, $fromname, $content, $subject, $filelist, $html = false, $cc = "", $bcc = "", $reply_to_addresses = array()) {
+./nucommon.php:function nuSetHashList($p){
+./nucommon.php:function nuSetJSONData($i, $nj){
+./nucommon.php:function nuSetTimeLimit(){
+./nucommon.php:function nuSQLTrim($s, $noCR = 0){
+./nucommon.php:function nuToCSV($table, $file, $d){
+./nucommon.php:function nuTranslate($e){
+./nucommon.php:function nuTT(){
+./nucommon.php:function nuTTList($id, $l){
+./nucommon.php:function nuUpdateFormSchema(){
+./nucommon.php:function nuUpdateObjectIds(){
+./nucommon.php:function nuUpdateSystemIds(){
+./nucommon.php:function nuUpdateTabIds(){
+./nucommon.php:function nuUpdateTableIds($table){
+./nucommon.php:function nuUpdateTableSchema($call_type){
+./nucommon.php:function nuUser(){
+./nucommon.php:function nuUserLanguage(){
+./nudata.php:function nuAutoNumber($form_id, $field_id, $value){
+./nudata.php:function nuAutoNumbers($form_id){
+./nudata.php:function nuBuildPrimaryKey($t, $p){
+./nudata.php:function nuChangeHashVariable($h, $v){
+./nudata.php:function nuCheckAccess($f, $r = ''){
+./nudata.php:function nuCheckAccessLevel($data){
+./nudata.php:function nuCloneForm(){
+./nudata.php:function nuDeleteForm($f){
+./nudata.php:function nuDeleteRow($r, $p){
+./nudata.php:function nuDisplayError($m){
+./nudata.php:function nuDuplicate($S, $R, $F){
+./nudata.php:function nuEditedRow($e){
+./nudata.php:function nuEditObjects($id){
+./nudata.php:function nuFormatValue($row, $i){
+./nudata.php:function nuGetFile(){
+./nudata.php:function nuHasNewRecordID(){
+./nudata.php:function nuHasNoRecordID(){
+./nudata.php:function nuInsertRow($r, $p){
+./nudata.php:function nuLogout(){
+./nudata.php:function nuReturnNewRecord($i = -1){
+./nudata.php:function nuSubformObject($id){
+./nudata.php:function nuUpdateCounter($id){
+./nudata.php:function nuUpdateDatabase(){
+./nudata.php:function nuUpdateEvent($t, $o){
+./nudata.php:function nuUpdateRow($r, $p, $row, $FK){
+./nudata.php:function nuValidateSubforms(){
+./nudatabase.php:function db_fetch_array($o){
+./nudatabase.php:function db_fetch_object($o){
+./nudatabase.php:function db_fetch_row($o){
+./nudatabase.php:function db_field_names($n){
+./nudatabase.php:function db_field_types($n){
+./nudatabase.php:function db_is_auto_id($table, $pk){
+./nudatabase.php:function db_num_rows($o) {
+./nudatabase.php:function db_primary_key($n){
+./nudatabase.php:function nuDebug($a){
+./nudatabase.php:function nuDebugResult($t){
+./nudatabase.php:function nuID(){
+./nudatabase.php:function nuRunQuery($s, $a = array(), $isInsert = false){
+./nudatabase.php:function nuUpdateTables(){
+./nudrag.php:function nuDragSave($data){
+./nuemailer.php:function _is_my_array_associative($arr) {
+./nuemailer.php:function _nuEmailHelperAdd(&$mail, $names_addresses, $method) {
+./nuemailer.php:function _nuEmailHelperAddAssociative(&$mail, $names_addresses, $method) {
+./nuemailer.php:function _nuEmailHelperAddOrdinal(&$mail, $names_addresses, $method) {
+./nuemailer.php:function _nuEmailHelperAttach(&$mail, $file_list = array() ) {
+./nuemailer.php:function _nuEmailHelperClean($file_list = array() ) {
+./nuemailer.php:function _nuMarshallEmailSettingsHelper($obj, $key, $default = '') {
+./nuemailer.php:function nuEmail($to_list=array(),$from_address='',$from_name='',$content='',$subject='',$file_list=array(),$html=false,$cc_list=array(), $bcc_list=array(), $reply_to_list=array(),$debug=0,$method='SMTP'){  // changed
+./nuemailer.php:function nuMarshallEmailSettings( $from_address = '', $from_name = '', $html = false, $reply_to_list = array() ) {
+./nuform.php:function isForm($i){
+./nuform.php:function isProcedure($i){
+./nuform.php:function isReport($i){
+./nuform.php:function nuAddJavascript($js){
+./nuform.php:function nuAddPrintButtons($f, $t, $a){
+./nuform.php:function nuBeforeBrowse($f){
+./nuform.php:function nuBeforeEdit($FID, $RID){
+./nuform.php:function nuBreadcrumbDescription($r, $R){
+./nuform.php:function nuBrowseColumns($f){
+./nuform.php:function nuBrowseRows($f){
+./nuform.php:function nuBrowseWhereClause($searchFields, $searchString, $returnArray = false) {
+./nuform.php:function nuBuildTabList($i){
+./nuform.php:function nuButtons($formid, $POST){
+./nuform.php:function nuDefaultObject($r, $t){
+./nuform.php:function nuFormAccess($s, $a){
+./nuform.php:function nuFormAccessList($j){
+./nuform.php:function nuFormCode($f){
+./nuform.php:function nuFormDimensions($f){
+./nuform.php:function nuFormProperties($f){
+./nuform.php:function nuGatherFormAndSessionData($home){
+./nuform.php:function nuGetAllLookupList(){
+./nuform.php:function nuGetAllLookupValues(){
+./nuform.php:function nuGetBrowseWidth($f){
+./nuform.php:function nuGetEditForm($F, $R){
+./nuform.php:function nuGetFormObject($F, $R, $OBJS){
+./nuform.php:function nuGetLookupValues($R, $O){
+./nuform.php:function nuGetOtherLookupValues($o){
+./nuform.php:function nuGetSQLValue($s){
+./nuform.php:function nuGetSrc($i){
+./nuform.php:function nuGetSubformRecords($R, $A){
+./nuform.php:function nuLookupRecord(){
+./nuform.php:function nuObjectEvents($i){
+./nuform.php:function nuPreloadImages($a){
+./nuform.php:function nuProcedureAccessList($j){
+./nuform.php:function nuRefineTabList($t){
+./nuform.php:function nuRemoveNonCharacters($s){
+./nuform.php:function nuReportAccessList($j){
+./nuform.php:function nuRunCode($P){
+./nuform.php:function nuRunDescription($P){
+./nuform.php:function nuSelectOptions($sql) {
+./nuform.php:function nuSetFormValue($f, $v){
+./nuform.php:function nuSetupButtons($f, $t) {
+./nuindexlibs.php:function nuGetJS_action_screen($nuBrowseFunction, $target, $welcome, $opener, $search, $like) {
+./nuindexlibs.php:function nuGetJS_plugin_login($nuBrowseFunction, $target) {
+./nuindexlibs.php:function nuGetJS_standalone_login($nuBrowseFunction, $target, $welcome) {
+./nuindexlibs.php:function nuLoadBody($debug = false) {
+./nuindexlibs.php:function nuUseUP($nuBrowseFunction, $target, $welcome, $u, $p) {
+./nupmalogin.php:function pmaBad() {
+./nupmalogin.php:function pmaGood() {
+./nuprocesslogins.php:function nuAccessLevelCode($u){
+./nuprocesslogins.php:function nuCheckExistingSession() {
+./nuprocesslogins.php:function nuCheckIsLoginRequest() {
+./nuprocesslogins.php:function nuCheckStandaloneGlobeadminLoginRequest() {
+./nuprocesslogins.php:function nuCheckStandaloneUserLoginRequest() {
+./nuprocesslogins.php:function nuCheckWordpressGlobeadminLoginRequest() {
+./nuprocesslogins.php:function nuCheckWordpressUserLoginRequest() {
+./nuprocesslogins.php:function nuDie($msg = 'Invalid login!') {
+./nuprocesslogins.php:function nuGetTranslation($l){
+./nuprocesslogins.php:function nuIDTEMP(){
+./nuprocesslogins.php:function nuLoginSetupGlobeadmin() {
+./nuprocesslogins.php:function nuLoginSetupNOTGlobeadmin($standalone = true) {
+./nuprocesslogins.php:function nuTempAnonReport() {
+./nuprocesslogins.php:function nuUpdateExistingSession() {
+./nureportdesigner.php:function nuStringify(){
+./nurunpdf.php:function nuAddCriteriaValues($hashData, $T){
+./nurunpdf.php:function nuBuildReport($PDF, $REPORT, $TABLE_ID){
+./nurunpdf.php:function nuGetObjectProperties($REPORT, $id){
+./nurunpdf.php:function nuGetTotalPages(){
+./nurunpdf.php:function nuIsField($i){
+./nurunpdf.php:function nuIsFile($i){
+./nurunpdf.php:function nuIsImage($i){
+./nurunpdf.php:function nuLowestGroupChange($lastROW, $thisROW, $groups){   //-- lowest = group 3
+./nurunpdf.php:function nuMakeSummaryTable($REPORT, $TABLE_ID){
+./nurunpdf.php:function nuPrintBackground($PDF, $sectionTop, $sectionHeight, $color){
+./nurunpdf.php:function nuPrintField($PDF, $S, $contents, $O, $LAY){
+./nurunpdf.php:function nuPrintImage($PDF, $S, $contents, $O){
+./nurunpdf.php:function nuPrintReport($PDF, $LAY, $DATA, $JSON){
+./nurunpdf.php:function nuRemoveFiles(){
+./nurunpdf.php:function nuRemovePageBreak($S){
+./nurunpdf.php:function nuReplaceHashes($str, $arr){
+./nurunpdf.php:function nuReplaceLabelHashVariables($LAY, $hashData){
+./nurunpdf.php:function nuSavePDF($PDF){
+./nurunpdf.php:function nuSetPixelsToMM($pxREPORT){
+./nurunpdf.php:function pdfObject($id, $t){
+./nurunpdf.php:function pdfSection($g, $s, $t, $h){  //-- section
+./nusanitize.php:function _nu_sanitize_array(&$_array) {
+./nusanitize.php:function nu_sanitize() {
+./nusanitize.php:function nu_sanitize_get_variables() {	
+./nusanitize.php:function nu_sanitize_post_variables() {
+./nusanitize.php:function nu_sanitize_sql_orderby( $orderby ) {
+./nusanitize.php:function nu_sanitize_text_fields( $str, $keep_newlines = false ) {
+./nusanitize.php:function nu_wp_check_invalid_utf8( $string, $strip = false ) {
+./nusanitize.php:function nu_wp_pre_kses_less_than( $text ) {
+./nusanitize.php:function nu_wp_pre_kses_less_than_callback( $matches ) {
+./nusanitize.php:function nu_wp_strip_all_tags($string, $remove_breaks = false) {
+./nusqlclass.php:function nus(){
+./nusqlclass.php:function test111(){
+./nustandalonesetuplibs.php:function nuStandaloneImportNewDB() {
+./nusystemupdatelibs.php:function nuAddNewSystemTables(){
+./nusystemupdatelibs.php:function nuAppendToSystemTables(){
+./nusystemupdatelibs.php:function nuCopySystemFiles() {
+./nusystemupdatelibs.php:function nuImportSystemFiles() {
+./nusystemupdatelibs.php:function nuInstallException($e){
+./nusystemupdatelibs.php:function nuJustNuRecords(){
+./nusystemupdatelibs.php:function nuMigrateSQL() {
+./nusystemupdatelibs.php:function nuRemoveNuRecords(){
+./nusystemupdatelibs.php:function nuSetCollation(){
+./nusystemupdatelibs.php:function nuSystemList(){
+./nusystemupdatelibs.php:function nuUpdateSystemRecords(){									
+./nuwordpresssetuplibs.php:function _derrive_code($key){
+./nuwordpresssetuplibs.php:function _derrive_id($key) {
+./nuwordpresssetuplibs.php:function nu_construct_access_levels_WPcoupled() {
+./nuwordpresssetuplibs.php:function nu_construct_roles_WPcoupled() {
+./nuwordpresssetuplibs.php:function nu_construct_session_data_WPcoupled() {
+./nuwordpresssetuplibs.php:function nu_WP_db_fetch_object($o){
+./nuwordpresssetuplibs.php:function nu_WP_db_fetch_row($o){
+./nuwordpresssetuplibs.php:function nu_WP_db_num_rows($o) {
+./nuwordpresssetuplibs.php:function nu_WP_nuID() {
+./nuwordpresssetuplibs.php:function nu_WP_RunQuery( $sql, $values = array() ) {
+./nuwordpresssetuplibs.php:function nuCheckWPUser() {
+./nuwordpresssetuplibs.php:function nuWPImportNewDB() { 
+./nuwordpresssetuplibs.php:function nuWPSetDeniedFlagDB() {
+./nuwordpresssetuplibs.php:function nuWPSetNewHeaderAndButtonsDB() {
+./nuwordpresssetuplibs.php:function nuWPSetWPFlagDB() {
+
+
+
+
+./tcpdf/tools/tcpdf_addfont.php:function showHelp() {
+./nudb/examples/openid.php:function Die_error($e)
+./nudb/examples/openid.php:function Show_page($contents)
+./nudb/examples/signon-script.php:function get_login_credentials($user)
+./nudb/vendor/composer/autoload_real.php:function composerRequired4a3523f00dfc37d09ffe096eb3f82ca($fileIdentifier, $file)
+./nudb/vendor/composer/ClassLoader.php:function includeFile($file)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function __($msgid)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _bind_textdomain_codeset($domain, $codeset)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _bindtextdomain($domain, $path)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _dgettext($domain, $msgid)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _dngettext($domain, $msgid, $msgidPlural, $number)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _dnpgettext($domain, $msgctxt, $msgid, $msgidPlural, $number)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _dpgettext($domain, $msgctxt, $msgid)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _gettext($msgid)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _ngettext($msgid, $msgidPlural, $number)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _npgettext($msgctxt, $msgid, $msgidPlural, $number)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _pgettext($msgctxt, $msgid)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _setlocale($category, $locale)
+./nudb/vendor/phpmyadmin/motranslator/src/functions.php:function _textdomain($domain)
+./nudb/vendor/pragmarx/google2fa/tests/bootstrap.php:function d($args)
+./nudb/vendor/pragmarx/google2fa/tests/bootstrap.php:function dd()
+./nudb/vendor/pragmarx/google2fa-qrcode/tests/bootstrap.php:function d($args)
+./nudb/vendor/pragmarx/google2fa-qrcode/tests/bootstrap.php:function dd()
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function expr(string $expression): Expression
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function inline(string $class = null): InlineServiceConfigurator
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function iterator(array $values): IteratorArgument
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function ref(string $id): ReferenceConfigurator
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function service_locator(array $values): ServiceLocatorArgument
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function tagged(string $tag, string $indexAttribute = null, string $defaultIndexMethod = null): TaggedIteratorArgument
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function tagged_iterator(string $tag, string $indexAttribute = null, string $defaultIndexMethod = null, string $defaultPriorityMethod = null): TaggedIteratorArgument
+./nudb/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php:function tagged_locator(string $tag, string $indexAttribute = null, string $defaultIndexMethod = null): ServiceLocatorArgument
+./nudb/vendor/symfony/polyfill-util/TestListenerTrait.php:function {$f['name']}{$f['signature']}
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function _twig_default_filter($value, $default = '')
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_array_batch($items, $size, $fill = null, $preserveKeys = true)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_array_column($array, $name, $index = null): array
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_array_filter($array, $arrow)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_array_map($array, $arrow)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_array_merge($arr1, $arr2)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_array_reduce($array, $arrow, $initial = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_call_macro(Template $template, string $method, array $args, int $lineno, array $context, Source $source)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_capitalize_string_filter(Environment $env, $string)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_constant($constant, $object = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_constant_is_defined($constant, $object = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_convert_encoding($string, $to, $from)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_cycle($values, $position)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_date_converter(Environment $env, $date = null, $timezone = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_date_format_filter(Environment $env, $date, $format = null, $timezone = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_date_modify_filter(Environment $env, $date, $modifier)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_ensure_traversable($seq)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_first(Environment $env, $item)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_get_array_keys_filter($array)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_get_attribute(Environment $env, Source $source, $object, $item, array $arguments = [], $type = /* Template::ANY_CALL */ 'any', $isDefinedTest = false, $ignoreStrictCheck = false, $sandboxed = false, int $lineno = -1)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_in_filter($value, $compare)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_include(Environment $env, $context, $template, $variables = [], $withContext = true, $ignoreMissing = false, $sandboxed = false)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_join_filter($value, $glue = '', $and = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_last(Environment $env, $item)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_length_filter(Environment $env, $thing)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_lower_filter(Environment $env, $string)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_number_format_filter(Environment $env, $number, $decimal = null, $decimalPoint = null, $thousandSep = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_random(Environment $env, $values = null, $max = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_replace_filter($str, $from)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_reverse_filter(Environment $env, $item, $preserveKeys = false)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_round($value, $precision = 0, $method = 'common')
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_slice(Environment $env, $item, $start, $length = null, $preserveKeys = false)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_sort_filter($array, $arrow = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_source(Environment $env, $name, $ignoreMissing = false)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_spaceless($content)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_split_filter(Environment $env, $value, $delimiter, $limit = null)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_test_empty($value)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_test_iterable($value)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_title_string_filter(Environment $env, $string)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_to_array($seq, $preserveKeys = true)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_trim_filter($string, $characterMask = null, $side = 'both')
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_upper_filter(Environment $env, $string)
+./nudb/vendor/twig/twig/src/Extension/CoreExtension.php:function twig_urlencode_filter($url)
+./nudb/vendor/twig/twig/src/Extension/DebugExtension.php:function twig_var_dump(Environment $env, $context, ...$vars)
+./nudb/vendor/twig/twig/src/Extension/EscaperExtension.php:function twig_escape_filter(Environment $env, $string, $strategy = 'html', $charset = null, $autoescape = false)
+./nudb/vendor/twig/twig/src/Extension/EscaperExtension.php:function twig_escape_filter_is_safe(Node $filterArgs)
+./nudb/vendor/twig/twig/src/Extension/EscaperExtension.php:function twig_raw_filter($string)
+./nudb/vendor/twig/twig/src/Extension/StringLoaderExtension.php:function twig_template_from_string(Environment $env, $template, string $name = null)
