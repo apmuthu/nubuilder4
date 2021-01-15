@@ -3,7 +3,7 @@
 	require_once('nuchoosesetup.php');
 	require_once('nuindexlibs.php');
 
-	if ( !$_SESSION['nubuilder_session_data']['PLUGIN'] ) {
+	if ( !isset($_SESSION['nubuilder_session_data']['PLUGIN']) || !$_SESSION['nubuilder_session_data']['PLUGIN'] ) {
 		require_once('nustandalonesetuplibs.php'); 
 		nuStandaloneImportNewDB();
 	}
