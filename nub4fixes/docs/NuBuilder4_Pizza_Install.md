@@ -27,9 +27,9 @@ Each time a table is entered using a MySQL client, it is necessary to logout and
 CREATE TABLE `customer` (
   `customer_id` varchar(25) NOT NULL,
   `cus_name` varchar(1000) NOT NULL,
-  `cus_address` text NOT NULL,
-  `cus_phone` varchar(1000) NOT NULL,
-  `cus_notes` text NOT NULL
+  `cus_address` text NULL,
+  `cus_phone` varchar(1000) NULL,
+  `cus_notes` text NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `customer` (`customer_id`, `cus_name`, `cus_address`, `cus_phone`, `cus_notes`) VALUES
