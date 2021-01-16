@@ -4038,7 +4038,7 @@ CREATE TABLE `zzzzsys_user` (
 --
 DROP TABLE IF EXISTS `zzzzsys_report_data`;
 
-CREATE VIEW `zzzzsys_report_data`  AS  select concat('PROCEDURE:',`zzzzsys_php`.`zzzzsys_php_id`) AS `id`,`zzzzsys_php`.`sph_code` AS `code`,`zzzzsys_php`.`sph_description` AS `description` from `zzzzsys_php` where `zzzzsys_php`.`sph_system` <> '1' and locate('#TABLE_ID#',`zzzzsys_php`.`sph_php`) > '0' union select concat('SQL:',`zzzzsys_select`.`zzzzsys_select_id`) AS `id`,'nuSQL' AS `code`,`zzzzsys_select`.`sse_description` AS `description` from `zzzzsys_select` where `zzzzsys_select`.`sse_system` is null or `zzzzsys_select`.`sse_system` = '' union select concat('TABLE:',`zzzzsys_table`.`zzzzsys_table_id`) AS `id`,'nuTABLE' AS `code`,`zzzzsys_table`.`zzzzsys_table_id` AS `description` from `zzzzsys_table` ;
+CREATE VIEW `zzzzsys_report_data`  AS  SELECT CONCAT('PROCEDURE:',`zzzzsys_php`.`zzzzsys_php_id`) AS `id`,`zzzzsys_php`.`sph_code` AS `code`,`zzzzsys_php`.`sph_description` AS `description` FROM `zzzzsys_php` WHERE `zzzzsys_php`.`sph_system` <> '1' AND locate('#TABLE_ID#',`zzzzsys_php`.`sph_php`) > '0' UNION SELECT CONCAT('SQL:',`zzzzsys_select`.`zzzzsys_select_id`) AS `id`,'nuSQL' AS `code`,`zzzzsys_select`.`sse_description` AS `description` FROM `zzzzsys_select` WHERE `zzzzsys_select`.`sse_system` IS NULL OR `zzzzsys_select`.`sse_system` = '' UNION SELECT CONCAT('TABLE:',`zzzzsys_table`.`zzzzsys_table_id`) AS `id`,'nuTABLE' AS `code`,`zzzzsys_table`.`zzzzsys_table_id` AS `description` FROM `zzzzsys_table` ;
 
 -- --------------------------------------------------------
 
@@ -4047,7 +4047,7 @@ CREATE VIEW `zzzzsys_report_data`  AS  select concat('PROCEDURE:',`zzzzsys_php`.
 --
 DROP TABLE IF EXISTS `zzzzsys_run_list`;
 
-CREATE VIEW `zzzzsys_run_list`  AS  select `zzzzsys_form`.`zzzzsys_form_id` AS `id`,'Form' AS `run`,`zzzzsys_form`.`sfo_code` AS `code`,`zzzzsys_form`.`sfo_description` AS `description` from `zzzzsys_form` union select `zzzzsys_report`.`zzzzsys_report_id` AS `id`,'Report' AS `run`,`zzzzsys_report`.`sre_code` AS `code`,`zzzzsys_report`.`sre_description` AS `description` from `zzzzsys_report` union select `zzzzsys_php`.`zzzzsys_php_id` AS `id`,'Procedure' AS `run`,`zzzzsys_php`.`sph_code` AS `code`,`zzzzsys_php`.`sph_description` AS `description` from `zzzzsys_php` where `zzzzsys_php`.`sph_system` <> 1 order by `code` ;
+CREATE VIEW `zzzzsys_run_list`  AS  SELECT `zzzzsys_form`.`zzzzsys_form_id` AS `id`,'Form' AS `run`,`zzzzsys_form`.`sfo_code` AS `code`,`zzzzsys_form`.`sfo_description` AS `description` FROM `zzzzsys_form` UNION SELECT `zzzzsys_report`.`zzzzsys_report_id` AS `id`,'Report' AS `run`,`zzzzsys_report`.`sre_code` AS `code`,`zzzzsys_report`.`sre_description` AS `description` FROM `zzzzsys_report` UNION SELECT `zzzzsys_php`.`zzzzsys_php_id` AS `id`,'Procedure' AS `run`,`zzzzsys_php`.`sph_code` AS `code`,`zzzzsys_php`.`sph_description` AS `description` FROM `zzzzsys_php` WHERE `zzzzsys_php`.`sph_system` <> 1 ORDER BY `code` ;
 
 --
 -- Indexes for dumped tables

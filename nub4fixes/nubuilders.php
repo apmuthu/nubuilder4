@@ -44,7 +44,7 @@ function nuBuildFastReport(){
 
 	";
 
-	nuRunQuery($s, Array($i, $c, $d, $g, $t, $f, $j));
+	nuRunQuery($s, array($i, $c, $d, $g, $t, $f, $j));
 
 	$js		= "
 
@@ -196,7 +196,7 @@ function nuBuildFastForm($table, $form_type){
 			$array	  = Array($field, $label, $i * 5, $top, 150, $table, $form_id, $tab_id, $newid, $oldid);
 			nuRunQuery($sql, $array);
 
-			$OT			= nuRunQuery("SELECT * FROM $TT WHERE zzzzsys_object_id = ? ", Array($newid));
+			$OT			= nuRunQuery("SELECT * FROM $TT WHERE zzzzsys_object_id = ? ", array($newid));
 			$top		= $top + db_fetch_object($OT)->sob_all_height + 10;
 
 		}
@@ -217,18 +217,18 @@ function nuBuildFastForm($table, $form_type){
 		$i		  = $r->sob_input_type;
 		$id		 = $r->sob_all_id;
 		$date	   = ($i == 'date' || $i == 'nuDate');
-		$norm	   = ($y == 'input' && $i != 'date' && $i != 'nuDate' && $i != 'nuNumber' && $i != 'number' && $i != 'file');
+		$norm	   = ($y == 'input' && $i != 'date' && $i != 'nuDate' && $i != 'nuNumber' && $i != 'number' && $i != 'file' && $i != 'nuAutoNumber');
 
-		if($y == 'lookup'){						 $a[] = Array('name'=>$id, 'type'=>'id');}
-		if($y == 'select'){						 $a[] = Array('name'=>$id, 'type'=>'varchar');}
-		if($y == 'calc'){						   $a[] = Array('name'=>$id, 'type'=>'decimal');}
-		if($y == 'textarea'){					   $a[] = Array('name'=>$id, 'type'=>'textarea');}
-		if($y == 'input' && $norm){				 $a[] = Array('name'=>$id, 'type'=>'varchar');}
-		if($y == 'input' && $date){				 $a[] = Array('name'=>$id, 'type'=>'date');}
+		if($y == 'lookup'){							$a[] = Array('name'=>$id, 'type'=>'id');}
+		if($y == 'select'){							$a[] = Array('name'=>$id, 'type'=>'varchar');}
+		if($y == 'calc'){							$a[] = Array('name'=>$id, 'type'=>'decimal');}
+		if($y == 'textarea'){						$a[] = Array('name'=>$id, 'type'=>'textarea');}
+		if($y == 'input' && $norm){					$a[] = Array('name'=>$id, 'type'=>'varchar');}
+		if($y == 'input' && $date){					$a[] = Array('name'=>$id, 'type'=>'date');}
 		if($y == 'input' && $i == 'number'){		$a[] = Array('name'=>$id, 'type'=>'int');}
-		if($y == 'input' && $i == 'nuNumber'){	  $a[] = Array('name'=>$id, 'type'=>'decimal');}
-		if($y == 'input' && $i == 'file'){	  	$a[] = Array('name'=>$id, 'type'=>'longtext');}
-
+		if($y == 'input' && $i == 'nuAutoNumber'){	$a[] = Array('name'=>$id, 'type'=>'bigintunsigned');}
+		if($y == 'input' && $i == 'nuNumber'){		$a[] = Array('name'=>$id, 'type'=>'decimal');}
+		if($y == 'input' && $i == 'file'){			$a[] = Array('name'=>$id, 'type'=>'longtext');}
 	}
 
 	if($newT){
@@ -388,13 +388,14 @@ function nuBuildNewTable($tab, $array, $newT){
 		$f = $array[$i]['name'];
 		$t = $array[$i]['type'];
 
-		if($t == 'id'){			$a[] = "$f VARCHAR(25) DEFAULT NULL";}
+		if($t == 'id'){				$a[] = "$f VARCHAR(25) DEFAULT NULL";}
 		if($t == 'varchar'){		$a[] = "$f VARCHAR(1000) DEFAULT NULL";}
-		if($t == 'int'){		$a[] = "$f INT DEFAULT NULL";}
+		if($t == 'int'){			$a[] = "$f INT DEFAULT NULL";}
 		if($t == 'textarea'){		$a[] = "$f TEXT DEFAULT NULL";}
 		if($t == 'decimal'){		$a[] = "$f DECIMAL(12,4) DEFAULT NULL";}
-		if($t == 'date'){		$a[] = "$f DATE DEFAULT NULL";}
+		if($t == 'date'){			$a[] = "$f DATE DEFAULT NULL";}
 		if($t == 'longtext'){		$a[] = "$f LONGTEXT DEFAULT NULL";}
+		if($t == 'bigintunsigned'){	$a[] = "$f BIGINT UNSIGNED DEFAULT NULL";}
 
 	}
 

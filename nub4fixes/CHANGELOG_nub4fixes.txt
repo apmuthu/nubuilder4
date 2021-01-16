@@ -1,3 +1,4 @@
+2021-01-16: Ap.Muthu   nuAutoNumber VARCHAR(1000) => BIGINT unsigned
 2021-01-15: Ap.Muthu   Further split of compound statements, whitespace fixes, long array syntax
 2021-01-15: Ap.Muthu   Plugin check for standalone DB import fixed
 2021-01-14: Ap.Muthu   Backported Zero Width lookup description suppressal

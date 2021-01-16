@@ -148,7 +148,7 @@ INSERT  INTO `zzzzsys_object`(`zzzzsys_object_id`,`sob_all_zzzzsys_form_id`,`sob
 CREATE TABLE `invoice` (
   `invoice_id` varchar(25) NOT NULL,
   `inv_date` date NOT NULL,
-  `inv_number` varchar(1000) NOT NULL,
+  `inv_number` bigint(20) unsigned NOT NULL,
   `inv_customer_id` varchar(25) NOT NULL,
   `inv_total` decimal(12,4) NOT NULL,
   `inv_tax` decimal(12,4) NOT NULL,
@@ -194,7 +194,7 @@ INSERT INTO `item` (`item_id`, `ite_invoice_id`, `ite_product_id`, `ite_price`, 
 ALTER TABLE `item`
   ADD PRIMARY KEY (`item_id`);
 ```
-* [Lookup Prices and Assume default Quantity](./images/LookupPricesDefaultUnits.png) (Units) in the Items subform:
+* [Lookup Prices and Assume default Quantity](./images/LookupPricesDefaultUnits.png) (Units) in the Items subform (AfterBrowse PHP):
 ```php
 $lu = nuLookupRecord();
 
