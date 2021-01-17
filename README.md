@@ -2,7 +2,7 @@
 
 * ***Name:*** nuBuilder 4 - Standalone
 * ***This Fork:*** https://github.com/apmuthu/nubuilder4
-* ***Contributors:*** Steven Copley, Ap.Muthu, smalos
+* ***Contributors:*** Steven Copley, Ap.Muthu, [smalos](https://github.com/smalos]
 * ***Donate link:*** https://www.nubuilder.com/#donate
 * ***License:*** [GPLv3](https://www.gnu.org/licenses/old-licenses/gpl-3.0.html)
 * ***Home Page:*** https://www.nubuilder.com
@@ -19,7 +19,7 @@
 
 ### nuManagement
 * The original Author Steven Copley [has handed over the project](http://nubuilder.blogspot.com/2020/12/) for future development to ***@smalos*** (**kev1n** in the forum) and **Janus** (in the forum).
-* @smalos has [his updated v4.5 fork](https://github.com/smalos/nubuilder4-Dev) and new changes will arise there.
+* @smalos has [his updated v4.5 fork](https://github.com/nuBuilder/nuBuilder-4.5) and new changes will arise there.
 * [Discord Invite](https://discord.com/invite/KbHzgh3EbY) - [discussion channel](https://discord.com/channels/710460059359903804/710465287912292372) for NuBuilder (expects your birthdate!)
 
 ## Description
@@ -106,6 +106,12 @@ die('PHP 5.5+ is required');
 /* Select mysql if your server does not have mysqli */
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 ```
+
+### PHPMailer version
+
+* By default NuBuilder v4 uses PHPMailer 6.0.2 released on 2017-11-02 and the current version in it's branch is 6.2.0 used in NuBuilder v4.5
+* To support older versions of PHP 5 to 7, it is advisable to use [PHPMailer v5.2.28](https://github.com/PHPMailer/PHPMailer/archive/v5.2.28.tar.gz) released on 2020-03-19
+
 ### Language translation stats
 
 ```sql
