@@ -1,3 +1,4 @@
+2021-01-21: Ap.Muthu   Backported French Language corrections
 2021-01-19: Ap.Muthu   Backported Russian unique translation for Font Weight as Вес шрифта
 2021-01-16: Ap.Muthu   Updated Pizza Tutorial Document
 2021-01-16: Ap.Muthu   Breadcrumb for User Home changed from Home to User Home
