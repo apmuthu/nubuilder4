@@ -3513,6 +3513,7 @@ INSERT INTO `zzzzsys_translate` (`zzzzsys_translate_id`, `trl_language`, `trl_en
 ('nu5bad6cb3e8d5fd6','Russian','User Details','Данные пользователя'),
 ('nu5bad6cb3e7428ce','Russian','User Home','Главная пользователя'),
 ('nu5ec114f258aa058','Russian','User Name','Имя пользователя'),
+('nu5ec114f258aa059','Russian','Username','Имя пользователя'),
 ('nu5bad6cb3e75e084','Russian','Users','Пользователи'),
 ('nu5bad6cb3e806f16','Russian','Validation','Проверка'),
 ('nu5ec114f258ab047','Russian','Vertical Label','Вертикальная метка'),
