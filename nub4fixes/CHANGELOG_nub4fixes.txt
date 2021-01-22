@@ -1,3 +1,4 @@
+2021-01-22: Ap.Muthu   Hindi Translation correction
 2021-01-22: Ap.Muthu   Alternate Tamil Translation to lower translation width
 2021-01-21: Ap.Muthu   Alternate Tamil Translation to fit text width on preview buttons
 2021-01-21: Ap.Muthu   Backported French Language corrections

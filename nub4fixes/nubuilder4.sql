@@ -2881,7 +2881,7 @@ INSERT INTO `zzzzsys_translate` (`zzzzsys_translate_id`, `trl_language`, `trl_en
 ('nu5bad6cb3abb93a5','Hindi','Page Footer','पेज फ़ुटर'),
 ('nu5bad6cb3abcd5b6','Hindi','Page Header','पेज हैडर'),
 ('nu5bad6cb3abe0030','Hindi','Paper','कागज़'),
-('nu5bad6cb3aef3136','Hindi','Password','कुंजिका'),
+('nu5bad6cb3aef3136','Hindi','Password','पासवर्ड'),
 ('nu5bad6cb3abf081e','Hindi','Phrase','मुहावरा'),
 ('nu5bad6cb3aef3137','Hindi','Preview Browse Form','प्रीव्यू ब्राउज फॉर्म'),
 ('nu5bad6cb3aef3138','Hindi','Preview Edit Form','पूर्वावलोकन प्रपत्र संपादित करें'),
@@ -2957,7 +2957,7 @@ INSERT INTO `zzzzsys_translate` (`zzzzsys_translate_id`, `trl_language`, `trl_en
 ('nu5bad6cb3aec7d1d','Hindi','Users','उपयोगकर्ताओं'),
 ('nu5bad6cb3aef3154','Hindi','Validation','मान्यकरण'),
 ('nu5bad6cb3aef3155','Hindi','Vertical Label','वर्टिकल लेबल'),
-('nu5bad6cb3aed5379','Hindi','View','राय'),
+('nu5bad6cb3aed5379','Hindi','View','देख'),
 ('nu5bad6cb3aedfbb8','Hindi','Widest','व्यापक'),
 ('nu5bad6cb3aee9643','Hindi','Width','चौड़ाई'),
 ('nu5bad6cb3aef308b','Hindi','Z Index','जेड इंडेक्स');
