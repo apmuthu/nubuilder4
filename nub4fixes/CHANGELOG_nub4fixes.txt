@@ -1,3 +1,4 @@
+2021-01-22: Ap.Muthu   Alternate Tamil Translation to lower translation width
 2021-01-21: Ap.Muthu   Alternate Tamil Translation to fit text width on preview buttons
 2021-01-21: Ap.Muthu   Backported French Language corrections
 2021-01-19: Ap.Muthu   Backported Russian unique translation for Font Weight as Вес шрифта

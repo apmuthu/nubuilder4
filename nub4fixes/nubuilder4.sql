@@ -3783,7 +3783,7 @@ INSERT INTO `zzzzsys_translate` (`zzzzsys_translate_id`, `trl_language`, `trl_en
 ('nu5ec114f258e4f36','Tamil','Print','அச்சிடுக'),
 ('nu5ec114f258e4f37','Tamil','Procedure','செயல்முறை'),
 ('nu5ec114f258e4f38','Tamil','Procedures','செயல்முறைகள்'),
-('nu5ec114f258e4f39','Tamil','Redirect To','இதற்கு திருப்பி விடுங்கள்'),
+('nu5ec114f258e4f39', 'Tamil','Redirect To','திருப்பிவிடும் இடம்'),
 ('nu5ec114f258e4f40','Tamil','Reenter New Password','புதிய கடவுச்சொல்லை<br>மீண்டும் உள்ளிடவும்'),
 ('nu5ec114f258e4f41','Tamil','Refresh','புதுப்பிப்பு'),
 ('nu5ec114f258e4f42','Tamil','Remaining','மீதமுள்ளவை'),
