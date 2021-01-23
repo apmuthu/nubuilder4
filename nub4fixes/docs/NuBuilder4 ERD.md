@@ -9,6 +9,11 @@
 #### Standalone and Settings ERD
 ![Settings ERD](./images/Nubuilder4_Settings_ERD.png)
 
+## Recommended php.ini Settings
+Requires webserver restart when changed.
+* max_input_vars = 5000
+The above is useful when [large number of fields and / or records](https://forums.nubuilder.com/viewtopic.php?f=19&t=10018&p=19549&hilit=increment#p19566) are envisaged
+
 ## set_denied to hide system forms and objects
 ***Setup => set_denied*** can be ticked to hide all NuBuilder's forms and objects. Useful for developers. Needs updated [nucommon.js](https://github.com/apmuthu/nubuilder4/commit/50deab677e2268cc0a970300297f5211a2a1fab9#diff-3be85bba7d935c8a483a53d3409983f33c617c6249f3983239015abb6dc73719)
 ![set_denied Setting](./images/set_denied_screenshot.png)
@@ -35,7 +40,7 @@ INSERT INTO `zzzzsys_object` (`zzzzsys_object_id`,`sob_all_zzzzsys_form_id`,`sob
 
 ### Clone a form or report from one development environment to another
 * There is no direct way but you can copy the corresponding rows from source to destination.
-* Data is mainly stored in these tables:
+* User Application Design Data is mainly stored in these tables:
 ````
 zzzzsys_object
 zzzzsys_form
