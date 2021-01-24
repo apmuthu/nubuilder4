@@ -1,3 +1,4 @@
+2021-01-24: Ap.Muthu   zzzzsys_select custom code whitespace: nowrap removed for linebreaks in Firefox
 2021-01-24: Ap.Muthu   Backported disable Arrange Objects on no objects, disable Change Login in subforms, whitespaces
 2021-01-24: Ap.Muthu   Updated Documentation
 2021-01-23: Ap.Muthu   Russian Translation complete
