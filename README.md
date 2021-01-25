@@ -10,6 +10,7 @@
 * ***Wiki:*** https://wiki.nubuilder.net/
 * ***Github Wiki:*** https://github.com/smalos/nuBuilder4-Code-Library/wiki/Installing-nuBuilder
 * ***Forum:*** https://forums.nubuilder.com/
+* ***Blogs:*** https://nubuilder.blogspot.com/ | https://nubuilderforte.blogspot.com/
 
 * ***Requires PHP:*** 5.4 (phpMyAdmin that is shipped with nuBuilder will require PHP 7.1+)
 * ***Requires MySQL:*** 5.5. (or MariaDB)
