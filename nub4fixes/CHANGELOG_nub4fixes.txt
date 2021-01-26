@@ -1,3 +1,4 @@
+2021-01-26: Ap.Muthu   Fixes for older PHP in Upstream (nuBuilder v4.5) PHPMailer 6.2.0
 2021-01-26: nc07       Hindi language fixes
 2021-01-25: Ap.Muthu   Upstream German fixes, trailing space in Upload File instances in sql removed
 2021-01-24: Ap.Muthu   zzzzsys_select custom code whitespace: nowrap removed for linebreaks in Firefox
