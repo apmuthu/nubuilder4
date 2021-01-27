@@ -134,7 +134,7 @@ function nuBuildForm(f){
 		obj0.focus();
 	}
 
-    if(f.record_id == '-2'){
+	if(f.record_id == '-2'){			// Arrange Objects
         nuCreateDragOptionsBox(f);
 	}else{
 		nuAddJavascript(f);
@@ -2544,8 +2544,6 @@ function nuSearchAction(S, F){
 	window.nuFORM.setProperty('search', s);
 	window.nuFORM.setProperty('filter', f);
 
-//	if(arguments.length == 0 && arguments.callee.caller !== 'nuGetPage'){
-
 	if(arguments.length === 0 && c != 'nuGetPage'){					//--kev1n
 		window.nuFORM.setProperty('page_number', 0);
 	}
@@ -2806,16 +2804,16 @@ function nuHighlightSearch(){
 
 		if(exclude.indexOf(col) == -1){
 
-			var p = String($(this).html());
+			for(var i = 0 ; i < search.length ; i++){
 
-			search = String(search).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-			var re = new RegExp(search, 'gi');
-			var m;
+				search[i] = search[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+				var re = new RegExp(search[i], 'gi');
 
-			if (search.length > 0)
-				$(this).html(p.replace(re, `<span class="nuBrowseSearch" >$&</span>`));
-			else $(this).html(p);
+				if (search[i].length > 0)
+					$(this).html($(this).html().replace(re, `<span class="nuBrowseSearch" >$&</span>`));
+				else $(this).html($(this).html());
 
+			}
 		}
 
 	});
@@ -3396,11 +3394,8 @@ function nuMessage(o){
 	}
 
 	widest		= Math.min(widest + 200, 1000);
-//
-//	var l		= ( $(window.top.document).width() - widest) / 2;
 	var w = $(this).innerWidth();
 	var l = Math.max(0, $(this).scrollLeft() + ( w - widest) / 2);
-//	$('body', par).append("<div id='nuMessageDiv' class='nuMessage' style='position:fixed; overflow:hidden;width:" + widest + "px;top:55px; left:10px' ></div>")
 	$('body', par).append("<div id='nuMessageDiv' class='nuMessage' style='overflow:hidden;width:" + widest + "px;left:" + l + "px' ></div>")
 
 	for(var i = 0 ; i < o.length ; i++){

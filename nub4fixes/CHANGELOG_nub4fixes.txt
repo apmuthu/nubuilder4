@@ -1,4 +1,5 @@
-2021-01-27: Ap.Muthu   Case insensitive search fixed not to mangle data case
+2021-01-27: smalos     Search fixed for multiple words separated by spaces
+2021-01-27: smalos     Case insensitive search fixed not to mangle data case
 2021-01-26: Ap.Muthu   Fixes for older PHP in Upstream (nuBuilder v4.5) PHPMailer 6.2.0
 2021-01-26: nc07       Hindi language fixes
 2021-01-25: Ap.Muthu   Upstream German fixes, trailing space in Upload File instances in sql removed
