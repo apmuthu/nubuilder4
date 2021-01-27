@@ -491,9 +491,9 @@ function nuRecordProperties(w, p, l){
 		$('#' + de)
 		.prop('checked', w.record_id == -1)
 		.attr('data-nu-checkbox', w.deletable == '0'?'':sf)
-		.css({'top'			: 3, 
-			'left'			: Number(l) + 2, 
-			'position' 		: 'absolute', 
+		.css({'top'			: 3,
+			'left'			: Number(l) + 2,
+			'position' 		: 'absolute',
 			'visibility'	: 'visible'})
 
 		if(w.deletable == '0'){				//-- Fike
@@ -1113,7 +1113,7 @@ function nuSELECT(w, i, l, p, prop){
 	.attr('data-nu-prefix', p);
 
 	if(prop.objects[i].multiple == 1){
-	
+
 		$('#' + id).attr('multiple', 'multiple');
 
 	}
@@ -1658,7 +1658,7 @@ function nuAddBreadcrumb(i){
 
 function nuMainForm(){
 
-	var result = false; 
+	var result = false;
 
 	if(opener){
 
@@ -1709,7 +1709,7 @@ function nuAddEditTabs(p, w){
 
 		if (w.browse_columns[i].width != '0') {
 			p = i;
-		} 
+		}
 
 	}
 
@@ -1831,12 +1831,12 @@ function nuOptions(p, f, t, access){
 			$('#' + id)
 			.attr('title', 'Options')
 			.attr('onclick', 'nuGetOptionsList("' + f + '", this, "' + p + '", "' + access + '", "' + t + '")')
-			.css({'top'			: 4, 
-			'left' 				: 2, 
-			'position' 			: 'relative', 
-			'z-index' 			: 1, 
-			'width' 			: 15, 
-			'height' 			: 15, 
+			.css({'top'			: 4,
+			'left' 				: 2,
+			'position' 			: 'relative',
+			'z-index' 			: 1,
+			'width' 			: 15,
+			'height' 			: 15,
 			'font-size'			: 20,
 			'text-align'		: 'center',
 			'border-style' 		: 'none'})
@@ -1855,10 +1855,10 @@ function nuOptions(p, f, t, access){
 			$('#' + id)
 			.attr('title', 'Options')
 			.attr('onclick', 'nuGetOptionsList("' + f + '", this, "' + p + '", "' + access + '", "' + t + '")')
-			.css({'top'			: 5, 
-			'right' 			: 5, 
-			'width' 			: 15, 
-			'height' 			: 15, 
+			.css({'top'			: 5,
+			'right' 			: 5,
+			'width' 			: 15,
+			'height' 			: 15,
 			'font-size'			: 20,
 			'padding-right'		: 10,
 			'text-align'		: 'right',
@@ -2127,7 +2127,7 @@ function nuSelectTab(tab){
 
 	}
 
-	// Treating nuIframes and nuHtml differently as anything that needs to calculate size can't be display: none when the page loads 
+	// Treating nuIframes and nuHtml differently as anything that needs to calculate size can't be display: none when the page loads
 	$("[data-nu-form='" + form + "']:not('.nuIframe, .nuHtml')").hide();
 	$(".nuIframe[data-nu-form='" + form + "']").css('visibility','hidden');
 	$(".nuHtml[data-nu-form='" + form + "']").css('visibility','hidden');
@@ -2345,7 +2345,6 @@ function nuBrowseTable(){
 
 						$("[data-nu-row='" + rw + "']").addClass('nuSelectBrowse');
 						$("[data-nu-row='" + rw + "']").removeClass('nuBrowseTable');
-						 
 
 					}, function() {
 
@@ -2670,7 +2669,7 @@ function nuPopulateLookup(fm, target){
 		if($('#' + id).attr('type') == 'checkbox'){
 
 			if(f[i][1] == '1'){
-				$('#' + id).prop('checked', true); 
+				$('#' + id).prop('checked', true);
 			}else{
 				$('#' + id).prop('checked', false);
 			}
@@ -2792,6 +2791,8 @@ function nuValidLookupId(id, fld){
 function nuHighlightSearch(){
 
 	var bc		= window.nuFORM.getCurrent();
+	if (bc.search.length == 0) return;
+
 	var exclude	= bc.nosearch_columns;
 
 	var search	= String(bc.search)
@@ -2801,22 +2802,19 @@ function nuHighlightSearch(){
 
 	$('.nuBrowseTable').each(function(index){
 
-//		var col	= Number(String($(this).attr('id')).substr(11));
 		var col	= Number(String($(this).attr('data-nu-column')));
 
 		if(exclude.indexOf(col) == -1){
 
-			var h	= String($(this).html());
+			var p = String($(this).html());
 
-			for(var i = 0 ; i < search.length ; i++){
-				h	= h.replaceAll(search[i],'`````' + search[i] + '````', true);
-			}
+			search = String(search).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+			var re = new RegExp(search, 'gi');
+			var m;
 
-//			h 		= h.replaceAll('`````', '<span class="nuBrowseSearch" onclick="this.offsetParent.onclick()">', true);
-			h       = h.replaceAll('`````', '<span class="nuBrowseSearch" >', true);
-			h 		= h.replaceAll('````', '</span>', true);
-
-			$(this).html(h);
+			if (search.length > 0)
+				$(this).html(p.replace(re, `<span class="nuBrowseSearch" >$&</span>`));
+			else $(this).html(p);
 
 		}
 
@@ -2893,7 +2891,7 @@ function nuChangeFile(e){
 	var r		= new FileReader();
 
 	r.onload 	= function(e) {
-	
+
 		var f	= btoa(r.result);
 		var o	= {'file' : f, 'name' : a.name, 'size' : a.size, 'type' : a.type};
 		var j	= JSON.stringify(o);
@@ -3147,7 +3145,7 @@ function nuSavingMessage(){
 
 	$('.nuActionButton').show();
 
-} 
+}
 
 function nuAbortSave(){
 
