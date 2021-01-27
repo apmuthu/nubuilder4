@@ -1377,7 +1377,6 @@ function nuRecordHolderObject(t){
 	while ($('#' + this.form + nuPad3(this.intNo + c) + h).length != 0){c++;}
 
 	this.rows	= this.intNo + c;
-//	this.top	= parseInt(p.css('height')) * this.rows + this.rows;  //--  + this.rows adds the border height
 	this.top	= (parseInt(p.css('height')+1) * this.rows);  //--  + this.rows adds the border height
 	var s		= this.form  + nuPad3(this.intNo + 1) + h;
 	this.last	= $('#' + s).length == 0;
@@ -2544,7 +2543,9 @@ function nuSearchAction(S, F){
 	window.nuFORM.setProperty('search', s);
 	window.nuFORM.setProperty('filter', f);
 
-	if(arguments.length === 0 && c != 'nuGetPage'){					//--kev1n
+//	if(arguments.length == 0 && arguments.callee.caller !== 'nuGetPage'){
+
+	if(arguments.length === 0 && c != 'nuGetPage'){
 		window.nuFORM.setProperty('page_number', 0);
 	}
 	if(arguments.length >= 1){
@@ -2806,12 +2807,7 @@ function nuHighlightSearch(){
 
 			for(var i = 0 ; i < search.length ; i++){
 
-				search[i] = search[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-				var re = new RegExp(search[i], 'gi');
-
-				if (search[i].length > 0)
-					$(this).html($(this).html().replace(re, `<span class="nuBrowseSearch" >$&</span>`));
-				else $(this).html($(this).html());
+				$(this).nuHighlight(search[i]);
 
 			}
 		}
@@ -3394,8 +3390,11 @@ function nuMessage(o){
 	}
 
 	widest		= Math.min(widest + 200, 1000);
+//
+//	var l		= ( $(window.top.document).width() - widest) / 2;
 	var w = $(this).innerWidth();
 	var l = Math.max(0, $(this).scrollLeft() + ( w - widest) / 2);
+//	$('body', par).append("<div id='nuMessageDiv' class='nuMessage' style='position:fixed; overflow:hidden;width:" + widest + "px;top:55px; left:10px' ></div>")
 	$('body', par).append("<div id='nuMessageDiv' class='nuMessage' style='overflow:hidden;width:" + widest + "px;left:" + l + "px' ></div>")
 
 	for(var i = 0 ; i < o.length ; i++){
