@@ -1,4 +1,5 @@
-2021-01-27: smalos     Removed commented out nuSelectBrowse() function that had been redefined
+2021-01-27: smalos     Backport - Reduce size of ace library
+2021-01-27: smalos     Backport - Removed commented out nuSelectBrowse() function that had been redefined
 2021-01-27: smalos     Improved search function with special characters escaping
 2021-01-27: smalos     Search fixed for multiple words separated by spaces
 2021-01-27: smalos     Case insensitive search fixed not to mangle data case

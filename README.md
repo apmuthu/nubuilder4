@@ -70,9 +70,10 @@ nuBuilder is a enterprise level application builder but with no limitations on d
 
 1. Upload the unzipped nuBuilder files to your webroot
 1. To use the fixes in this fork, overwrite the core folder files with those in the nub4fixes folder
+1. Delete the `ace` folder and recreate the reduced fileset by unzipping the `docs/ace_reduced.zip`
 1. Create a database (e.g. `nubuilder4`)
-1. Edit `nuconfig.php` to set your database credentials and globeadmin credentials
-1. [Detailed installation instructions:](https://github.com/smalos/nuBuilder4-Code-Library/wiki/Installing-nuBuilder)
+1. Edit `nuconfig.php` to set your *database* and *globeadmin* credentials
+1. [Detailed installation instructions:](https://github.com/smalos/nuBuilder4-Code-Library/wiki/Installing-nuBuilder) for Upstream codebase
 
 ## Changelog
 * [core CHANGELOG](https://github.com/apmuthu/nubuilder4/blob/master/core/CHANGELOG.txt)

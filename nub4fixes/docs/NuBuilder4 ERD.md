@@ -103,3 +103,6 @@ WHERE lang.trl_english IS NULL
 GROUP BY a.trl_english;
 ```
 
+### ace Library size reduction
+* Replace the ace library folder with the contents of [ace](./ace_reduced.zip)
+
