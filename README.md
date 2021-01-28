@@ -42,6 +42,8 @@ nuBuilder uses either ***MySQL*** or ***Maria DB*** databases and gives its user
 ### Alternative to MS-Access
 nuBuilder provides an ideal replacement/upgrade from **MS-Access**. It won't get slower and slower as you add more records, unlike **MS-Access**.
 
+Import your MS Access tables into [Acces2NuBuilder](https://web.archive.org/web/20150301115345/https://www.nubuilder.net/A2N.zip) and [cached here](./nb4fixes/docs/A2N.zip) (2014-03-06) and get them into nuBuilder.
+
 ### Easy To Learn For End Users
 nuBuilder uses an Uncluttered Interface which makes it very easy for new users to find there way around.
 
