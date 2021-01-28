@@ -59,6 +59,7 @@ nuRunQuery("DROP TABLE IF EXISTS $TABLE_ID");
 nuRunQuery("DROP TABLE IF EXISTS $TABLE_ID".'_nu_summary');
 
 if($get){
+	ob_end_clean();
 	$PDF->Output('nureport.pdf', 'I');
 }else{
 	nuSavePDF($PDF);
