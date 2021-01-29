@@ -154,9 +154,9 @@ INSERT INTO `zzzzsys_browse` (`zzzzsys_browse_id`, `sbr_zzzzsys_form_id`, `sbr_t
 ('nu5bad6cb3777c5ee', 'nucalcobjects', 'Object', 'thechild', '1', '', 20, 0),
 ('nu5bad6cb377899bf', 'nuformat', 'Type', 'srm_type', 'l', '', 20, 150),
 ('nu5bad6cb3779593d', 'nuformat', 'Format', 'srm_format', 'l', '', 10, 300),
-('nu5bad6cb377a01b0', 'nuobject', 'Input Type', 'sob_input_type', 'l', NULL, 20, 100),
-('nu5bad6cb377a9e19', 'nubrowse', 'join', 'sbr_zzzzsys_form_id', '1', NULL, 10, 0),
-('nu5bad6cb377b6a58', 'nuform', 'Table', 'sfo_table', 'l', NULL, 40, 200),
+('nu5bad6cb377a01b0', 'nuobject', 'Input Type', 'sob_input_type', 'l', '', 20, 100),
+('nu5bad6cb377a9e19', 'nubrowse', 'join', 'sbr_zzzzsys_form_id', '1', '', 10, 0),
+('nu5bad6cb377b6a58', 'nuform', 'Table', 'sfo_table', 'l', '', 40, 200),
 ('nu5bad6cb377d2981', 'nufile', 'Description', 'sfi_description', 'l', '', 20, 200),
 ('nu5bad6cb3781d394', 'nufile', 'JSON', 'sfi_json', 'l', '', 30, 0),
 ('nu5bad6cb3783715c', 'nufile', 'Image', '\"\"', 'l', '', 40, 150),
@@ -177,10 +177,10 @@ INSERT INTO `zzzzsys_browse` (`zzzzsys_browse_id`, `sbr_zzzzsys_form_id`, `sbr_t
 ('nu5bad6cb374ae1fc', 'nutablookup', 'Form', 'sfo_description', 'l', '', 20, 150),
 ('nu5bad6cb374b7c3b', 'nutablookup', 'Code', 'sfo_code', 'l', '', 30, 100),
 ('nu5bad6cb374c102f', 'nutablookup', 'Type', 'sfo_type', 'l', '', 40, 100),
-('nu5bad6cb3747d41c', 'nuuser', 'Username', 'sus_login_name', 'l', NULL, 20, 150),
-('nu5bad6cb3746cc1b', 'nuuser', 'Language', 'sus_language', 'l', NULL, 50, 150),
-('5f91f6a0bb1989e', '5f91f6a0a7a30ed', 'Code', 'sal_code', 'l', '', 10, 100),
-('5f91f6a0bdf121c', '5f91f6a0a7a30ed', 'Description', 'sal_description', 'l', '', 20, 300);
+('nu5bad6cb3747d41c', 'nuuser', 'Username', 'sus_login_name', 'l', '', 20, 150),
+('nu5bad6cb3746cc1b', 'nuuser', 'Language', 'sus_language', 'l', '', 50, 150),
+('nu5f91f6a0bb1989e', 'nuaccess', 'Code', 'sal_code', 'l', '', 10, 100),
+('nu5f91f6a0bdf121c', 'nuaccess', 'Description', 'sal_description', 'l', '', 20, 300);
 
 -- --------------------------------------------------------
 
@@ -708,10 +708,10 @@ INSERT INTO `zzzzsys_object` (`zzzzsys_object_id`, `sob_all_zzzzsys_form_id`, `s
 ('nu5bd10c9148543a6', 'nuaccess', 'zzzzsys_access', 'input', 'sal_description', 'Description', 'nu5bad6cb36ac903f', 40, 125, 161, 200, 18, '1', 'left', '1', '0', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', NULL, '', '', '', '', '', '', '', 0, '', 'text', '', '', '', '', '', '', '', ''),
 ('5bef30c4f282d05', 'nufile', 'zzzzsys_file', 'html', 'corner', ' ', 'nu5bad6cb3719774c', 50, 514, 520, 14, 18, '1', 'left', '0', '0', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', NULL, '', '', '', '', '', '', '', 0, '', 'text', '', '<div></div>', '', '', '', '', '', ''),
 ('5dcf3068d69ee0a', 'nuphp', 'zzzzsys_php', 'input', 'sph_hide', 'Hide', 'nu5bad6cb36b27343', 50, 0, 0, 100, 18, '1', 'left', '0', '2', '', '', '', '', '', '', '', '', 'browse|Browse|edit|Edit|browseedit|Browse and Edit|criteria|Criteria or Home|procedure|Procedure|report|Report', '', '', '', NULL, '', '', NULL, '', '', '', '', '', '', '', 0, '', 'text', '', '', '', '', '', '', '', ''),
-('5f711b9351ae752', 'nucsvtransfer', '', 'select', 'csv_transfer', 'Action', '5f711b9343afdbd', 10, 109, 80, 150, 18, '1', 'left', '0', '0', '', '', '', '', '', '', '', '0', 'export|Export to CSV File|import|Import from CSV File', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', ''),
-('5f711b9352a6c59', 'nucsvtransfer', '', 'input', 'csv_from', '_________________________', '5f711b9343afdbd', 20, 81, 392, 300, 18, '1', 'left', '0', '0', '', '', '', '', '', '', '', '0', '0|No|1|Yes', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', 'text', '[1,2,3,4]', '', '', '', '', '', '', ''),
-('5f711b9353c3c52', 'nucsvtransfer', '', 'select', 'csv_delimiter', 'Delimiter', '5f711b9343afdbd', 30, 109, 392, 100, 18, '1', 'center', '1', '0', '', '', '', '', '', '', '', '0', '44|Comma|9|Tab|59|Semicolon', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', ''),
-('5f711b9354c1105', 'nucsvtransfer', '', 'input', 'csv_to', '_________________________', '5f711b9343afdbd', 40, 137, 392, 300, 20, '1', 'left', '0', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', 'text', '', '', '', '', '', '', '', ''),
+('5f711b9351ae752', 'nucsvtransfer', '', 'select', 'csv_transfer', 'Action', 'nu5f711b9343afdbd', 10, 109, 80, 150, 18, '1', 'left', '0', '0', '', '', '', '', '', '', '', '0', 'export|Export to CSV File|import|Import from CSV File', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', ''),
+('5f711b9352a6c59', 'nucsvtransfer', '', 'input', 'csv_from', '_________________________', 'nu5f711b9343afdbd', 20, 81, 392, 300, 18, '1', 'left', '0', '0', '', '', '', '', '', '', '', '0', '0|No|1|Yes', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', 'text', '[1,2,3,4]', '', '', '', '', '', '', ''),
+('5f711b9353c3c52', 'nucsvtransfer', '', 'select', 'csv_delimiter', 'Delimiter', 'nu5f711b9343afdbd', 30, 109, 392, 100, 18, '1', 'center', '1', '0', '', '', '', '', '', '', '', '0', '44|Comma|9|Tab|59|Semicolon', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', ''),
+('5f711b9354c1105', 'nucsvtransfer', '', 'input', 'csv_to', '_________________________', 'nu5f711b9343afdbd', 40, 137, 392, 300, 20, '1', 'left', '0', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '', 'text', '', '', '', '', '', '', '', ''),
 ('5f712364d1b0afb', 'nuhome', '', 'run', 'run_csvtransfer', 'CSV Transfer', 'nu5bad6cb36efb50c', 190, 99, 733, 195, 45, '1', 'center', '1', '0', '', '', 'nucsvtransfer', '', 'b', '-1', '', '', '', '', '', '', NULL, '', '', NULL, '', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', ''),
 ('5fab2fb6e66f19b', 'nuformat', 'zzzzsys_format', 'input', 'places', 'Places', 'nu5bad6cb36fcbc18', 70, 136, 562, 52, 30, '1', 'left', '0', '0', '', '', '', '', '', '', '', '', 'browse|Browse|edit|Edit|browseedit|Browse and Edit|criteria|Criteria or Home|procedure|Procedure|report|Report', '', '', '', NULL, '', '', NULL, '', '', '', '', '', '', '', 0, '', 'nuScroll', '[\'0\', \'1\', \'2\', \'3\', \'4\']', '', '', '', '', '', '', '');
 
@@ -962,11 +962,11 @@ INSERT INTO `zzzzsys_tab` (`zzzzsys_tab_id`, `syt_zzzzsys_form_id`, `syt_title`,
 ('nufastforms', 'nuuserhome', 'Fast Forms', -1, NULL),
 ('nu5bad6cb37434d3a', 'nulaunchform', 'Forms', 10, ''),
 ('nu5bad6cb374482e8', 'nutablookup', 'Tabs', 10, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/Forms#Tabs_.28Subform.29\');'),
-('5f711b9343afdbd', 'nucsvtransfer', 'Transfer', 10, 'window.open(\'https://wiki.nubuilder.net/nubuilderforte/index.php/CSV_Transfer\');'),
-('5f91f6a0ab888d8', '5f91f6a0a7a30ed', 'User', 10, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');'),
-('5f91f6a0aeb5f94', '5f91f6a0a7a30ed', 'Forms', 20, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');'),
-('5f91f6a0b172777', '5f91f6a0a7a30ed', 'Procedures', 30, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');'),
-('5f91f6a0b476113', '5f91f6a0a7a30ed', 'Reports', 40, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');');
+('nu5f711b9343afdbd', 'nucsvtransfer', 'Transfer', 10, 'window.open(\'https://wiki.nubuilder.net/nubuilderforte/index.php/CSV_Transfer\');'),
+('nu5f91f6a0ab888d8', 'nuaccess', 'User', 10, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');'),
+('nu5f91f6a0aeb5f94', 'nuaccess', 'Forms', 20, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');'),
+('nu5f91f6a0b172777', 'nuaccess', 'Procedures', 30, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');'),
+('nu5f91f6a0b476113', 'nuaccess', 'Reports', 40, 'window.open(\'http://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level\');');
 
 -- --------------------------------------------------------
 
