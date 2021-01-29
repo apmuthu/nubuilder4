@@ -84,6 +84,8 @@ function nuGetFormObject($F, $R, $OBJS){
 	$tabs 			= nuBuildTabList($F);
 	$f				= nuGetEditForm($F, $R);
 	$f->form_id		= $F;
+
+	if ($R == '' && $f->form_type == 'launch') $R = '-1';
 	$f->record_id	= $R;
 
 	if($f->table == ''){
