@@ -1,4 +1,5 @@
 <?php	
+	$nb_path = __DIR__;
 
 	require_once('nuchoosesetup.php');
 	require_once('nuindexlibs.php');
@@ -15,6 +16,11 @@
 
 	require_once('nusystemupdatelibs.php');
 	nuMigrateSQL();
+
+	if ( !isset($_SESSION['nubuilder_session_data']['NB_PATH']) || $_SESSION['nubuilder_session_data']['NB_PATH'] != $nb_path ) {
+		nuLoadNewSession();
+	}
+
 ?>
 <!DOCTYPE html>
 <html id="nuhtml" onclick="nuClick(event)">

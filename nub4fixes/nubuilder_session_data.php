@@ -3,22 +3,23 @@
 class nubuilder_session_data {
 
 	var $nubuilder		= array(
+	'NB_PATH'				=> __DIR__,
 	'PLUGIN'				=> false,
-	'GLOBEADMIN'         	=> false,
+	'GLOBEADMIN'			=> false,
 	'GLOBEADMIN_NAME'		=> '',
-	'GLOBEADMIN_PASS'    	=> '',
-	'USER_LOGIN'         	=> '',
-	'USER_PASS'          	=> '',
-	'USER_EMAIL'         	=> '',
+	'GLOBEADMIN_PASS'		=> '',
+	'USER_LOGIN'			=> '',
+	'USER_PASS'				=> '',
+	'USER_EMAIL'			=> '',
 	'USER_DISPLAY_NAME' 	=> '',
-	'USER_ROLES'         	=> '',
-	'DB_NAME'            	=> '',
-	'DB_USER'            	=> '',
-	'DB_PASSWORD'        	=> '',
-	'DB_HOST'            	=> '',
-	'DB_CHARSET'         	=> '',
-	'NU_SITE_URL'        	=> '',
-	'WP_ADMIN_URL'       	=> '',
+	'USER_ROLES'			=> '',
+	'DB_NAME'				=> '',
+	'DB_USER'				=> '',
+	'DB_PASSWORD'			=> '',
+	'DB_HOST'				=> '',
+	'DB_CHARSET'			=> '',
+	'NU_SITE_URL'			=> '',
+	'WP_ADMIN_URL'			=> '',
 	'IS_DEMO'				=> false,
 	'WP_ROLES'				=> '',
 	'WP_SITE_URL'			=> '',
@@ -60,7 +61,7 @@ class nubuilder_session_data {
 		$this->nubuilder['WP_ADMIN_URL']		= $wpdata->WP_ADMIN_URL;
 		$this->nubuilder['IS_DEMO']				= false;
 		$this->nubuilder['WP_ROLES']			= $wpdata->WP_ROLES;
-		$this->nubuilder['WP_SITE_URL']       	= $wpdata->WP_SITE_URL;
+		$this->nubuilder['WP_SITE_URL']			= $wpdata->WP_SITE_URL;
 		$this->nubuilder['JQ_PATH']				= '../../../wp-includes/js/jquery/jquery.js';
 		$this->nubuilder['WP_BLOG_CHARSET']		= $wpdata->WP_BLOG_CHARSET;
 	}

@@ -1,3 +1,4 @@
+2021-02-01: Ap.Muthu   Added Multi nuBuilder operation from same browser
 2021-02-01: Ap.Muthu   Only whitespace fixes for nubuilder_session_data.php
 2021-02-01: Ap.Muthu   Cloned nubuilder_session_data.php for multi nuBuilder feature
 2021-02-01: Ap.Muthu   Check for variable existence before check for value
