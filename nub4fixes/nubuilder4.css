@@ -10,21 +10,21 @@
 .nu_subform                  {background-color : #fa9b96 !important}
 .nu_run                      {background-color : #cbc287 !important}
 .nu_textarea                 {background-color : #babedb !important}
-.nu_select                   {background-color : #caa5f6 !important}   
-.nu_calc                     {background-color : #B6B6B4 !important}   
+.nu_select                   {background-color : #caa5f6 !important}
+.nu_calc                     {background-color : #B6B6B4 !important}
 
 .nu_browseedit               {background-color : #a0a7d6 !important}
 .nu_edit                     {background-color : #68c994 !important}
 .nu_browse     	             {background-color : #cbc287 !important}
-.nu_launch                   {background-color : #dd6eb3 !important}   
-.nu_subform                  {background-color : #fa9b96 !important}   
+.nu_launch                   {background-color : #dd6eb3 !important}
+.nu_subform                  {background-color : #fa9b96 !important}
 
-.nu_Form                     {background-color : #FABA74 !important}   
-.nu_Report                   {background-color : #62D3FF !important}   
-.nu_Procedure                {background-color : #9FD275 !important}   
+.nu_Form                     {background-color : #FABA74 !important}
+.nu_Report                   {background-color : #62D3FF !important}
+.nu_Procedure                {background-color : #9FD275 !important}
 
 
-.input_file { 
+.input_file {
    background-color : #ffe0b7;
 }
 
@@ -83,13 +83,13 @@ li {
 }
 
 label {
-  text-align: right; 
+  text-align: right;
   position: absolute
 }
 
 iframe {
   padding: 0px;
-  margin: 0px;  
+  margin: 0px;
   border-style: none;
 }
 
@@ -275,15 +275,15 @@ input[type=range]::-webkit-slider-runnable-track {
    -moz-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
    box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
    font-size:12px;
-   width: 150px; 
+   width: 150px;
    height: 150px;
-   right: 5px; 
-   position: absolute; 
+   right: 5px;
+   position: absolute;
    text-align: center;
    border-style: none;
    display: inline-block;
    z-index: 5000;
-   
+
 }
 
 .nuOptionsBox ul p {
@@ -427,7 +427,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .nuBuilderLink {
 	text-decoration-line: none;
-	color: #606060; 
+	color: #606060;
 }
 
 
@@ -460,12 +460,12 @@ input[type=range]::-webkit-slider-runnable-track {
   color: #959595;	
 }
 
-.nuBlank{ 
+.nuBlank{
     font-weight:bold;
 }
 
 
-.nuDuplicate{ 
+.nuDuplicate{
     font-style:italic;
     font-weight:900;
 }
@@ -788,16 +788,16 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .nuDragArea {
 	position:absolute;
-	top:0px; 
-	left: 0px; 
-	border-style:solid; 
-	border-width:1px; 
-	border-color:black; 
-	-webkit-user-select:none; 
-	-moz-user-select:none; 
-	overflow:visible; 
+	top:0px;
+	left: 0px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	overflow:visible;
 	background-color:white;
-	background-image: url("graphics/grid.png"); 
+	background-image: url("graphics/grid.png");
 	z-index: 1;
 }
 
@@ -861,12 +861,12 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #dialogTitle {
-	cursor: pointer; 
+	cursor: pointer;
 }
 
 .nuDragToolbar {
-	cursor: pointer; 
-	list-style-type: none; 
+	cursor: pointer;
+	list-style-type: none;
 	text-align: center;
 	padding-top:4px;
 	font-family: Helvetica;
@@ -874,7 +874,7 @@ input[type=range]::-webkit-slider-runnable-track {
 	z-index: 1000;
 }
 .nuToolbar {
-	cursor: pointer; 
+	cursor: pointer;
 	text-align: center;
 	display: inline-block;
 	width:150px;
@@ -886,11 +886,11 @@ input[type=range]::-webkit-slider-runnable-track {
 	color:red;
 }
 
-.wordwrap { 
-   white-space: pre-wrap;      /* CSS3 */   
-   white-space: -moz-pre-wrap; /* Firefox */    
-   white-space: -pre-wrap;     /* Opera <7 */   
-   white-space: -o-pre-wrap;   /* Opera 7 */    
+.wordwrap {
+   white-space: pre-wrap;      /* CSS3 */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -pre-wrap;     /* Opera <7 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
    word-wrap: break-word;      /* IE */
 }
 
@@ -979,7 +979,7 @@ input[type=range]::-webkit-slider-runnable-track {
 	border-color: red !important;
 }
 
-.nuMust:after{ 
+.nuMust:after{
     content: " *";
     color:#f00;
 }
