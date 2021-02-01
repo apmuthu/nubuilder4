@@ -8,10 +8,10 @@
 		nuStandaloneImportNewDB();
 	}
 
-	if ( $_SESSION['nubuilder_session_data']['PLUGIN'] && !isset($_SESSION['nubuilder_session_data']['SESSION_ID']) ) {
-                require_once('nuwordpresssetuplibs.php');
+	if ( isset($_SESSION['nubuilder_session_data']['PLUGIN']) && $_SESSION['nubuilder_session_data']['PLUGIN'] && !isset($_SESSION['nubuilder_session_data']['SESSION_ID']) ) {
+		require_once('nuwordpresssetuplibs.php');
 		nuCheckWPUser();
-        }
+	}
 
 	require_once('nusystemupdatelibs.php');
 	nuMigrateSQL();
