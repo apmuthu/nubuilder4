@@ -106,3 +106,8 @@ GROUP BY a.trl_english;
 ### ace Library size reduction
 * Replace the ace library folder with the contents of [ace](./ace_reduced.zip)
 
+### Multi install feature and caveats
+
+* [Forum Post](https://forums.nubuilder.com/viewtopic.php?f=19&t=10799&p=22925#p22925)
+* [Now allows one install at a time](https://github.com/apmuthu/nubuilder4/commit/55cac0b9beca50e225df02047b07110c00202ceb) from being accessed even without logging out from another install in a single window's single tab
+* Subdomain / domain is the best way to simultaneously access different installs from the same server.
