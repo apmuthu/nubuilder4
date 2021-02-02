@@ -1,3 +1,4 @@
+2021-02-01: smalos     [Fixed] Duplicate property 'height'
 2021-02-01: Ap.Muthu   Updated docs with Multi install access caveats
 2021-02-01: Ap.Muthu   css .nuScroll - bg grey to white avoids disabled FastForm Table field ambiguity
 2021-02-01: Ap.Muthu   Only whitespace fixes in nubuilder4.css

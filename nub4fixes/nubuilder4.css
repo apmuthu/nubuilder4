@@ -472,7 +472,6 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .nuBrowseTitle {
   background-color: white;
-  height: 55px;
   border-style: none;
   position:absolute;
   top:3px;
