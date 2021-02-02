@@ -43,7 +43,7 @@
 .js {
    background-color: #fffbe2;
    font-family:Lucida Console;
-   padding: 0px 2px 0px 2px;
+   padding: 0 2px 0 2px;
    font-size: 10px;
 }
 
@@ -62,23 +62,23 @@
 
 
 div {
-  padding: 0px;
-  margin: 0px
+  padding: 0;
+  margin: 0
 }
 
 img {
-  padding: 0px;
-  margin: 0px
+  padding: 0;
+  margin: 0
 }
 
 ul {
-  padding: 0px;
-  margin: 0px
+  padding: 0;
+  margin: 0
 }
 
 li {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   display: inline
 }
 
@@ -88,14 +88,14 @@ label {
 }
 
 iframe {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   border-style: none;
 }
 
 select {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: initial;
@@ -105,7 +105,7 @@ select {
 
 textarea {
   padding: 2px;
-  margin: 0px;
+  margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 13.3333px;
@@ -115,8 +115,8 @@ textarea {
 body {
   background-color: #f9f9f9;
   transform-origin: top left;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
@@ -124,7 +124,7 @@ body {
 
 input {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 0px 2px 0px 2px;
+  padding: 0 2px 0 2px;
   border-radius: 2px;
 }
 
@@ -142,14 +142,14 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuCellOdd{
   background-color: #F5F5F5;
   border-style: solid;
-  border-width: 1px 0px 0px 0px;
+  border-width: 1px 0 0 0;
   padding: 3px 10px 3px 10px;
 }
 
 .nuCellEven{
   background-color: white;
   border-style: solid;
-  border-width: 1px 0px 0px 0px;
+  border-width: 1px 0 0 0;
   padding: 3px 10px 3px 10px;
 }
 
@@ -158,7 +158,7 @@ input[type=range]::-webkit-slider-runnable-track {
    position			: absolute;
    width			: 20px;
    height			: 10px;
-   bottom			: 0px;
+   bottom			: 0;
    right			: -10px;
    background-color	: red
 }
@@ -180,21 +180,21 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuTabHolder {
   background-color: white;
   border-style: solid;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
   border-color: lightgrey;
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0 0 0;
   overflow: visible;
 }
 
 .nuActionHolder {
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0 10px 0;
   background-color: white;
   height: 22px;
   text-align: left;
 }
 
 .nuBreadcrumbHolder {
-  padding: 5px 0px 5px 0px;
+  padding: 5px 0 5px 0;
   background-color: #00adef;
   color: white;
   font-size: 12px;
@@ -226,9 +226,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #nuCalendar {
-   -webkit-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-   -moz-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-   box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+   -webkit-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+   -moz-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+   box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
 }
 
 .nuCalendarColor {
@@ -269,11 +269,11 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .nuOptionsBox {
-	
+
    background-color: orange;
-   -webkit-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-   -moz-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-   box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+   -webkit-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+   -moz-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+   box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
    font-size:12px;
    width: 150px;
    height: 150px;
@@ -300,18 +300,18 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .nuOptionsItem:hover {
    background-color: #00adef;
-   border-width: 0px;
+   border-width: 0;
    border-style: none;
    cursor: pointer;
 }
 
 .nuShadow {
-  box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+  box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
 }
 
 .nuOptionsList {
    background-color: #BADEEB;
-   box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+   box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
    padding-top: 4px;
    height:20px;
 }
@@ -319,7 +319,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 #nuSearchList{
   background-color: #BADEEB;
-  box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+  box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
   padding-top: 4px;
 }
 
@@ -343,7 +343,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .nuRECORD {
   display: inline;
-  margin: 0px 5px;
+  margin: 0 5px;
   position:absolute;
   background-color: transparent;
   width: 99.3%;
@@ -356,15 +356,15 @@ input[type=range]::-webkit-slider-runnable-track {
   border-color: rgba(0, 0, 0, 0.08);
   height: 300px;
   width: 350px;
-  margin: 50px auto 0px auto;
+  margin: 50px auto 0 auto;
   padding: 30px;
 }
 
 .nuLoginInput {
   height:40px;
   width:330px;
-  border-width:0px 0px 1px 0px;
-  padding:0px 0px 0px 10px;
+  border-width:0px 0 1px 0;
+  padding:0px 0 0 10px;
 }
 
 
@@ -442,22 +442,22 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .nuLanding {
-  border: 1px solid red;	
+  border: 1px solid red;
   cursor: pointer;
 }
 
 .nuSort {
   font-size: 14px;
-  padding: 0px;
+  padding: 0;
 }
 
 .nuSort:hover {
-  color: red;	
+  color: red;
   cursor: pointer;
 }
 
 .nuNoSearch {
-  color: #959595;	
+  color: #959595;
 }
 
 .nuBlank{
@@ -478,7 +478,7 @@ input[type=range]::-webkit-slider-runnable-track {
   font-size:14px;
   overflow: visible;
   height:30px;
-  padding: 7px 10px 0px 10px;
+  padding: 7px 10px 0 10px;
 }
 
 .nuBrowseTable {
@@ -497,7 +497,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuSelectBrowse {
   height: 70px;
   border-style: solid;
-  border-width: 1px 0px 0px 0px;
+  border-width: 1px 0 0 0;
   padding: 3px 10px 3px 10px;
   position:absolute;
   top:75px;
@@ -512,7 +512,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 #nuListerListBox{
-  box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+  box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
   background-color: #D0EABB;
   border: 1px solid rgba(0, 0, 0, 0.05);
   color: black;
@@ -548,7 +548,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuTab {
   display: inline;
   border-style: solid;
-  border-width: 0px;
+  border-width: 0;
   border-color: #CCCCCC;
   font-size: 14px;
   padding: 3px 7px 3px 7px;
@@ -564,12 +564,12 @@ input[type=range]::-webkit-slider-runnable-track {
   background-color: transparent;
   display: inline;
   font-size: 14px;
-  padding: 3px 7px 0px 7px;
+  padding: 3px 7px 0 7px;
   margin-left: 1px;
-  border-radius: 0px;
+  border-radius: 0;
   border-style: solid;
   border-color: #606060;
-  border-width: 0px 0px 2px 0px;
+  border-width: 0 0 2px 0;
 }
 
 .nuSubform {
@@ -585,7 +585,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuSubform0 {
   background-color: white;
   border-style: solid !important;
-  border-width: 0px 0px 1px 0px !important;
+  border-width: 0 0 1px 0 !important;
   border-color: rgba(0, 0, 0, 0.08) !important;
   box-sizing: border-box !important;
 }
@@ -593,7 +593,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuSubform1 {
   background-color: white;
   border-style: solid !important;
-  border-width: 0px 0px 1px 0px !important;
+  border-width: 0 0 1px 0 !important;
   border-color: rgba(0, 0, 0, 0.08) !important;
   box-sizing: border-box !important;
 }
@@ -601,7 +601,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuSubform2 {
   background-color: white;
   border-style: solid !important;
-  border-width: 0px 0px 1px 0px !important;
+  border-width: 0 0 1px 0 !important;
   border-color: rgba(0, 0, 0, 0.08) !important;
   box-sizing: border-box !important;
 }
@@ -617,10 +617,10 @@ input[type=range]::-webkit-slider-runnable-track {
   border-style: solid;
   font-size: 14px;
   height: 40px;
-  padding: 0px 6px 0px 6px;
+  padding: 0 6px 0 6px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   border-color: #2a8bcc;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 .nuButton:hover {
@@ -634,10 +634,10 @@ input[type=range]::-webkit-slider-runnable-track {
   border-style: solid;
   font-size: 14px;
   height: 40px;
-  padding: 0px 6px 0px 6px;
+  padding: 0 6px 0 6px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   border-color: #87A96B;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
 }
 
 .nuUserHomeButton:hover {
@@ -653,11 +653,11 @@ input[type=range]::-webkit-slider-runnable-track {
   border-style: solid;
   font-size: 12px;
   height: 20px;
-  padding: 0px 6px 0px 6px;
+  padding: 0 6px 0 6px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   border-color: #2a8bcc;
-  border-width: 0px 0px 1px 0px;
-  margin: 0px 0px 0px 10px;
+  border-width: 0 0 1px 0;
+  margin: 0 0 0 10px;
 }
 
 .nuSaveButtonEdited {
@@ -703,7 +703,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .nuCalculatorCurrency {
-	
+
 	border:1px solid black;
 	text-align:center;
 	width:30px;
@@ -711,7 +711,7 @@ input[type=range]::-webkit-slider-runnable-track {
 	font: 16px bold;
 	font-family:monospace;
 	background-color:#ebebeb;
-	
+
 }
 
 .nuCalculatorButton:hover {
@@ -736,8 +736,8 @@ input[type=range]::-webkit-slider-runnable-track {
 
 #nuModal {
   background-color: #DEDEDE;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   position: absolute;
   width: 100%;
   opacity: 0.70;
@@ -747,7 +747,7 @@ input[type=range]::-webkit-slider-runnable-track {
 #nuPopupModal {
   background-color: #DEDEDE;
   top: 40px;
-  left: 0px;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -788,7 +788,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .nuDragArea {
 	position:absolute;
 	top:0px;
-	left: 0px;
+	left: 0;
 	border-style:solid;
 	border-width:1px;
 	border-color:black;
@@ -801,9 +801,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .nuDragDialog{
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-	-moz-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-	box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+	-webkit-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+	-moz-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+	box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
 	background-color: #cccccc;
 }
 
@@ -895,8 +895,8 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .nuDragOptionsBox {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     background-color: #cccccc;
     z-index: -1;
     min-height: 440px;
@@ -925,7 +925,7 @@ input[type=range]::-webkit-slider-runnable-track {
     display: block;
     height: 25px;
     width: 140px;
-	padding: 0px 0px 0px 10px;
+	padding: 0 0 0 10px;
 }
 
 .nuDragOptionsIcon {
@@ -1031,7 +1031,7 @@ input[type=range]::-webkit-slider-runnable-track {
     font-family:Tahoma,Geneva,Arial,sans-serif;
 	font-size:11px;
     padding:10px 10px 10px 36px;
-    margin: 0px auto;
+    margin: 0 auto;
 	background:#fff8c4 url('graphics/warning.png') no-repeat 10px 10px;
     border:1px solid #f2c779;
 	width: 500px;
@@ -1050,8 +1050,8 @@ input[type=range]::-webkit-slider-runnable-track {
  	text-align: center;
 	padding:20px;
 	background-color: #FFEEA6;
-	box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-    opacity: 100;
+	box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+    opacity: 1;
     z-index: 5000;
 }
 
@@ -1117,9 +1117,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .nuBoxHeader {
-   -webkit-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-   -moz-box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
-   box-shadow: 5px 5px 5px 0px rgba(150,147,150,1);
+   -webkit-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+   -moz-box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
+   box-shadow: 5px 5px 5px 0 rgba(150,147,150,1);
 }
 
 .nuBoxTitle {
@@ -1153,11 +1153,11 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 span.nuActionButton{
-	margin:5px 0px 0px 0px;
+	margin:5px 0 0 0;
 }
 
 .nuPortraitTab {
-	
+
 	font-size:x-large;
 	padding:10px;
 	font-weight:900;
