@@ -1,3 +1,4 @@
+2021-02-02: Ap.Muthu   Whitespace fixes for nurunpdf.php
 2021-02-02: smalos     [Fixed] opacity out of range value(100), 0px => 0, whitespace fixes
 2021-02-02: smalos     [Fixed] Duplicate property 'height'
 2021-02-01: Ap.Muthu   Updated docs with Multi install access caveats
