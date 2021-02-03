@@ -35,6 +35,9 @@ $PDF->setPrintFooter(false);
 $REPORT						= nuSetPixelsToMM($LAYOUT);
 
 $PDF->SetMargins(1,1,1);
+
+// Font subsetting to reduce the size of the generated pdf file
+/*
 $fl							= json_decode(nuFontList());
 
 for($i = 0 ; $i < count($fl) ; $i++){
@@ -43,6 +46,8 @@ for($i = 0 ; $i < count($fl) ; $i++){
 	$PDF->AddFont($fnt, '', '', true);
 
 }
+*/
+
 $justID						= strstr($JSON->parentID, ':');
 
 nuBuildTempTable($JSON->parentID, $TABLE_ID);
@@ -63,7 +68,7 @@ if($get){
 	ob_end_clean();
 	$PDF->Output('nureport.pdf', 'I');
 }else{
-	nuSavePDF($PDF);
+	nuSavePDF($PDF, $JSON->code);
 }
 
 nuRemoveFiles();
@@ -100,11 +105,14 @@ function nuPrintReport($PDF, $LAY, $DATA, $JSON){
 
 			if($O->objectType == 'label'){
 
+				$description = isset($JSON->sre_description) ? $JSON->sre_description : '';
+				$sre_code = isset($JSON->sre_code) ? $JSON->sre_code : '';
+
 				$label		= $DATA[$s]->objects[$o]->lines[0];
 
 				$label		= str_replace('#pages#',		$pageNumber, $label);
-				$label		= str_replace('#description#',	$JSON->sre_description, $label);
-				$label		= str_replace('#code#',			$JSON->sre_code, $label);
+				$label		= str_replace('#description#',	$description, $label);
+				$label		= str_replace('#code#',			$sre_code, $label);
 				$label		= str_replace('#year#',			date('y'), $label);
 				$label		= str_replace('#month#',		date('m'), $label);
 				$label		= str_replace('#day#',			date('d'), $label);
@@ -159,6 +167,7 @@ function nuBuildReport($PDF, $REPORT, $TABLE_ID){
 	$group_by							= '';
 	$order['a']							= 'asc ';
 	$order['d']							= 'desc ';
+	$lastROW							= 1;
 
 	for($i = 3 ; $i < 8 ; $i++){
 		if($REPORT->groups[$i]->sortField != ''){				//-- loop through groups
@@ -728,7 +737,6 @@ class nuSECTION{
 	
 					$v = $this->nuGetFormatting($O);
 					$value = $v['V'];
-//           		$value = mb_convert_encoding($v['V'], "WINDOWS-1252", "UTF-8");
 				}
 			}
 
@@ -884,9 +892,7 @@ function nuPrintField($PDF, $S, $contents, $O, $LAY){
 	$PDF->SetLineWidth($borderWidth / 5);
 	$PDF->SetXY($left, $top);
 	
-	$l = 'Hleď, toť přízračný kůň v mátožné póze šíleně úpí';
 	$t = implode("\n", $contents->lines);
-	$txt = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 	if($t == 'KEEP EXACT HEIGHT'){
 		$PDF->Rect($left, $top, $width, $height, 'DF');
@@ -943,27 +949,6 @@ function nuReplaceLabelHashVariables($LAY, $hashData){
 	}
 
 }
-
-/*
-function nuReplaceHashes($str, $arr){
-
-	while(list($key, $value) = each($arr)){
-
-		if( !is_object($value) and !is_array($value) and $str != '' and $key != ''){
-
-			$newValue	= addslashes($value);
-			$str 		= str_replace('#'.$key.'#', $newValue, $str);
-
-		}
-
-	}
-
-    $GLOBALS['latest_hashData'] = $arr;
-
-	return $str;
-
-}
-*/
 
 function nuMakeSummaryTable($REPORT, $TABLE_ID){
 
@@ -1113,7 +1098,7 @@ function nuRemovePageBreak($S){
 	}
 }
 
-function nuSavePDF($PDF){
+function nuSavePDF($PDF, $code = '') {
 
 	// output to file
 	$filename1 ='nupdf_'.nuID().'.pdf';
@@ -1126,19 +1111,19 @@ function nuSavePDF($PDF){
 	$usr 		= $s["USER_ID"];
 	$rid		= nuID();
 
-	// after created initially you can comment/exclude creation of the pdf_temp table
-	$q1 		= "
-	CREATE TABLE IF NOT EXISTS pdf_temp (
+	// creation of temporary table to store the names of generated files
+	$q1 = "CREATE TABLE IF NOT EXISTS pdf_temp (
 		pdf_temp_id VARCHAR(25) PRIMARY KEY,
 		pdf_added_by VARCHAR(25),
+		pdf_code VARCHAR(100),
 		pdf_file_name VARCHAR(255),
 		pdf_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 	); ";
 
 	nuRunQuery($q1);
 
-	$q1 		= "INSERT INTO pdf_temp (pdf_temp_id,pdf_added_by,pdf_file_name)
-	VALUES ('$rid','$usr','$filename');";
+	$q1 = "INSERT INTO pdf_temp (pdf_temp_id,pdf_added_by,pdf_code,pdf_file_name)
+				VALUES ('$rid','$usr','$code','$filename');";
 
 	nuRunQuery($q1);
 
