@@ -3380,7 +3380,7 @@ INSERT INTO `zzzzsys_translate` (`zzzzsys_translate_id`, `trl_language`, `trl_en
 ('nu5bad6cb3ca66e4c','Russian','Font Color','Цвет шрифта'),
 ('nu5bad6cb3ca07e21','Russian','Font Family','Семейство шрифтов'),
 ('nu5bad6cb3c9d9a34','Russian','Font Size','Размер шрифта'),
-('nu5bad6cb3c9c5eb9','Russian','Font Weight','Вес шрифта'),
+('nu5bad6cb3c9c5eb9','Russian','Font Weight','Насыщенность шрифта'),
 ('nu5ec114f25887f43','Russian','Foreign Key','Внешний ключ'),
 ('nu5bad6cb3c9ac46a','Russian','Form','Форма'),
 ('nu5bad6cb3c98c077','Russian','Form Object List','Список объектов формы'),

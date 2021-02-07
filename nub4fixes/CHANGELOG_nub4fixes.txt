@@ -1,3 +1,4 @@
+2021-02-08: Ap.Muthu   Font Weight Russian translation changed to Насыщенность шрифта (forum user @KEE)
 2021-02-05: smalos     "zzzzsys_object.sob_all_table" set to blank for "run" object
 2021-02-03: smalos     Reduced PDF size, new pdf_temp.pdf_code field saves report on nuRunReportSave()
 2021-02-03: Ap.Muthu   Whitespace fixes for nurunpdf.php
