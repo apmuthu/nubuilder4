@@ -15,6 +15,7 @@ if($get){
 	$jsonID					= $_GET['i'];
 }else{
 	$jsonID					= $_POST['ID'];
+	$tag					= $_POST['tag'];
 }
 
 $J							= nuGetJSONData($jsonID);
@@ -68,7 +69,7 @@ if($get){
 	ob_end_clean();
 	$PDF->Output('nureport.pdf', 'I');
 }else{
-	nuSavePDF($PDF, $JSON->code);
+	nuSavePDF($PDF, $JSON->code, $tag);
 }
 
 nuRemoveFiles();
@@ -1098,7 +1099,7 @@ function nuRemovePageBreak($S){
 	}
 }
 
-function nuSavePDF($PDF, $code = '') {
+function nuSavePDF($PDF, $code = '', $tag = '') {
 
 	// output to file
 	$filename1 ='nupdf_'.nuID().'.pdf';
@@ -1116,14 +1117,15 @@ function nuSavePDF($PDF, $code = '') {
 		pdf_temp_id VARCHAR(25) PRIMARY KEY,
 		pdf_added_by VARCHAR(25),
 		pdf_code VARCHAR(100),
+		pdf_tag VARCHAR(100),
 		pdf_file_name VARCHAR(255),
 		pdf_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 	); ";
 
 	nuRunQuery($q1);
 
-	$q1 = "INSERT INTO pdf_temp (pdf_temp_id,pdf_added_by,pdf_code,pdf_file_name)
-				VALUES ('$rid','$usr','$code','$filename');";
+	$q1 = "INSERT INTO pdf_temp (pdf_temp_id,pdf_added_by,pdf_code,pdf_tag,pdf_file_name)
+				VALUES ('$rid','$usr','$code','$tag','$filename');";
 
 	nuRunQuery($q1);
 
