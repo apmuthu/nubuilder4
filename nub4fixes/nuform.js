@@ -250,9 +250,10 @@ function nuSetBody(f){
 		$('body').addClass('nuBrowseBody')
 	}else{
 
+		var height = f.dimensions == null ? 0 : f.dimensions.edit.height;
 		$('body').addClass('nuEditBody')
 		.css('width', window.innerWidth-1)
-		.css('height', f.dimensions.edit.height)
+		.css('height', height)
 
 	}
 
@@ -2136,6 +2137,40 @@ function nuSelectTab(tab){
 	$(".nuIframe[data-nu-form='" + form + "'][data-nu-tab='"  + filt + "']").css('visibility','visible');
 	$(".nuHtml[data-nu-form='" + form + "'][data-nu-tab='"  + filt + "']").css('visibility','visible');
 	$('#' + tab.id).addClass('nuTabSelected');
+
+}
+
+function nuSelectTabByTitle(s) {
+	var tabs = JSON.parse(JSON.stringify(nuSERVERRESPONSE)).tabs;
+	var l = tabs.findIndex(data => data.title === s);
+	if (l > -1) nuSelectTab($('#' + 'nuTab' + l)[0]); 
+}
+
+function nuRemoveTabs(t){
+
+	for(var i = 0 ; i < arguments.length ; i++){
+		$('#nuTab' + arguments[i]).remove();
+	}
+
+}
+
+function nuHideTabByTitle(s) {
+
+	var tabs = JSON.parse(JSON.stringify(nuSERVERRESPONSE)).tabs;
+	var l = tabs.findIndex(data => data.title === s);
+	if (l > -1) nuHide('nuTab' + l);
+
+}
+
+function nuHideTabs(t) {
+
+	for (var i = 0; i < arguments.length; i++) {
+		if (arguments[i] == parseInt(arguments[i])) {
+			$('#nuTab' + arguments[i]).hide();
+		} else {
+			nuHideTabByTitle(arguments[i]);
+		}
+	}
 
 }
 
