@@ -99,7 +99,6 @@ function nuBuildFastForm($table, $form_type){
 	$r			  = db_fetch_row($t);
 	$form_code	  = 'FF' . $r[0];
 	$form_desc	  = 'Fast Form ' . $r[0];
-	$s			  = Array();
 
 	//----------add tab--------------------
 	$sql			= "
@@ -209,7 +208,6 @@ function nuBuildFastForm($table, $form_type){
 
 	$t			  = nuRunQuery("SELECT * FROM $TT");
 	$a			  = Array();
-	$n			  = 'number date';
 
 	while($r = db_fetch_object($t)){
 

@@ -1,4 +1,5 @@
-2021-04-02: smalos     Cloned nusearchclass.php for fixes
+2021-04-02: smalos     Removed unused variables and declared undefined variable
+2021-04-02: Ap.Muthu   Cloned nusearchclass.php for fixes
 2021-03-31: smalos     Backported some new JS tab functions
 2021-03-18: smalos     Backported additional argument tag in nuRunReportSave()
 2021-03-18: Ap.Muthu   Cloned nuajax.js for pdf tag enhancement

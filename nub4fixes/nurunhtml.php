@@ -11,7 +11,6 @@ $s					= "SELECT deb_message AS json FROM zzzzsys_debug WHERE zzzzsys_debug_id =
 $t					= nuRunQuery($s, array($_GET['i']));
 $r					= db_fetch_object($t);
 $j					= json_decode($r->json);
-$q					= $j->sql;
 $c					= $j->columns;
 $_POST['nuHash']	= (array) $j->hash;
 
@@ -25,7 +24,6 @@ print "<style>\n";
 
 for($col = 0 ; $col < count($c) ; $col++){
 
-
 	$wd		= ($c[$col]->width) . 'px';
 
 	if($c[$col]->align == 'l'){$align = 'left';}
@@ -37,6 +35,7 @@ for($col = 0 ; $col < count($c) ; $col++){
 }
 
 print "</style>\n";
+$class = array();
 
 print "<TABLE border=1>\n";
 print "\n<TR>";
