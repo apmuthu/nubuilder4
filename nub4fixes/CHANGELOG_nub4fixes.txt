@@ -1,3 +1,4 @@
+2021-04-07: Ap.Muthu   nb45_PHPMailer_6.3.0_long_array_syntax_fixes.zip added
 2021-04-02: smalos     Removed unused variables and declared undefined variable
 2021-04-02: Ap.Muthu   Cloned nusearchclass.php for fixes
 2021-03-31: smalos     Backported some new JS tab functions
